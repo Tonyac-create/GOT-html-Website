@@ -53,24 +53,27 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Transparent Header Color on a Banner */
 
-#header nav a, #header i {
+nav a {
     color:#F6A316;
 }
-
-
-/* Header Colors when the Navigation is sticky and solid */ 
-
-#header.nav-solid, #header.nav-solid a, #header.nav-solid i, #nav-mobile ul li a {
-    color:#F6A316;
-}
-
 
 /* Header Active State */
 
-#header.nav-solid .active {
+.nav-list a.active {
+    color: #2AB8CD; /* Couleur bleue pour le lien ciblé */
+}
+
+/* Header Colors when the Navigation is sticky and solid */ 
+
+#nav-mobile ul li a {
+    color:#F6A316;
+}
+
+
+/* #header.nav-solid .active {
     color: #2AB8CD;
     border-color: #2AB8CD;
-}    
+}     */
 
 
 
