@@ -33,15 +33,15 @@ $(document).ready(function () {
 
 	/* Sticky Navigation */
 	if (!!$.prototype.stickyNavbar) {
-		$('#header').stickyNavbar();
+		$('#banner').stickyNavbar();
 	}
 
 	$('#content').waypoint(function (direction) {
 		if (direction === 'down') {
-			$('#header').addClass('nav-solid fadeInDown');
+			$('#banner').addClass('nav-solid fadeInDown');
 		}
 		else {
-			$('#header').removeClass('nav-solid fadeInDown');
+			$('#banner').removeClass('nav-solid fadeInDown');
 		}
 	});
 

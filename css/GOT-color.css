@@ -124,11 +124,10 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Banner Background and Text Colors = section 1 */
 
-#banner {
+.hero-section {
     background: url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat right bottom;
     background-size:50%;
 }
-
 
 
 /*------------------------------------------------------------------------------------------*/
@@ -278,7 +277,7 @@ h6 {
 /* Section Innovons 1  et Watch video section Se dépasser 4 Button contour Color */
 
 .button, input[type="submit"] {
-    border-color:#2AB8CD;
+    border-color:#F6A316;
     color :#F6A316
 }
 
