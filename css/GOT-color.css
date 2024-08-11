@@ -37,8 +37,12 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Border Color _ Cadres _ sections 6_Témoignages et 7_GOT Connexion */
 
-#banner .section-heading:before, .testimonial.classic footer:before {
+#banner .section-heading:before {
     background: #0D2D45;
+}
+
+.testimonial.classic footer:before {
+    background: #F6A316;
 }
 
 .pricing-block-content:hover {
@@ -127,7 +131,7 @@ nav a {
 
 /* Banner Background and Text Colors = section 1 */
 
-.hero-section {
+.hero-section, #about {
     background: url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat right bottom;
     background-size:50%;
 }

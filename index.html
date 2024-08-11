@@ -99,22 +99,22 @@
                     <nav id="nav-main">
                         <ul class="nav-list">
                             <li>
-                                <a href="#banner">Home</a>
+                                <a href="#hero-section">Home</a>
                             </li>
                             <li>
-                                <a href="#GOT Âme">La GOT Âme</a>
+                                <a href="#about">La GOT Âme</a>
                             </li>
                             <li>
-                                <a href="#projets">Projets en cours</a>
+                                <a href="#projects">Projets en cours</a>
                             </li>
                             <li>
-                                <a href="#sedépasser">Se dépasser</a>
+                                <a href="#Sedepasser">Se dépasser</a>
                             </li>
                             <li>
                                 <a href="#testimonials">Témoignages</a>
                             </li>
                             <li>
-                                <a href="#partenaires">Partenaires</a>
+                                <a href="#Partenaires">Partenaires</a>
                             </li>
                             <li>
                                 <a href="#connexion">GOT Connexion</a>
@@ -123,8 +123,13 @@
                     </nav>
                     <!--End of Main Navigation-->
 
-                    <div id="nav-trigger"><span></span></div>
-                    <nav id="nav-mobile"></nav>
+                    <div id="nav-trigger">
+                        <span>
+                            <img src="/images/bars-solid.svg" alt="icone menu burger">
+                        </span>
+                        <nav id="nav-mobile">
+                        </nav>
+                    </div>
 
                 <!-- </div>
             </div>
@@ -138,7 +143,7 @@
         <!--Hero Section-->
         <!-- <div id="banner-content" class="row clearfix"> -->
     
-            <section class="hero-section">
+            <section id="hero-section" class="hero-section scrollto">
     
                 <div class="section-heading">
                     <img src="images\Logos\logo_99px.webp" id="GOT_logo_99px" alt="GOT_logo"/>
@@ -297,7 +302,7 @@
         <!--Projets-->
 
         <!-- <div class="row clearfix"> -->
-        <section class="introduction">
+        <section id="projects" class="introduction scrollto">
             <!-- <div class="col-3"> -->
             <div class="col-3">
                 <h3>LE COEUR DE NOS VALEURS</h3>
@@ -323,9 +328,9 @@
                     <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) -->
                 </div>
             <div class="CTA-projects">
-                <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
+                <!-- <a href="#" data-videoid="UYJ5IjBRlW8" data-videosite="youtube" class="button video link-lightbox">
                 WATCH VIDEO <i class="fa fa-play" aria-hidden="true"></i>
-                </a>
+                </a> -->
 
                 <!--Call to Action-->
                 <a href="#" class="button">Je kiffe vos projets ! Je m'engage</a>
@@ -335,7 +340,7 @@
         </section>
 
         <!--Content Section-->
-        <section id="Se dépasser" class="introduction scrollto">
+        <section id="Sedepasser" class="introduction scrollto">
             <!-- <div class="row no-padding-bottom clearfix"> -->
                 <!--Content of the Right Side-->
                 <!-- <div class="col-3"> -->
@@ -377,102 +382,100 @@
         <!--End of Content Section-->
 
         <!--Testimonials-->
-        <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+        <section id="testimonials" class="scrollto" data-enllax-ratio=".2">
 
-            <div class="row clearfix">
+            <!-- <div class="row clearfix"> -->
 
-                <div class="section-heading">
+                <div class="col-3">
                     <h3>TÉMOIGNAGES</h3>
                     <h2 class="section-title">Ils parlent de nous</h2>
                 </div>
 
-                <!--User Testimonial-->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="images/user-images/Barbu.png" alt="User"/>
-                    <q>«The handbook significantly improved my code management workflow in days.»</q>
-                    <footer>Jacky Chan - LeadTech @ abcTech</footer>
-                </blockquote>
-                <!-- End of Testimonial-->
+                <div class="cards-testimonials">
+                    <!--User Testimonial-->
+                    <blockquote class="col-3 testimonial classic">
+                        <img src="images/user-images/Barbu.png" alt="User"/>
+                        <q>The handbook significantly improved my code management workflow in days.</q>
+                        <footer>Jacky Chan - LeadTech @ abcTech</footer>
+                    </blockquote>
+                    <!-- End of Testimonial-->
 
-                <!--User Testimonial-->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="images/user-images/Femme.png" alt="User"/>
-                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua</q>
-                    <footer>Linda Evangelista - Cybersecurity Engineer @QRS Solutions</footer>
-                </blockquote>
-                <!-- End of Testimonial-->
+                    <!--User Testimonial-->
+                    <blockquote class="col-3 testimonial classic">
+                        <img src="images/user-images/Femme.png" alt="User"/>
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua</q>
+                        <footer>Linda Evangelista - Cybersecurity Engineer @QRS Solutions</footer>
+                    </blockquote>
+                    <!-- End of Testimonial-->
 
-                <!--User Testimonial-->
-                <blockquote class="col-3 testimonial classic">
-                    <img src="images/user-images/Garçon.png" alt="User"/>
-                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua</q>
-                    <footer>Émilie Jolie - FullStack développeuse @UVW Conseil</footer>
-                </blockquote>
-                <!-- End of Testimonial-->
+                    <!--User Testimonial-->
+                    <blockquote class="col-3 testimonial classic">
+                        <img src="images/user-images/Garçon.png" alt="User"/>
+                        <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore
+                            et dolore magna aliqua</q>
+                        <footer>Émilie Jolie - FullStack développeuse @UVW Conseil</footer>
+                    </blockquote>
+                    <!-- End of Testimonial-->
+                </div>
 
-            </div>
+            <!-- </div> -->
 
-        </aside>
+        </section>
         <!--End of Testimonials-->
 
         <!--Partenaires-->
-        <section id="Partenaires" class="scrollto clearfix">
-            <div class="row clearfix">
+        <section id="Partenaires" class="scrollto">
+            <!-- <div class="row clearfix"> -->
 
                 <div class="col-3">
-
-                    <div class="section-heading">
+                    <!-- <div class="section-heading"> -->
                         <h3>TRUST</h3>
                         <h2 class="section-title">Ils sont nos partenaires</h2>
                         <p class="section-subtitle">Nous avons le soutien des grands acteurs de la technologie et de l'innovation</p>
-                    </div>
-
+                    <!-- </div> -->
                 </div>
 
-                <div class="col-2-3">
-
-                    <a href="#" class="col-3">
+                <div class="link-partenaires">
+                    <a href="#">
                         <img src="images/Partenaires-images/Logo Google Partner.svg" alt="Partenaires-Google"/>
-                        <div class="client-overlay"><span>Tree</span></div>
+                        <!-- <div class="client-overlay"><span>Tree</span></div> -->
                     </a>
-                    <a href="#" class="col-3">
+                    <a href="#">
                         <img src="images/Partenaires-images/Logo-Canva-1.webp" alt="Partenaires-Canva"/>
-                        <div class="client-overlay"><span>Fingerprint</span></div>
+                        <!-- <div class="client-overlay"><span>Fingerprint</span></div> -->
                     </a>
-                    <a href="#" class="col-3">
+                    <a href="#">
                         <img src="images/Partenaires-images/Logo-Github.webp" alt="Partenaires-Github"/>
-                        <div class="client-overlay"><span>The Man</span></div>
+                        <!-- <div class="client-overlay"><span>The Man</span></div> -->
                     </a>
-                    <a href="#" class="col-3">
+                    <a href="#">
                         <img src="images/Partenaires-images/Logo-HelloAsso.webp" alt="Partenaires-HelloAsso"/>
-                        <div class="client-overlay"><span>Mustache</span></div>
+                        <!-- <div class="client-overlay"><span>Mustache</span></div> -->
                     </a>
-                    <a href="#" class="col-3">
+                    <a href="#">
                         <img src="images/Partenaires-images/Logo-JeVeuxAider.gouv.fr.webp" alt="Partenaires-JeVeuxAider.gouv"/>
-                        <div class="client-overlay"><span>Goat</span></div>
+                        <!-- <div class="client-overlay"><span>Goat</span></div> -->
                     </a>
-
                 </div>
 
-            </div>
+            <!-- </div> -->
         </section>
         <!--End of Partenaires-->
 
         <!--Pricing Tables-->
-        <section id="pricing" class="secondary-color text-center scrollto clearfix ">
+        <!-- <section id="pricing" class="secondary-color text-center scrollto clearfix ">
             <div class="row clearfix">
 
                 <div class="section-heading">
                     <h3>YOUR CHOICE</h3>
                     <h2 class="section-title">We have the right package for you</h2>
-                </div>
+                </div> -->
 
                 <!--Pricing Block-->
-                <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
+                <!-- <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.4s">
                     <div class="pricing-block-content">
                         <h3>Personal</h3>
                         <p class="pricing-sub">The standard version</p>
@@ -489,11 +492,11 @@
                         </ul>
                         <a href="#" class="button">BUY TODAY</a>
                     </div>
-                </div>
+                </div> -->
                 <!--End Pricing Block-->
 
                 <!--Pricing Block-->
-                <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.6s">
+                <!-- <div class="pricing-block featured col-3 wow fadeInUp" data-wow-delay="0.6s">
                     <div class="pricing-block-content">
                         <h3>Student</h3>
                         <p class="pricing-sub">Most popular choice</p>
@@ -510,11 +513,11 @@
                         </ul>
                         <a href="#" class="button">BUY TODAY</a>
                     </div>
-                </div>
+                </div> -->
                 <!--End Pricing Block-->
 
                 <!--Pricing Block-->
-                <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.8s">
+                <!-- <div class="pricing-block col-3 wow fadeInUp" data-wow-delay="0.8s">
                     <div class="pricing-block-content">
                         <h3>Business</h3>
                         <p class="pricing-sub">For the whole team</p>
@@ -531,11 +534,11 @@
                         </ul>
                         <a href="#" class="button">BUY TODAY</a>
                     </div>
-                </div>
+                </div> -->
                 <!--End Pricing Block-->
 
-            </div>
-        </section>
+            <!-- </div>
+        </section> -->
         <!--End of Pricing Tables-->
 
     </main>
@@ -544,7 +547,7 @@
 
     <!--Footer-->
     <footer id="landing-footer" class="clearfix">
-        <div class="row clearfix">
+        <!-- <div class="row clearfix"> -->
 
             <p id="copyright" class="col-2">Made with love by <a href="https://www.guildopentech.org">Guild Open Tech</a></p>
 
@@ -572,7 +575,7 @@
                 </li>
             </ul>
             <!--End of Social Icons in Footer-->
-        </div>
+        <!-- </div> -->
     </footer>
     <!--End of Footer-->
 

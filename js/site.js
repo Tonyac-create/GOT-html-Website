@@ -36,14 +36,14 @@ $(document).ready(function () {
 		$('#banner').stickyNavbar();
 	}
 
-	$('#content').waypoint(function (direction) {
-		if (direction === 'down') {
-			$('#banner').addClass('nav-solid fadeInDown');
-		}
-		else {
-			$('#banner').removeClass('nav-solid fadeInDown');
-		}
-	});
+	// $('#banner').waypoint(function (direction) {
+	// 	if (direction === 'down') {
+	// 		$('#banner').addClass('nav-list fadeInDown');
+	// 	}
+	// 	else {
+	// 		$('#banner').removeClass('nav-list fadeInDown');
+	// 	}
+	// });
 
 });
 

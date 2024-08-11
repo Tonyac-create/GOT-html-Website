@@ -630,7 +630,7 @@ section {
   transition: all 0.3s ease-out;
 }
 
-#nav-trigger span:after {
+/* #nav-trigger span:after {
   font-family: "Cabin";
   display: inline-block;
   width: 38px;
@@ -640,7 +640,7 @@ section {
   content: "\f0c9";
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-}
+} */
 
 #nav-trigger span.open:after {
   content: "\f00d";
@@ -675,15 +675,15 @@ nav#nav-mobile ul {
   display: none;
   list-style-type: none;
   position: absolute;
-  left: 0;
+  /* left: 0; */
   right: 0;
   margin-left: -20px;
   margin-right: -20px;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  background-color: #071520;
   box-shadow: 0 5px 3px rgba(238, 238, 238, 0.2);
+  background-color: #071520;
 }
 
 nav#nav-mobile ul:after {
@@ -694,17 +694,17 @@ nav#nav-mobile li {
   margin: 0 20px;
   float: none;
   text-align: left;
-  border-bottom: 1px solid #e1e1e1;
+  /* border-bottom: 1px solid #e1e1e1; */
 }
 
 nav#nav-mobile li:last-child {
   border-bottom: none;
 }
 
-.nav-solid nav#nav-mobile li {
+/* .nav-solid nav#nav-mobile li {
   border-top: 1px solid #e1e1e1;
   border-bottom: none;
-}
+} */
 
 nav#nav-mobile a {
   display: block;
@@ -722,8 +722,7 @@ nav#nav-mobile a {
 }
 
 nav#nav-mobile a:hover {
-  background: #fafafa;
-  opacity: 1;
+  color: #2ab8cd;
 }
 
 /* --------- 2.5 Social Elements ---------- */
@@ -828,7 +827,6 @@ h6 {
 /* HeroSection
 /*------------------------------------------------------------------------------------------*/
 
-
 .section-heading {
   display: flex;
   align-items: center;
@@ -843,8 +841,8 @@ h6 {
 }
 
 .section-title {
-    padding-top: 0;
-    padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .section-subtitle {
@@ -856,38 +854,37 @@ h6 {
   color: #fafafa;
 }
 
-
 .container {
-    width: 75%;
-    margin: 20px 0 40px 92px;
+  width: 75%;
+  margin: 20px 0 40px 0;
 }
 
 .styled-list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .styled-list li {
-    margin-bottom: 10px;
-    font-size: 1.2em;
+  margin-bottom: 10px;
+  font-size: 1.2em;
 }
 
 .icon {
-    color: #fafafa; 
-    margin-right: 8px;
+  color: #fafafa;
+  margin-right: 8px;
 }
 
 .highlighted {
-    color: #F6A316;
+  color: #f6a316;
 }
 
 .highlight-icon {
-    color: #F6A316;
+  color: #f6a316;
 }
 
 .link-node {
   width: 2px;
-  height: 25px; 
+  height: 25px;
   background-color: #fafafa;
   position: relative;
   margin-left: 5px;
@@ -896,11 +893,11 @@ h6 {
 .link-node::before {
   content: "";
   position: absolute;
-  top: -10px; 
+  top: -10px;
   left: 50%;
   transform: translateX(-50%);
   width: 2px;
-  height: 20px; 
+  height: 20px;
   background-color: #fafafa;
 }
 
@@ -909,7 +906,7 @@ h6 {
 }
 
 #CTA-hero-section {
-    margin-left: 40%;
+  margin-left: 40%;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -1048,49 +1045,71 @@ h6 {
 /*------------------------------------------------------------------------------------------*/
 
 /* --------- 6.1 Introduction ---------- */
+/* #about {
+    position: relative;
+    overflow: hidden;
+}
+
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/images/banner-images/Body_MeshGradient-CC-N°1.webp');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    transform: scaleY(-1);
+    z-index: -1;
+    pointer-events: none;
+} */
+
+
 .introduction {
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
 }
 
 .introduction .size-logo-about {
-    width: 40px;
+  width: 40px;
 }
 
 .tag {
-    display: flex;
-    gap: 8px;
-    /* border: 2px solid #2AB8CD; */
-    border-top-left-radius: 60px;
-    border-bottom-left-radius: 60px;
-    padding: 16px 24px;
-    width: 320px;
-    background: linear-gradient(0.25turn, #2AB8CD, #071520);
+  display: flex;
+  gap: 8px;
+  /* border: 2px solid #2AB8CD; */
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  padding: 16px 24px;
+  width: 320px;
+  background: linear-gradient(0.25turn, #2ab8cd, #071520);
 }
 
 .tag-about {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 16px;
 }
 
 .tag-about .tag {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .tag .text-tag {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .text-tag p {
-    font-weight: bold;
-    margin: 0;
-    text-align: center;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
 }
 
 .introduction img.featured {
@@ -1112,28 +1131,35 @@ h6 {
 
 /* --------- 6.3 Testimonials ---------- */
 
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+#testimonials .cards-testimonials {
+  display: flex;
+  margin-top: 24px;
+}
+
 .testimonial {
   padding: 15px;
 }
 
-blockquote {
+/* blockquote {
   position: relative;
-}
+} */
 
 .testimonial img {
   max-height: 80px;
   border-radius: 250em;
 }
 
-.testimonial footer {
-  padding-top: 80px;
-}
-
 /* Style Classic - Avatar above Testimonial */
 
 .testimonial.classic img {
-  display: inline-block;
-  margin-bottom: 25px;
+  display: flex;
+  margin: 0 auto 25px auto;
 }
 
 .testimonial.classic q {
@@ -1160,8 +1186,8 @@ blockquote {
 
 /* --------- 6.4 Gallery ---------- */
 #gallery {
-    display: flex;
-    margin: 24px 0;
+  display: flex;
+  margin: 24px 0;
 }
 
 #gallery img {
@@ -1213,41 +1239,40 @@ blockquote {
 }
 
 .CTA-projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-    margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
 }
 
 /* Section Se dépasser */
 .sedepasser {
-    display: flex;
-    margin: 24px 0;
+  display: flex;
+  margin: 24px 0;
 }
 
 .sedepasser-img {
-    width: 50%;
-    height: 100%;
-    margin-left: 16px;
+  width: 50%;
+  height: 80%;
+  margin-left: auto;
 }
 
-.sedepasser-img img{
-    width: 100%;
-    height: 85%;
+.sedepasser-img img {
+  width: 100%;
+  height: 85%;
 }
 
 .sedepasser-list {
-    list-style: none;
-    margin: 16px 0;
+  list-style: none;
+  margin: 16px 0;
 }
 
 .sedepasser-list li {
-    margin: 8px 0;
+  margin: 8px 0;
 }
 
 .CTA-sedepasser {
-    margin-top: 48px;
+  margin-top: 48px;
 }
 
 /**
@@ -1611,6 +1636,22 @@ blockquote {
 }
 
 /* --------- 6.6 Partenaires ---------- */
+#Partenaires {
+  display: flex;
+  flex-direction: column;
+}
+
+#Partenaires .link-partenaires {
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+#Partenaires .link-partenaires img {
+  width: 200px;
+  height: 75px;
+}
 
 #clients a {
   display: block;
@@ -1626,7 +1667,7 @@ blockquote {
   padding: 15px 25px;
 }
 
-.client-overlay {
+/* .client-overlay {
   background: rgba(0, 0, 0, 0.8);
   position: absolute;
   top: 0;
@@ -1640,20 +1681,20 @@ blockquote {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
-}
+} */
 
-#clients a:hover .client-overlay {
+#clients a:hover {
   opacity: 1;
 }
 
-.client-overlay span {
+/* .client-overlay span {
   position: absolute;
   top: 48%;
   left: 0;
   width: 100%;
   text-align: center;
   display: inline-block;
-}
+} */
 
 /* --------- 6.7 Pricing Table / Connexion ---------- */
 
@@ -1727,6 +1768,7 @@ blockquote {
 
 #landing-footer {
   clear: both;
+  padding: 40px 16px;
 }
 
 #landing-footer .row {
@@ -1769,7 +1811,7 @@ blockquote {
 }
 
 #scrollUp:before {
-  background: #F6A316;
+  background: #f6a316;
   font-family: "fontawesome";
   font-size: 2.4em;
   font-style: normal;
@@ -2310,6 +2352,7 @@ blockquote {
 @media all and (max-width: 1024px) {
   #nav-trigger {
     display: block;
+    margin-left: auto;
   }
 
   nav#nav-main {
