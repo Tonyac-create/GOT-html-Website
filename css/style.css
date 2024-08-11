@@ -251,7 +251,7 @@ section {
 
 [class*="col-"] {
   float: left;
-  padding: 55px;
+  /* padding: 55px; */
 }
 
 #partenaires .col-2-3 [class*="col-"] {
@@ -842,9 +842,14 @@ h6 {
   height: 270px;
 }
 
+.section-title {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .section-subtitle {
   font-size: 24px;
-  padding-top: 0;
+  margin: 0;
 }
 
 .section-heading-white {
@@ -1043,6 +1048,50 @@ h6 {
 /*------------------------------------------------------------------------------------------*/
 
 /* --------- 6.1 Introduction ---------- */
+.introduction {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+}
+
+.introduction .size-logo-about {
+    width: 40px;
+}
+
+.tag {
+    display: flex;
+    gap: 8px;
+    /* border: 2px solid #2AB8CD; */
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    padding: 16px 24px;
+    width: 320px;
+    background: linear-gradient(0.25turn, #2AB8CD, #071520);
+}
+
+.tag-about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.tag-about .tag {
+    display: flex;
+    flex-direction: row;
+}
+
+.tag .text-tag {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.text-tag p {
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
 
 .introduction img.featured {
   padding: 15px 0 0 0;
@@ -1110,6 +1159,10 @@ blockquote {
 }
 
 /* --------- 6.4 Gallery ---------- */
+#gallery {
+    display: flex;
+    margin: 24px 0;
+}
 
 #gallery img {
   max-height: 200px;
@@ -1157,6 +1210,14 @@ blockquote {
   opacity: 1;
   top: 50%;
   left: 50%;
+}
+
+.CTA-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 16px;
 }
 
 /**
