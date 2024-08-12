@@ -215,8 +215,8 @@ section {
 
 #content {
   padding-top: 135px;
-  padding-left: 16px;
-  padding-right: 16px;
+  /* padding-left: 16px;
+  padding-right: 16px; */
 }
 
 /* Rows and Columns */
@@ -834,7 +834,7 @@ h6 {
   gap: 16px;
   width: 75%;
   margin-bottom: 16px;
-  margin-left: 12px;
+  margin-left: 28px;
 }
 
 .section-heading img {
@@ -1096,6 +1096,7 @@ h6 {
   display: flex;
   flex-direction: column;
   margin-top: 120px;
+  margin-left: 28px;
 }
 
 .introduction .size-logo-about {
@@ -1224,13 +1225,44 @@ h6 {
 }
 
 /* --------- 6.4 Gallery ---------- */
+.card-gallery ul {
+  list-style: none;
+  width: 80%;
+}
+
+.card-gallery ul li {
+  padding-bottom: 4px;
+}
+
+.icon-gallery {
+  margin-right: 8px;
+}
+
 #gallery {
   display: flex;
   margin: 24px 0;
 }
 
+#gallery .card-gallery {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding: 0 24px;
+}
+
+#gallery .link-card-gallery {
+  font-size: 21px;
+  color: #2ab8cd;
+}
+
+.icon-terminal {
+  width: 15px;
+  padding-right: 4px;
+}
+
 #gallery img {
   max-height: 200px;
+  margin: 0 auto;
 }
 
 #gallery [class*="col-"] {
@@ -1238,7 +1270,7 @@ h6 {
 }
 
 #gallery a {
-  display: inline-block;
+  display: flex;
   position: relative;
   overflow: hidden;
 }
@@ -1281,7 +1313,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
+  margin-top: 35px;
 }
 
 /* Section Se dépasser */
@@ -1303,15 +1335,21 @@ h6 {
 
 .sedepasser-list {
   list-style: none;
-  margin: 16px 0;
+  margin: 8px 0 16px 0;
 }
 
 .sedepasser-list li {
   margin: 8px 0;
 }
 
+.sedepasser-subtitle {
+  font-size: 24px;
+  /* margin-bottom: 8px; */
+  color: #f6a316;
+}
+
 .CTA-sedepasser {
-  margin-top: 48px;
+  margin-top: 35px;
 }
 
 /**

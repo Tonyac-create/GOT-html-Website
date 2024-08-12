@@ -141,6 +141,11 @@ nav a {
     background-size: 50%;
 }
 
+#projects {
+    background: url("../images/banner-images/Body_3_MeshGradient-CC_html-1.webp") no-repeat left top;
+    background-size: 70%;
+}
+
 
 /*------------------------------------------------------------------------------------------*/
 /* 5. Typography */
