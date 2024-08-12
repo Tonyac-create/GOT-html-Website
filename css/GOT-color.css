@@ -89,7 +89,7 @@ nav a {
 /* Section 7_GOT Connexion Primary Background and Text Colors */
 
 .primary-color, .featured .pricing {
-    background: linear-gradient(to bottom, #071520, #0D2D45);
+    background: linear-gradient(to left, #071520, #0D2D45);
 }
 
 /* Section 7_GOT Connexion Couleur texte tarif */
@@ -131,9 +131,14 @@ nav a {
 
 /* Banner Background and Text Colors = section 1 */
 
-.hero-section, #about {
+.hero-section {
     background: url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat right bottom;
-    background-size:50%;
+    background-size: 50%;
+}
+
+#about {
+    background: url("../images/banner-images/meshgradient-CC.webp") no-repeat right bottom;
+    background-size: 50%;
 }
 
 
@@ -174,7 +179,7 @@ body {
     font-family:'Cabin', 'Open Sans', Arial;
     font: size 60px;
     line-height:50px;
-    font-weight:600;
+    font-weight:500;
     color:#ffffff;
 }
 
@@ -192,15 +197,16 @@ body {
 .section-title {
     font-family: 'Cabin','Open Sans', Arial;
     font-size: 60px; 
-    font-weight: 600;
+    font-weight: 500;
     color:#ffffff;
+    margin: 15px 0 8px 0;
 }
 
 .section-subtitle {
     font-family: 'Cabin','Open Sans', Arial;
     font-size: 27px;
     font-weight:300;
-    line-height:30px;
+    line-height:35px;
     color:#F6A316;
 }
 
@@ -223,7 +229,7 @@ body {
 h1 {
     font-family: 'Cabin', 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 60px; 
-    font-weight:600;
+    font-weight:500;
     color:#ffffff;
 }
 
@@ -237,7 +243,8 @@ h2 {
 h3 {
     font-family: 'Cabin','Open Sans', sans-serif, Arial, Helvetica;
     font-size: 27px; 
-    font-weight:300;
+    font-weight:600;
+    letter-spacing: 1.8px;
     color:#F6A316;
 }
 
@@ -284,7 +291,7 @@ h6 {
 /* Section Innovons 1  et Watch video section Se dépasser 4 Button contour Color */
 
 .button, input[type="submit"] {
-    border-color:#F6A316;
+    border-color:#2ab8cd;
     color :#F6A316
 }
 
@@ -294,6 +301,7 @@ h6 {
 .button:hover,  input[type="submit"]:hover {
     border-color:#2AB8CD;
     color:#2AB8CD;
+    animation: shake 0.5s ease-in-out infinite;
 }
 
 
