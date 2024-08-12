@@ -1253,6 +1253,11 @@ h6 {
 #gallery .link-card-gallery {
   font-size: 21px;
   color: #2ab8cd;
+  padding-top: 8px;
+}
+
+#link-github a:hover {
+  color: #f6a316;
 }
 
 .icon-terminal {
@@ -1309,6 +1314,10 @@ h6 {
   left: 50%;
 }
 
+#link-github a:before {
+  content: none;
+}
+
 .CTA-projects {
   display: flex;
   align-items: center;
@@ -1319,37 +1328,55 @@ h6 {
 /* Section Se dépasser */
 .sedepasser {
   display: flex;
-  margin: 24px 0;
+  /* margin: 24px 0; */
+}
+
+.sedepasser-title {
+  padding-top: 0;
+  font-weight: 500;
 }
 
 .sedepasser-img {
-  width: 50%;
-  height: 80%;
-  margin-left: auto;
+  width: 350px;
+  height: 410px;
+}
+
+.sedepasser-text {
+  margin-left: 16px;
 }
 
 .sedepasser-img img {
   width: 100%;
-  height: 85%;
+  height: 100%;
 }
 
 .sedepasser-list {
   list-style: none;
-  margin: 8px 0 16px 0;
+  margin: 8px 0 32px 0;
+}
+
+.icon-terminal-sedepasser {
+  width: 20px;
+}
+
+.decale {
+  padding-left: 28px;
 }
 
 .sedepasser-list li {
+  font-size: 21px;
   margin: 8px 0;
 }
 
-.sedepasser-subtitle {
+.subtitle-sedepasser {
   font-size: 24px;
-  /* margin-bottom: 8px; */
+  margin-top: 20px;
+  margin-bottom: 8px;
   color: #f6a316;
 }
 
 .CTA-sedepasser {
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
 /**

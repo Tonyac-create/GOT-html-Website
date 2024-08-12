@@ -142,8 +142,13 @@ nav a {
 }
 
 #projects {
-    background: url("../images/banner-images/Body_3_MeshGradient-CC_html-1.webp") no-repeat left top;
+    background: url("../images/banner-images/Body_3_MGrdt-CC_html.webp") no-repeat left top;
     background-size: 70%;
+}
+
+#Sedepasser {
+    background: url("../images/banner-images/Body_2_MeshGradient-CC_html.webp") no-repeat right center;
+    background-size: 50%;
 }
 
 

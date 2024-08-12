@@ -318,15 +318,17 @@
             </div>
 
             <!-- </div> -->
-            <div id="gallery" class="scrollto" data-featherlight-gallery
-                    data-featherlight-filter="a">
+            <div id="gallery" class="scrollto">
+                <!-- data-featherlight-gallery data-featherlight-filter="a" -->
                     <div class="card-gallery">
-                        <a href="images/gallery-images/LOGO_TxtBlc_Website_158px.webp" data-featherlight="image" class="col-3 wow fadeIn"
-                            data-wow-delay="0.1s">
+                        <a href="images/gallery-images/LOGO_TxtBlc_Website_158px.webp" class="col-3 wow fadeIn" >
+                            <!-- data-featherlight="image" data-wow-delay="0.1s" -->
                             <img src="images/Logos/LOGO_TxtBlc_Website_158px_site.webp" alt="Landing Page"/>
                         </a>
-                        <a href="#" class="link-card-gallery"><span class="icon-gallery">&#9679;</span>Accès Reader au GitHub</a>
-                        <p class="sedepasser-subtitle">Site web</p>
+                        <div id="link-github">
+                            <a href="https://github.com/GuildOpenTech" target="_blank" id="github-link" class="link-card-gallery"><span class="icon-gallery">&#9679;</span>Accès Reader au GitHub</a>
+                        </div>
+                        <p class="subtitle-sedepasser">Site web</p>
                         <ul>
                             <li><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal"> Apprendre en développant des projets</li>
                             <li><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal"> Apprendre en développant des projets</li>
@@ -338,8 +340,10 @@
                         data-wow-delay="0.3s">
                             <img src="images/gallery-images/LOGO_TxtBlc_HealApp_158px.webp" alt="Landing Page"/>
                         </a>
-                        <a href="#" class="link-card-gallery"><span class="icon-gallery">&#9679;</span>Accès Reader au GitHub</a>
-                        <p class="sedepasser-subtitle">App de rencontres</p>
+                        <div id="link-github">
+                            <a href="https://github.com/GuildOpenTech" target="_blank" class="link-card-gallery"><span class="icon-gallery">&#9679;</span>Accès Reader au GitHub</a>
+                        </div>
+                        <p class="subtitle-sedepasser">App de rencontres</p>
                         <ul>
                             <li><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal">Lorem ipsum dolor sit</li>
                             <li><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal">Lorem ipsum dolor sit</li>
@@ -351,8 +355,10 @@
                         data-wow-delay="0.5s">
                             <img src="images/Logos/LOGO_TxtBlc_Match_158px_site.webp" alt="Landing Page"/>
                         </a>
-                        <a href="#" class="link-card-gallery"><span class="icon-gallery">&#9679;</span>Accès Reader au GitHub</a>
-                        <p class="sedepasser-subtitle">App de santé prédictive</p>
+                        <div id="link-github">
+                            <a href="https://github.com/GuildOpenTech" target="_blank" class="link-card-gallery"><span class="icon-gallery">&#9679;</span>Accès Reader au GitHub</a>
+                        </div>
+                            <p class="subtitle-sedepasser">App de santé prédictive</p>
                         <ul>
                             <li><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal">Lorem ipsum dolor sit</li>
                             <li><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal">Lorem ipsum dolor sit</li>
@@ -364,8 +370,10 @@
                         data-wow-delay="1.1s">
                             <img src="images/Logos/LOGO_TxtBlc_Learn_158px_site.webp" alt="Landing Page"/>
                         </a>
-                        <a href="#" class="link-card-gallery"><span class="icon-gallery">&#9679;</span>Accès Reader au GitHub</a>
-                        <p class="sedepasser-subtitle">Plateforme e-learning</p>
+                        <div id="link-github">
+                            <a href="https://github.com/GuildOpenTech" target="_blank" class="link-card-gallery"><span class="icon-gallery">&#9679;</span>Accès Reader au GitHub</a>
+                        </div>
+                            <p class="subtitle-sedepasser">Plateforme e-learning</p>
                         <ul>
                             <li><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal">Lorem ipsum dolor sit</li>
                             <li><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal">Lorem ipsum dolor sit</li>
@@ -395,30 +403,30 @@
                 <!-- <div class="col-3"> -->
                     <div class="col-3">
                         <h3>L'INCLUSION</h3>
-                        <h2 class="section-title">Se dépasser</h2>
+                        <h2 class="section-title">Dépasser les obstacles</h2>
                     </div>
                     <div class="sedepasser">
-                        <div>
-                            <p class="sedepasser-subtitle">Avec la GOT Âme : tu gagnes de l'expérience pratique </p>
+                        <div class="sedepasser-img">
+                            <img src="images/gallery-images/assortiment-pieces-echecs-luxueuses.webp" alt="Dame"/>
+                        </div>
+                        <div class="sedepasser-text">
+                            <h2 class="sedepasser-title">Avec la GOT Âme : tu gagnes de l'expérience pratique</h2>
                             <ul class="sedepasser-list">
-                                <li>+ tu acquiers de la seniorité</li>
-                                <li>> pour trouver ton premier job</li>
-                                <li>> pour valider ta reconversion</li>
-                                <li>> pour acquérir de nouvelles compétences</li>
+                                <li><img src="/images/plus-solid.svg" alt="icon terminal" class="icon-terminal-sedepasser"> tu acquiers de la seniorité</li>
+                                <li class="decale"><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal-sedepasser"> pour trouver ton premier job</li>
+                                <li class="decale"><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal-sedepasser"> pour valider ta reconversion</li>
+                                <li class="decale"><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal-sedepasser"> pour acquérir de nouvelles compétences</li>
                             </ul>
-                            <p class="sedepasser-subtitle">Le GOT Engagement : tu participes à l'association  </p>
+                            <h2 class="sedepasser-title">Le GOT Engagement : tu participes à l'association</h2>
                             <ul class="sedepasser-list">
-                                <li>+ tu acquiers et/ou tu partages des connaissances</li>
-                                <li>> dans des projets opensource que tu intègres dans ton portfolio</li>
-                                <li>> tu peux proposer des projets et nous montons les équipes</li>
+                                <li><img src="/images/plus-solid.svg" alt="icon terminal" class="icon-terminal-sedepasser"> tu acquiers et/ou tu partages des connaissances</li>
+                                <li class="decale"><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal-sedepasser"> dans des projets opensource que tu intègres dans ton portfolio</li>
+                                <li class="decale"><img src="/images/terminal-solid.svg" alt="icon terminal" class="icon-terminal-sedepasser"> tu peux proposer des projets et nous montons les équipes</li>
                             </ul>
                             <div class="CTA-sedepasser">
                                 <a href="#" class="button primary-color">J'ai déjà la GOT Âme ! Je m'engage</a>
                             <!--End Call to Action-->
                             </div>
-                        </div>
-                        <div class="sedepasser-img">
-                            <img src="images/assortiment-pieces-echecs-luxueuses_loupe.jpg" alt="Dame"/>
                         </div>
                     </div>
                 <!-- </div> -->
