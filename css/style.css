@@ -692,7 +692,7 @@ h6 {
 
 .container {
   width: 100%;
-  margin: 75px 0 70px 98px;
+  margin: 75px 0 70px 110px;
 }
 
 .styled-list {
@@ -749,33 +749,6 @@ h6 {
 
 #CTA-hero-section {
   margin-left: 40%;
-}
-
-/*------------------------------------------------------------------------------------------*/
-/* 4. Banner= section 1 */
-/*------------------------------------------------------------------------------------------*/
-
-/* #banner {
-    background-size: cover;
-    
-} */
-
-#banner-content.row {
-  /* padding-top: 130px; */
-  padding-bottom: 70px;
-}
-
-#banner h1 {
-  padding-top: 5%;
-}
-
-/* Trait bleu A supprimer_Fait */
-#banner .section-heading:before {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 0px;
-  margin-top: 30px;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -846,11 +819,11 @@ h6 {
 
 /* --------- 5.2 Parallax Elements ---------- */
 
-.banner-parallax-1,
+/* .banner-parallax-1,
 .banner-parallax-2,
 .banner-parallax-3 {
   min-height: 350px;
-}
+} */
 
 /* --------- 5.3 Divider ---------- */
 
@@ -2377,10 +2350,6 @@ h6 {
     font-size: 38px;
   }
 
-  #banner h1 {
-    font-size: 48px;
-  }
-
   /* Hide Elements */
   a#scrollUp {
     display: none !important;
@@ -2424,10 +2393,6 @@ h6 {
   }
 
   /*-----------------Header Elements-----------------*/
-
-  #banner-content.row {
-    padding-top: 85px !important;
-  }
 
   /*Navigation*/
   nav#nav-mobile ul {
