@@ -21,7 +21,7 @@ body {
 
 /* Default Link Color */
 
-a, .la-ball-triangle-path {
+a {
     color:#F6A316;
 }
 
@@ -81,7 +81,12 @@ nav a {
 /* Section 7_GOT Connexion Primary Background and Text Colors */
 
 .primary-color, .featured .pricing {
+    background: linear-gradient(to left, rgba(7, 21, 32, 0.5), rgba(13, 45, 69, 0.5));
+}
+
+a:hover .primary-color {
     background: linear-gradient(to left, #071520, #0D2D45);
+    /* background: linear-gradient(to left, rgba(7, 21, 32, 1), rgba(13, 45, 69, 1)); */
 }
 
 /* Section 7_GOT Connexion Couleur texte tarif */
@@ -254,7 +259,7 @@ h6 {
 .button:hover,  input[type="submit"]:hover {
     border-color:#2AB8CD;
     color:#2AB8CD;
-    animation: shake 0.5s ease-in-out infinite;
+    animation: shake 0.5s ease-in-out 6;
 }
 
 
