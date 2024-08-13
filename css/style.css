@@ -69,10 +69,6 @@ body {
   overflow-x: hidden;
 }
 
-p {
-  line-height: 21px;
-}
-
 a {
   text-decoration: none;
   line-height: inherit;
@@ -80,19 +76,6 @@ a {
   -moz-transition: opacity 0.3s ease-out;
   -o-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out;
-}
-
-iframe {
-  border: 0 !important;
-}
-
-.parallax-window {
-  min-height: 400px;
-  background: transparent;
-}
-
-figure {
-  margin: 0;
 }
 
 /* --------- 1.1 Input Elements ---------- */
@@ -149,22 +132,6 @@ section {
 
 #content {
   padding-top: 135px;
-  /* padding-left: 16px;
-  padding-right: 16px; */
-}
-
-/* Rows and Columns */
-
-.no-padding-top div {
-  padding-top: 10;
-}
-
-.big-padding-top {
-  padding-top: 25px !important;
-}
-
-.big-padding-bottom {
-  padding-bottom: 55px !important;
 }
 
 /* Targets all elements */
@@ -178,14 +145,6 @@ section {
   padding: 0;
 }
 
-/* Clearfix */
-
-/* .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
-
 /* section 2 : l'association paragraphes */
 .col-2 {
   width: 30%;
@@ -197,76 +156,12 @@ section {
   width: 80%;
 }
 
-.col-4 {
-  width: 25%;
-}
-
-.col-5 {
-  width: 20%;
-}
-
-.col-6 {
-  width: 16.6666666667%;
-}
-
-.col-7 {
-  width: 14.2857142857%;
-}
-
-.col-8 {
-  width: 12.5%;
-}
-
-.col-9 {
-  width: 11.1111111111%;
-}
-
-.col-10 {
-  width: 10%;
-}
-
-.col-11 {
-  width: 9.09090909091%;
-}
-
-.col-12 {
-  width: 8.33%;
-}
-
-/* .col-2-3 {
-    width: 100%;
-} */
-
-.col-3-4 {
-  width: 100%;
-}
-
-.col-9-10 {
-  width: 90%;
-}
-
-/* Golden Ratio */
-.col-61 {
-  width: 61.8%;
-}
-
-.col-38 {
-  width: 38.2%;
-}
-
-/* --------- 2.1 Header --------- */
-
 /* --------- 2.2 Logo ---------- */
 
 #logo {
   float: left;
   height: 90px;
   line-height: 66px;
-}
-
-#logo h1,
-#logo h2 {
-  display: inline-block;
 }
 
 /* --Banner c'est la header--- */
@@ -276,18 +171,6 @@ section {
   background-color: #071520;
   padding: 16px;
   width: 100%;
-}
-
-#banner #logo h1 {
-  font-size: 60px;
-  margin-left: 10px;
-  font-weight: 600;
-  padding: 0;
-}
-
-#logo h2 {
-  font-size: 18px;
-  padding: 0;
 }
 
 #logo img {
@@ -312,11 +195,6 @@ section {
 }
 
 /* --------- 2.3 Buttons ---------- */
-
-.call-to-action {
-  padding: 15px 0 15px 0;
-}
-
 /*Style*/
 
 .button {
@@ -330,89 +208,6 @@ section {
   display: inline-block;
   border-width: 2px;
   border-style: outset;
-}
-
-/* Play Button */
-
-#video-section {
-  position: relative;
-}
-
-.play-video {
-  height: 110px;
-  position: absolute;
-  top: 50%;
-  margin-top: -110px;
-  width: 100%;
-}
-
-.play-icon {
-  display: inline-block;
-  font-size: 0px;
-  cursor: pointer;
-  margin: 45px auto;
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-}
-
-.play-icon:after {
-  pointer-events: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  content: "";
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-
-.play-icon:before {
-  font-family: "fontawesome";
-  content: "\f144";
-  /* speak: none; */
-  font-size: 74px;
-  line-height: 110px;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  display: block;
-  -webkit-font-smoothing: antialiased;
-  color: #fff;
-}
-
-.play-video .play-icon {
-  background: rgba(255, 255, 255, 0.5);
-  -webkit-transition: -webkit-transform ease-out 0.3s, background 0.4s;
-  -moz-transition: -moz-transform ease-out 0.3s, background 0.4s;
-  transition: transform ease-out 0.3s, background 0.4s;
-}
-
-.play-video .play-icon:after {
-  top: 0;
-  left: 0;
-  padding: 0;
-  z-index: -1;
-  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
-  opacity: 0;
-  -webkit-transform: scale(0.9);
-  -moz-transform: scale(0.9);
-  -ms-transform: scale(0.9);
-  transform: scale(0.9);
-}
-
-.play-video .play-icon:hover {
-  background: rgba(255, 255, 255, 0.05);
-  -webkit-transform: scale(0.93);
-  -moz-transform: scale(0.93);
-  -ms-transform: scale(0.93);
-  transform: scale(0.93);
-  color: #f6a316;
 }
 
 /* Responsive Nav Styling */
@@ -439,18 +234,6 @@ section {
   transition: all 0.3s ease-out;
 }
 
-/* #nav-trigger span:after {
-  font-family: "Cabin";
-  display: inline-block;
-  width: 38px;
-  height: 71px;
-  line-height: 75px;
-  text-align: center;
-  content: "\f0c9";
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-} */
-
 #nav-trigger span.open:after {
   content: "\f00d";
 }
@@ -464,15 +247,6 @@ section {
 #nav-trigger span.open,
 #nav-trigger span.open:hover {
   color: #7b1e97;
-}
-
-.nav-solid #nav-trigger span.open:hover {
-  color: #cd14c7;
-}
-
-.nav-solid #nav-trigger span {
-  color: #0fa523;
-  opacity: 1;
 }
 
 nav#nav-mobile {
@@ -510,11 +284,6 @@ nav#nav-mobile li:last-child {
   border-bottom: none;
 }
 
-/* .nav-solid nav#nav-mobile li {
-  border-top: 1px solid #e1e1e1;
-  border-bottom: none;
-} */
-
 nav#nav-mobile a {
   display: block;
   padding: 12px 0;
@@ -534,7 +303,7 @@ nav#nav-mobile a:hover {
   color: #2ab8cd;
 }
 
-/* --------- 2.5 Social Elements ---------- */
+/* --------- 2.5 Social Elements Footer ---------- */
 
 .social-icons {
   display: inline-block;
@@ -610,27 +379,12 @@ h6 {
   padding: 7px 0;
 }
 
-/* Text Alignment */
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
 /*------------------------------------------------------------------------------------------*/
 /* HeroSection
 /*------------------------------------------------------------------------------------------*/
 
 .section-heading {
   display: flex;
-  /* align-items: center; */
   line-height: 1.2;
   gap: 16px;
   width: 75%;
@@ -649,7 +403,6 @@ h6 {
 }
 
 #hero-section {
-  /* height: 600px; */
   margin-top: 100px;
 }
 
@@ -763,26 +516,6 @@ h6 {
   margin-top: 0;
 }
 
-/* Icon Left*/
-
-.icon-left .icon {
-  left: 15;
-}
-
-.icon-left .icon-block-description {
-  padding-left: 10px;
-}
-
-/* Icon Right */
-
-.icon-right .icon {
-  right: 15;
-}
-
-.icon-right .icon-block-description {
-  padding-right: 53px;
-}
-
 /* Icon Above */
 
 .icon-top {
@@ -806,65 +539,11 @@ h6 {
   min-height: 350px;
 } */
 
-/* --------- 5.3 Divider ---------- */
-
-.divider {
-  position: relative;
-  width: 40%;
-  height: 20px;
-  line-height: 20px;
-  margin: 10px auto 5px auto;
-  clear: both;
-  text-align: center;
-}
-
-.divider-inner {
-  position: absolute;
-  height: 1px;
-  width: 100%;
-  top: 50%;
-  margin-top: -1px;
-  border-top: 1px solid;
-  border-color: #071520;
-}
-
-.divider i {
-  background: #071520;
-  position: relative;
-  top: -11px;
-  padding: 0 5px 0 5px;
-  color: #071520;
-}
-
 /*------------------------------------------------------------------------------------------*/
 /* 6. Landing Page Sections */
 /*------------------------------------------------------------------------------------------*/
 
 /* --------- 6.1 Introduction ---------- */
-/* #about {
-    position: relative;
-    overflow: hidden;
-}
-
-#about::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('/images/banner-images/Body_MeshGradient-CC-N°1.webp');
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: right;
-    transform: scaleY(-1);
-    z-index: -1;
-    pointer-events: none;
-} */
-
-/* #about { 
-  height: 950px;;
-} */
 
 .introduction {
   display: flex;
@@ -932,13 +611,9 @@ h6 {
     url("banner-images\Body_MeshGradient-CC-N°1.webp");
 }
 
-/* --------- 6.3 Testimonials ---------- */
-
-/* #testimonials {
-  display: flex;
-  flex-direction: column;
-  margin-top: 32px;
-} */
+/*------------------------------------------------------------------------------------------*/
+/* Section Témoignages
+/*------------------------------------------------------------------------------------------*/
 
 #testimonials .cards-testimonials {
   display: flex;
@@ -948,10 +623,6 @@ h6 {
 .testimonial {
   padding: 15px;
 }
-
-/* blockquote {
-  position: relative;
-} */
 
 .testimonial img {
   max-height: 80px;
@@ -1088,7 +759,9 @@ h6 {
   margin-top: 35px;
 }
 
-/* Section Se dépasser */
+/*------------------------------------------------------------------------------------------*/
+/* Section Se dépasser
+/*------------------------------------------------------------------------------------------*/
 .sedepasser {
   display: flex;
   /* margin: 24px 0; */
@@ -1389,117 +1062,6 @@ h6 {
     margin-top: -30px;
     font-size: 40px;
   }
-}
-
-/* --------- 6.5 Video ---------- */
-
-#video-box {
-  color: #fff;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-}
-
-.video_container,
-.easyContainer {
-  position: relative;
-  padding-bottom: 56.25%; /* 16/9 ratio */
-  margin: 0;
-  padding-top: 0; /* IE6 workaround*/
-  height: 0;
-  overflow: hidden;
-}
-
-.video_container iframe,
-.video_container object,
-.video_container embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-}
-
-.slvj-lightbox iframe,
-.slvj-lightbox object,
-.slvj-lightbox embed {
-  width: 100% !important;
-  height: 529px !important;
-}
-
-.videojs-background-wrap {
-  overflow: hidden;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: -998;
-}
-
-#slvj-window {
-  width: 100%;
-  min-height: 100%;
-  z-index: 9999999999;
-  background: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-#slvj-window,
-#slvj-window * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-#slvj-background-close {
-  width: 100%;
-  min-height: 100%;
-  z-index: 31;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-#slvj-back-lightbox {
-  max-width: 940px;
-  max-height: 529px;
-  z-index: 32;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.slvj-lightbox {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  z-index: 53;
-}
-
-#slvj-close-icon:before {
-  font-family: "fontawesome";
-  color: #fff;
-  content: "\f00d";
-  font-size: 22px;
-  opacity: 0.5;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  z-index: 99999;
-  height: 22px;
-  width: 22px;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  cursor: pointer;
-}
-
-#slvj-close-icon:before:hover {
-  opacity: 1;
-  cursor: pointer;
 }
 
 /* --------- 6.6 Partenaires ---------- */
