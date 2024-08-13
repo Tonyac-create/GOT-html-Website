@@ -25,7 +25,7 @@ a, .la-ball-triangle-path {
     color:#F6A316;
 }
 
-a:hover, #header.nav-solid nav a:hover {
+a:hover, nav a:hover {
     color:#2AB8CD;
 }
 
@@ -73,14 +73,6 @@ nav a {
     color:#F6A316;
 }
 
-
-/* #header.nav-solid .active {
-    color: #2AB8CD;
-    border-color: #2AB8CD;
-}     */
-
-
-
 /*------------------------------------------------------------------------------------------*/
 /* 3. Section 7_GOT Connexion_Primary and Secondary Colors */
 /*------------------------------------------------------------------------------------------*/
@@ -106,7 +98,7 @@ nav a {
     margin-top:30px;
 }
 
-.text-center .section-heading h2:after {
+.section-heading h2:after {
     margin:30px auto 25px auto;
 }
 
@@ -160,52 +152,12 @@ nav a {
 body {
     font-family: 'Cabin', 'Open Sans', Arial;
     font-size:18px;
-    font-weight:regular;
     color:#fdfdfd;
 }
 
-/* Logo, if you are using Fonts as Logo and not image
-
-#logo h1 {
-    font-family:;
-    font-size:; 
-    font-weight:;
-    color:;
-}
-
-#logo h2 {
-    font-family:;
-    font-size:; 
-    font-weight:;
-    color:;
-}
-
-*/
-
-
-/* Section 1 = Banner Typography = Titre Innovons */
-
-#banner h1 {
-    font-family:'Cabin', 'Open Sans', Arial;
-    font: size 60px;
-    line-height:50px;
-    font-weight:500;
-    color:#ffffff;
-}
-
-/* Texte sous titre */
-#banner h2 {
-    font-family: 'Cabin', 'Open Sans', Arial;
-    font-size:27px;
-    font-weight:300;
-    color:#F6A316;
-}
-
-
-/* Section 2 = La GOT Âme Title  */
+/* Section 1 = La GOT Âme Title  */
 
 .section-title {
-    font-family: 'Cabin','Open Sans', Arial;
     font-size: 60px; 
     font-weight: 500;
     color:#ffffff;
@@ -213,7 +165,6 @@ body {
 }
 
 .section-subtitle {
-    font-family: 'Cabin','Open Sans', Arial;
     font-size: 27px;
     font-weight:300;
     line-height:35px;
@@ -223,7 +174,6 @@ body {
 /* Section 5 =Testimonial */
 
 .testimonial q {
-    font-family: 'Cabin', 'Open Sans', sans-serif, Arial;
     font-size: 20px; 
     font-weight:300;
     color:#ffffff;
@@ -237,21 +187,18 @@ body {
 /* Standard Headings h1-h6 */
 
 h1 {
-    font-family: 'Cabin', 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 60px; 
     font-weight:500;
     color:#ffffff;
 }
 
 h2 {
-    font-family:'Cabin', 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 34px; 
     font-weight:300;
     color:#F6A316;
 }
 
 h3 {
-    font-family: 'Cabin','Open Sans', sans-serif, Arial, Helvetica;
     font-size: 27px; 
     font-weight:600;
     letter-spacing: 1.8px;
@@ -260,21 +207,18 @@ h3 {
 
 /* Titres section2 icones et packages */
 h4 {
-    font-family: 'Cabin','Open Sans', sans-serif, Arial, Helvetica;
     font-size: 20px; 
     font-weight:200;
     color:#F6A316;
 }
 
 h5 {
-    font-family: 'Cabin','Open Sans', sans-serif, Arial, Helvetica;
     font-size: 16px; 
     font-weight:300;
     color:#b50d0d;
 }
 
 h6 {
-    font-family: 'Cabin','Open Sans', sans-serif, Arial, Helvetica;
     font-size: 14px; 
     font-weight:200;
     color:#cc1bc9;
@@ -291,7 +235,6 @@ h6 {
 /* Watch video section Se dépasser 4 et Connexion 7  Button Text */
 
 .button, input[type="submit"]  {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:24px;
     font-weight:500;
     color:#F6A316;
@@ -321,7 +264,6 @@ h6 {
 /* Section Innovons 1 Button Text */
 
 #banner .button {
-    font-family: 'Cabin','Open Sans', sans-serif, Arial, Helvetica;
     font-size:24px;
     color:#F6A316;
 }
@@ -347,7 +289,6 @@ h6 {
 /*------------------------------------------------------------------------------------------*/
 
 #landing-footer, #landing-footer p, #landing-footer a {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:14px;
     font-weight:normal;
     color:#2AB8CD;
