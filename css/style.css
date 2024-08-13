@@ -563,7 +563,7 @@ h6 {
 .tag {
   display: flex;
   gap: 8px;
-  border: 2px solid #0D2D45;
+  border: 2px solid #0d2d45;
   border-style: outset;
   border-top-left-radius: 60px;
   border-bottom-left-radius: 60px;
@@ -1082,49 +1082,6 @@ h6 {
   height: 75px;
 }
 
-#clients a {
-  display: block;
-  text-align: center;
-  position: relative;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-}
-
-#clients img {
-  display: inline-block;
-  padding: 15px 25px;
-}
-
-/* .client-overlay {
-  background: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-} */
-
-#clients a:hover {
-  opacity: 1;
-}
-
-/* .client-overlay span {
-  position: absolute;
-  top: 48%;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  display: inline-block;
-} */
-
 /* --------- 6.7 Pricing Table / Connexion ---------- */
 
 .pricing-block-content {
@@ -1263,19 +1220,19 @@ h6 {
   left: 0;
   right: 0;
   bottom: 0; */
-  /* background-color: #071520; change if the mask should have another color then white */
-  /* z-index: 99999; makes sure it stays on top */
+/* background-color: #071520; change if the mask should have another color then white */
+/* z-index: 99999; makes sure it stays on top */
 /* } */
 
 /* #status {
   width: 110px;
   height: 110px;
   position: absolute; */
-  /* left: 50%; centers the loading animation horizontally one the screen */
-  /* top: 50%; centers the loading animation vertically one the screen */
-  /* background-position: center; */
-  /* margin: -55px 0 0 -55px; is width and height divided by two */
-  /* text-align: center;
+/* left: 50%; centers the loading animation horizontally one the screen */
+/* top: 50%; centers the loading animation vertically one the screen */
+/* background-position: center; */
+/* margin: -55px 0 0 -55px; is width and height divided by two */
+/* text-align: center;
 } */
 
 /*!
@@ -1800,7 +1757,6 @@ h6 {
 /* Landscape mobile & down
 ===============================*/
 @media (max-width: 480px) {
-
   #scrollUp,
   #scrollUp:before {
     display: none;
@@ -1809,57 +1765,19 @@ h6 {
   .col-1,
   .col-2,
   .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10,
-  .col-11,
-  .col-12,
-  .col-2-3,
-  .col-3-4,
-  .col-9-10,
-  .col-61,
-  .col-38 {
+  .col-2-3 {
     width: 100%;
   }
 
   .col-1,
   .col-2,
   .col-3,
-  .col-4,
-  .col-5,
-  .col-6,
-  .col-7,
-  .col-8,
-  .col-9,
-  .col-10,
-  .col-11,
-  .col-12,
-  .col-2-3,
-  .col-3-4,
-  .col-9-10,
-  .col-61,
-  .col-38 {
+  .col-2-3 {
     padding-right: 0;
     padding-left: 0;
   }
 
   /*-----------------Sections-----------------*/
-
-  /* Call to Action*/
-  .call-to-action {
-    padding-bottom: 25px;
-  }
-
-  /* Video */
-  .slvj-lightbox iframe,
-  .slvj-lightbox object,
-  .slvj-lightbox embed {
-    height: 270px !important;
-  }
 
   /* Footer */
   #landing-footer #copyright {
@@ -1886,7 +1804,6 @@ h6 {
 /* Mobile to Tablet Portrait
 ===============================*/
 @media (min-width: 480px) and (max-width: 767px) {
-
   #scrollUp,
   #scrollUp:before {
     display: none;
@@ -1894,23 +1811,11 @@ h6 {
 
   .col-1,
   .col-2,
-  .col-5,
-  .col-7,
-  .col-9,
-  .col-11,
-  .col-2-3,
-  .col-3-4,
-  .col-61,
-  .col-38 {
+  .col-2-3 {
     width: 100%;
   }
 
-  .col-3,
-  .col-4,
-  .col-6,
-  .col-8,
-  .col-10,
-  .col-12 {
+  .col-3 {
     width: 50%;
   }
 
@@ -1925,13 +1830,6 @@ h6 {
   }
 
   /*-----------------Sections-----------------*/
-
-  /* Video */
-  .slvj-lightbox iframe,
-  .slvj-lightbox object,
-  .slvj-lightbox embed {
-    height: 370px !important;
-  }
 
   /* Footer */
   #landing-footer #copyright {
@@ -1948,11 +1846,6 @@ h6 {
 /* Landscape Tablet to Desktop
 ===============================*/
 @media (min-width: 768px) and (max-width: 1024px) {
-
-  .big-padding-top {
-    padding-top: 45px !important;
-  }
-
   /*-----------------Header Elements-----------------*/
 
   /*Navigation*/
@@ -1961,14 +1854,5 @@ h6 {
     margin-right: -40px;
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  /*-----------------Sections-----------------*/
-
-  /* Video */
-  .slvj-lightbox iframe,
-  .slvj-lightbox object,
-  .slvj-lightbox embed {
-    height: 432px !important;
   }
 }
