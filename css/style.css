@@ -73,11 +73,6 @@ p {
   line-height: 21px;
 }
 
-.row img {
-  height: auto;
-  max-width: 100%;
-}
-
 a {
   text-decoration: none;
   line-height: inherit;
@@ -160,20 +155,6 @@ section {
 
 /* Rows and Columns */
 
-.row {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 15px 0;
-  position: relative;
-}
-
-.no-padding-bottom .row,
-.no-padding-bottom div,
-.no-padding-bottom.row {
-  padding-bottom: 10;
-}
-
-.no-padding-top.row,
 .no-padding-top div {
   padding-top: 10;
 }
@@ -949,17 +930,6 @@ h6 {
   padding: 15px 0 0 0;
   background-image: linear-gradient(to bottom, #071520, #0d2d45),
     url("banner-images\Body_MeshGradient-CC-N°1.webp");
-}
-
-/* --------- 6.2 Features ---------- */
-
-.features.row {
-  padding-left: 5%;
-  padding-right: 1%;
-}
-
-.features div:nth-child(4) {
-  clear: both;
 }
 
 /* --------- 6.3 Testimonials ---------- */
@@ -2274,10 +2244,6 @@ h6 {
     display: none;
   }
 
-  .row {
-    padding: 15px !important;
-  }
-
   .col-1,
   .col-2,
   .col-3,
@@ -2294,8 +2260,7 @@ h6 {
   .col-3-4,
   .col-9-10,
   .col-61,
-  .col-38,
-  .row {
+  .col-38 {
     width: 100%;
   }
 
@@ -2365,10 +2330,6 @@ h6 {
     display: none;
   }
 
-  .row {
-    padding: 15px 0 !important;
-  }
-
   .col-1,
   .col-2,
   .col-5,
@@ -2378,8 +2339,7 @@ h6 {
   .col-2-3,
   .col-3-4,
   .col-61,
-  .col-38,
-  .row {
+  .col-38 {
     width: 100%;
   }
 
