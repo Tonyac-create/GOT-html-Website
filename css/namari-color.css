@@ -29,12 +29,6 @@ a:hover, #header.nav-solid nav a:hover {
     color:#2AB8CD;
 }
 
-/* Default Icon Color = section 2 */
-
-.icon i {
-    color:#13c92e;
-}
-
 /* Border Color _ sous témoignages _ section right package */
 
 #banner .section-heading:before, .testimonial.classic footer:before {
@@ -60,7 +54,7 @@ a:hover, #header.nav-solid nav a:hover {
 
 /* Header Colors when the Navigation is sticky and solid */ 
 
-#header.nav-solid, #header.nav-solid a, #header.nav-solid i, #nav-mobile ul li a {
+#nav-mobile ul li a {
     color:#F6A316;
 }
 
@@ -89,26 +83,6 @@ a:hover, #header.nav-solid nav a:hover {
 .primary-color, .primary-color .section-title, .primary-color .section-subtitle, .featured .pricing, .featured .pricing p {
     color:#fcfbfb;    
 }
-/* Tirets dans toutes les sections */
-.section-heading h2:after {
-    background:#2AB8CD;
-    content:"";
-    display:block;
-    width:50px;
-    height:2px;
-    margin-top:30px;
-}
-
-.text-center .section-heading h2:after {
-    margin:30px auto 25px auto;
-}
-
-/* Section 2 Primary Icon Colors */
-
-.primary-color .icon i, .primary-color i {
-    color:#16bb2a;
-}
-
 
 /* Section Right package Secondary Background and Text Colors */
 
@@ -142,29 +116,9 @@ body {
     color:#fdfdfd;
 }
 
-/* Logo, if you are using Fonts as Logo and not image
-
-#logo h1 {
-    font-family:;
-    font-size:; 
-    font-weight:;
-    color:;
-}
-
-#logo h2 {
-    font-family:;
-    font-size:; 
-    font-weight:;
-    color:;
-}
-
-*/
-
-
 /* Section 1 = Banner Typography = Titre Innovons */
 
 #banner h1 {
-    font-family:'Cabin', 'Open Sans', Arial;
     font: size 60px;
     line-height:50px;
     font-weight:600px;
@@ -173,7 +127,6 @@ body {
 
 /* Texte sous titre */
 #banner h2 {
-    font-family: 'Cabin', 'Open Sans', Arial;
     font-size:27px;
     font-weight:300;
     color:#F6A316;
@@ -183,14 +136,12 @@ body {
 /* Section 2 Title  */
 
 .section-title {
-    font-family: 'Cabin','Open Sans', Arial;
     font-size: 60px; 
     font-weight: 600px;
     color:#ffffff;
 }
 
 .section-subtitle {
-    font-family: 'Cabin','Open Sans', Arial;
     font-size: 27px;
     font-weight:300;
     line-height:30px;
@@ -200,7 +151,6 @@ body {
 /* Testimonial */
 
 .testimonial q {
-    font-family: 'Cabin', 'Open Sans', sans-serif, Arial;
     font-size: 17px; 
     font-weight:300;
     color:#ffffff;
@@ -214,21 +164,18 @@ body {
 /* Standard Headings h1-h6 */
 
 h1 {
-    font-family: 'Cabin', 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 60px; 
     font-weight:300;
     color:#ffffff;
 }
 
 h2 {
-    font-family:'Cabin', 'Open Sans', sans-serif, Arial, Helvetica;
     font-size: 34px; 
     font-weight:300;
     color:#F6A316;
 }
 
 h3 {
-    font-family: 'Cabin','Open Sans', sans-serif, Arial, Helvetica;
     font-size: 27px; 
     font-weight:700;
     color:#F6A316;
@@ -236,21 +183,18 @@ h3 {
 
 /* Titres section2 icones et packages */
 h4 {
-    font-family: 'Cabin','Open Sans', sans-serif, Arial, Helvetica;
     font-size: 18px; 
     font-weight:400;
     color:#F6A316;
 }
 
 h5 {
-    font-family: 'Cabin','Open Sans', sans-serif, Arial, Helvetica;
     font-size: 16px; 
     font-weight:400;
     color:#b50d0d;
 }
 
 h6 {
-    font-family: 'Cabin','Open Sans', sans-serif, Arial, Helvetica;
     font-size: 14px; 
     font-weight:400;
     color:#cc1bc9;
@@ -289,40 +233,11 @@ h6 {
     color:#2AB8CD;
 }
 
-
-/* ----------Banner Buttons---------- */
-
-
-/* Section 1 Button Text */
-
-#banner .button {
-    font-family: 'Cabin','Open Sans', sans-serif, Arial, Helvetica;
-    font-size:16px;
-    color:#F6A316;
-}
-
-
-/* Button Color */
-
-#banner .button {
-    border-color:#2AB8CD;
-}
-
-
-/* Button Hover Color */
-
-#banner .button:hover {
-    color:#2AB8CD;
-    border-color:#2AB8CD;
-}
-
-
 /*------------------------------------------------------------------------------------------*/
 /* 7. Footer _  made with love */
 /*------------------------------------------------------------------------------------------*/
 
 #landing-footer, #landing-footer p, #landing-footer a {
-    font-family: 'Open Sans', sans-serif, Arial, Helvetica;
     font-size:12px;
     font-weight:normal;
     color:#2AB8CD;
