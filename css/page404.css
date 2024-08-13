@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+}
+
+#content-page404 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 80%;
+}
+
+.content {
+    background: url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat right bottom;
+    background-size: 60%;
+}
+
+span {
+    color: #2AB8CD;
+    font-size: 9em;
+}
+
+.title {
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+section a {
+    text-align: center;
+}
+
+@media (max-width: 760px) {
+    section {
+        margin: 0 16px;
+    }
+}
