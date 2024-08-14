@@ -28,6 +28,10 @@ a:hover {
   text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
     0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
 }
+/* 0 0 3px #2AB8CD,
+0 0 7px #2AB8CD,
+0 0 15px #2AB8CD,
+0 0 30px #2AB8CD */
 
 .nav-list li:hover a {
   text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
