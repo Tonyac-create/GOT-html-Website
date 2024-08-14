@@ -181,17 +181,50 @@ section {
 
 /* ----navigation = header---- */
 
-/* AJOUT ANGELE */
-#nav-main {
+nav#nav-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   margin-left: auto;
-  margin-right: 16px;
 }
 
-#nav-main ul.nav-list {
+.nav-list {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
   list-style: none;
-  gap: 32px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 140px;
+}
+
+.nav-list li .highlight-icon {
+  margin-bottom: 5px; /* Espace entre le point et le lien */
+  font-size: 30px; /* Taille des points */
+  color: #f0a500; /* Couleur des points */
+}
+
+.link-node-navbar {
+  height: 2px;
+  background-color: #00aced; /* Couleur du trait */
+  width: 152px; /* Ajustez la largeur selon vos besoins */
+  position: absolute;
+  margin-right: 20px;
+  top: 23px; /* Ajustez la position verticale selon vos besoins */
+  /* left: 50%; */
+  transform: translateX(-50%);
+}
+
+.nav-list li:first-child .link-node-navbar {
+  display: none; /* Cache le trait avant le premier lien */
 }
 
 /* --------- 2.3 Buttons ---------- */
@@ -591,6 +624,12 @@ h6 {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+}
+
+.text-tag span {
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
 }
 
 .text-tag p {

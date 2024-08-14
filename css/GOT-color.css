@@ -13,222 +13,234 @@
 /* 1. Website Default Styling */
 /*------------------------------------------------------------------------------------------*/
 
-
 body {
-    background:#071520;
+  background: #071520;
 }
-
 
 /* Default Link Color */
 
-a {
-    color:#F6A316;
+a:hover {
+  color: #2ab8cd;
 }
 
-a:hover, nav a:hover {
-    color:#2AB8CD;
+.nav-list li:hover .icon {
+    color: #2ab8cd;
+  text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
+    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
+}
+
+.nav-list li:hover a {
+  text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
+    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
 }
 
 /* Default Icon Color = section 2 */
 
 .icon i {
-    color:#F6A316;
+  color: #f6a316;
 }
 
 /* Border Color _ Cadres _ sections 6_Témoignages et 7_GOT Connexion */
 
 #banner .section-heading:before {
-    background: #0D2D45;
+  background: #0d2d45;
 }
 
 .testimonial.classic footer:before {
-    background: #F6A316;
+  background: #f6a316;
 }
 
 .pricing-block-content:hover {
-    border-color:#2AB8CD;
+  border-color: #2ab8cd;
 }
-
 
 /*------------------------------------------------------------------------------------------*/
 /* 2. Header sur page d'accueil */
 /*------------------------------------------------------------------------------------------*/
 
-
 /* Transparent Header Color on a Banner */
 
 nav a {
-    color:#F6A316;
+  color: #f6a316;
 }
 
 /* Header Active State */
 
-.nav-list a.active {
-    color: #2AB8CD; /* Couleur bleue pour le lien ciblé */
+.nav-list li a.active {
+  color: #2ab8cd;
+  text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
+    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
 }
 
-/* Header Colors when the Navigation is sticky and solid */ 
+/* Header Colors when the Navigation is sticky and solid */
 
 #nav-mobile ul li a {
-    color:#F6A316;
+  color: #f6a316;
 }
 
 /*------------------------------------------------------------------------------------------*/
 /* 3. Section 7_GOT Connexion_Primary and Secondary Colors */
 /*------------------------------------------------------------------------------------------*/
 
-
 /* Section 7_GOT Connexion Primary Background and Text Colors */
 
-.primary-color, .featured .pricing {
-    background: linear-gradient(to left, rgba(7, 21, 32, 0.5), rgba(13, 45, 69, 0.5));
+.primary-color,
+.featured .pricing {
+  background: linear-gradient(
+    to left,
+    rgba(7, 21, 32, 0.5),
+    rgba(13, 45, 69, 0.5)
+  );
 }
 
 a:hover .primary-color {
-    background: linear-gradient(to left, #071520, #0D2D45);
-    /* background: linear-gradient(to left, rgba(7, 21, 32, 1), rgba(13, 45, 69, 1)); */
+  background: linear-gradient(to left, #071520, #0d2d45);
+  /* background: linear-gradient(to left, rgba(7, 21, 32, 1), rgba(13, 45, 69, 1)); */
 }
 
 /* Section 7_GOT Connexion Couleur texte tarif */
-.primary-color, .primary-color .section-title, .primary-color .section-subtitle, .featured .pricing, .featured .pricing p {
-    color:#fcfbfb;    
+.primary-color,
+.primary-color .section-title,
+.primary-color .section-subtitle,
+.featured .pricing,
+.featured .pricing p {
+  color: #fcfbfb;
 }
 /* Tirets dans toutes les sections */
 .section-heading h2:after {
-    background:#2AB8CD;
-    content:"";
-    display:block;
-    width:50px;
-    height:2px;
-    margin-top:30px;
+  background: #2ab8cd;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  margin-top: 30px;
 }
 
 .section-heading h2:after {
-    margin:30px auto 25px auto;
+  margin: 30px auto 25px auto;
 }
 
 /* Section 2_Association Primary Icon Colors */
 
-.primary-color .icon i, .primary-color i {
-    color:#F6A316;
+.primary-color .icon i,
+.primary-color i {
+  color: #f6a316;
 }
-
 
 /* Section 7_GOT Connexion Background Cadre and Text Colors */
 
 .secondary-color {
-    background: linear-gradient(to bottom, #071520, #0D2D45);
+  background: linear-gradient(to bottom, #071520, #0d2d45);
 }
-
 
 /*------------------------------------------------------------------------------------------*/
 /* 4. Banner */
 /*------------------------------------------------------------------------------------------*/
 
-
 /* Banner Background and Text Colors = section 1 */
 
 .hero-section {
-    background: url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat right bottom;
-    background-size: 50%;
+  background: url("../images/banner-images/Body_MeshGradient-CC-N°1.webp")
+    no-repeat right bottom;
+  background-size: 50%;
 }
 
 #about {
-    background: url("../images/banner-images/meshgradient-CC.webp") no-repeat right bottom;
-    background-size: 50%;
+  background: url("../images/banner-images/meshgradient-CC.webp") no-repeat
+    right bottom;
+  background-size: 50%;
 }
 
 #projects {
-    background: url("../images/banner-images/Body_3_MGrdt-CC_html.webp") no-repeat left top;
-    background-size: 70%;
+  background: url("../images/banner-images/Body_3_MGrdt-CC_html.webp") no-repeat
+    left top;
+  background-size: 70%;
 }
 
 #Sedepasser {
-    background: url("../images/banner-images/Body_2_MeshGradient-CC_html.webp") no-repeat right center;
-    background-size: 50%;
+  background: url("../images/banner-images/Body_2_MeshGradient-CC_html.webp")
+    no-repeat right center;
+  background-size: 50%;
 }
-
 
 /*------------------------------------------------------------------------------------------*/
 /* 5. Typography */
 /*------------------------------------------------------------------------------------------*/
 
-
 body {
-    font-family: 'Cabin', 'Open Sans', Arial;
-    font-size:18px;
-    color:#fdfdfd;
+  font-family: "Cabin", "Open Sans", Arial;
+  font-size: 18px;
+  color: #fdfdfd;
 }
 
 /* Section 1 = La GOT Âme Title  */
 
 .section-title {
-    font-size: 60px; 
-    font-weight: 500;
-    color:#ffffff;
-    margin: 15px 0 8px 0;
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 15px 0 8px 0;
 }
 
 .section-subtitle {
-    font-size: 27px;
-    font-weight:300;
-    line-height:35px;
-    color:#F6A316;
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 35px;
+  color: #f6a316;
 }
 
 /* Section 5 =Testimonial */
 
 .testimonial q {
-    font-size: 20px; 
-    font-weight:300;
-    color:#ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
 }
 
-.testimonial.classic q, .testimonial.classic footer {
-    color:#ffffff;
+.testimonial.classic q,
+.testimonial.classic footer {
+  color: #ffffff;
 }
-
 
 /* Standard Headings h1-h6 */
 
 h1 {
-    font-size: 60px; 
-    font-weight:500;
-    color:#ffffff;
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
 h2 {
-    font-size: 34px; 
-    font-weight:300;
-    color:#F6A316;
+  font-size: 34px;
+  font-weight: 300;
+  color: #f6a316;
 }
 
 h3 {
-    font-size: 27px; 
-    font-weight:600;
-    letter-spacing: 1.8px;
-    color:#F6A316;
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  color: #f6a316;
 }
 
 /* Titres section2 icones et packages */
 h4 {
-    font-size: 20px; 
-    font-weight:200;
-    color:#F6A316;
+  font-size: 20px;
+  font-weight: 200;
+  color: #f6a316;
 }
 
 h5 {
-    font-size: 16px; 
-    font-weight:300;
-    color:#b50d0d;
+  font-size: 16px;
+  font-weight: 300;
+  color: #b50d0d;
 }
 
 h6 {
-    font-size: 14px; 
-    font-weight:200;
-    color:#cc1bc9;
+  font-size: 14px;
+  font-weight: 200;
+  color: #cc1bc9;
 }
-
 
 /*------------------------------------------------------------------------------------------*/
 /* 6. Buttons */
@@ -236,71 +248,68 @@ h6 {
 
 /* ----------Default Buttons---------- */
 
-
 /* Watch video section Se dépasser 4 et Connexion 7  Button Text */
 
-.button, input[type="submit"]  {
-    font-size:24px;
-    font-weight:500;
-    color:#F6A316;
+.button,
+input[type="submit"] {
+  font-size: 24px;
+  font-weight: 500;
+  color: #f6a316;
 }
-
 
 /* Section Innovons 1  et Watch video section Se dépasser 4 Button contour Color */
 
-.button, input[type="submit"] {
-    border-color:#2ab8cd;
-    color :#F6A316
+.button,
+input[type="submit"] {
+  border-color: #2ab8cd;
+  color: #f6a316;
 }
-
 
 /* Button Hover Color */
 
-.button:hover,  input[type="submit"]:hover {
-    border-color:#2AB8CD;
-    color:#F6A316;
-    animation: shake 0.5s ease-in-out 6;
+.button:hover,
+input[type="submit"]:hover {
+  border-color: #2ab8cd;
+  color: #f6a316;
+  animation: shake 0.5s ease-in-out 6;
 }
 
-
 /* ----------Banner Buttons---------- */
-
 
 /* Section Innovons 1 Button Text */
 
 #banner .button {
-    font-size:24px;
-    color:#F6A316;
+  font-size: 24px;
+  color: #f6a316;
 }
-
 
 /* Button Color */
 
 #banner .button {
-    border-color:#2AB8CD;
+  border-color: #2ab8cd;
 }
-
 
 /* Button Hover Color */
 
 #banner .button:hover {
-    color:#F6A316;
-    border-color:#2AB8CD;
+  color: #f6a316;
+  border-color: #2ab8cd;
 }
-
 
 /*------------------------------------------------------------------------------------------*/
 /* 7. Footer _  Design@GOT */
 /*------------------------------------------------------------------------------------------*/
 
-#landing-footer, #landing-footer p, #landing-footer a {
-    font-size:14px;
-    font-weight:normal;
-    color:#2AB8CD;
+#landing-footer,
+#landing-footer p,
+#landing-footer a {
+  font-size: 14px;
+  font-weight: normal;
+  color: #2ab8cd;
 }
 
 /* Footer Icon Color */
 
 #landing-footer i {
-    color:#2AB8CD;
+  color: #2ab8cd;
 }
