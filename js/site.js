@@ -60,24 +60,24 @@ document.addEventListener("DOMContentLoaded", function () {
     var links = document.querySelectorAll("#nav-main li a");
 
     links.forEach(function (link) {
-      var span = link.previousElementSibling;
+      var svg = link.previousElementSibling;
 
       if (link.classList.contains("active")) {
-        if (span && span.classList.contains("highlight-icon")) {
-          span.style.color = "#2ab8cd";
-          span.style.textShadow = `
-        0 0 5px #2AB8CD,
-        0 0 10px #2AB8CD,
-        0 0 20px #2AB8CD,
-        0 0 40px #2AB8CD,
-        0 0 80px #2AB8CD,
-        0 0 120px #2AB8CD
+        if (svg && svg.classList.contains("highlight-icon")) {
+          svg.style.color = "#2ab8cd";
+          svg.style.filter = `
+          drop-shadow(0 0 5px #2AB8CD)
+          drop-shadow(0 0 10px #2AB8CD)
+          drop-shadow(0 0 20px #2AB8CD)
+          drop-shadow(0 0 40px #2AB8CD)
+          drop-shadow(0 0 80px #2AB8CD)
+          drop-shadow(0 0 120px #2AB8CD)
     `;
         }
       } else {
-        if (span && span.classList.contains("highlight-icon")) {
-          span.style.color = "";
-          span.style.textShadow = "";
+        if (svg && svg.classList.contains("highlight-icon")) {
+          svg.style.color = "";
+          svg.style.filter = "";
         }
       }
     });

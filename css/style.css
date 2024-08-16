@@ -217,12 +217,11 @@ nav#nav-main {
 
 .link-node-navbar {
   height: 1px;
-  background-color: #00aced; /* Couleur du trait */
-  width: 152px; /* Ajustez la largeur selon vos besoins */
+  background-color: #00aced;
+  width: 148px;
   position: absolute;
-  margin-right: 20px;
-  top: 23px; /* Ajustez la position verticale selon vos besoins */
-  /* left: 50%; */
+  margin-right: 16px;
+  top: 8px;
   transform: translateX(-50%);
 }
 
@@ -491,7 +490,9 @@ h6 {
 }
 
 .highlight-icon {
-  color: #f6a316;
+  display: inline-block;
+  width: 17px;
+  height: 17px;
 }
 
 .link-node {
@@ -499,7 +500,7 @@ h6 {
   height: 25px;
   background-color: #fafafa;
   position: relative;
-  margin-left: 5px;
+  margin-left: 7px;
 }
 
 .link-node::before {
@@ -1201,6 +1202,58 @@ h6 {
 
 #landing-footer .link-about {
   padding-left: 24px;
+}
+
+#content-about {
+  display: flex;
+  flex-direction: column;
+  height: 790px;
+  padding: 100px 100px 0 87px;
+  margin-top: 150px;
+  background-image: url("../images/banner-images/GOTHtml_APropos_PlumeCC.webp");
+  background-position: left bottom;
+  background-size: 47%;
+  background-repeat: no-repeat;
+}
+
+#content-about h2 {
+  color: #e1e1e1;
+  font-weight: 600;
+}
+
+#content-about li {
+  list-style: none;
+  margin-bottom: 8px;
+  font-size: 25px;
+}
+
+#content-about li a {
+  color: #f6a316;
+}
+
+#content-about .styled-list-about {
+  margin-left: 54px;
+}
+
+#content-about .link-socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 380px;
+  margin-top: 21px;
+}
+
+#content-about .link-socials a img {
+  width: 27px;
+  height: 27px;
+}
+
+main .design-about {
+  color: #f6a316;
+  text-align: end;
+  margin: 0;
+  margin-top: auto;
+  padding-bottom: 16px;
 }
 
 /* --------- 6.7 Pricing Table / Connexion ---------- */
