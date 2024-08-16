@@ -581,7 +581,7 @@ h6 {
 .introduction {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+  margin-top: 122px;
   margin-left: 28px;
 }
 
@@ -657,7 +657,9 @@ h6 {
 
 #testimonials .cards-testimonials {
   display: flex;
+  gap: 16px;
   margin-top: 24px;
+  height: 500px;
 }
 
 .testimonial {
@@ -670,23 +672,75 @@ h6 {
 }
 
 /* Style Classic - Avatar above Testimonial */
-
-.testimonial.classic img {
+.testimonial header {
   display: flex;
-  margin: 0 auto 25px auto;
+  align-items: center;
+}
+
+.testimonial .stars {
+  margin-left: auto;
+}
+
+.testimonial .guillemets {
+  width: 66px;
+}
+
+.testimonial h2 {
+  font-weight: 600;
+  font-size: 26px;
+  padding-bottom: 8px;
+  width: 50%;
+}
+
+.testimonial header img {
+  width: 20px;
+}
+
+.testimonial.classic {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 2px solid #0d2d45;
+  border-style: outset;
+  border-bottom-left-radius: 500px;
+  border-bottom-right-radius: 500px;
+  background: linear-gradient(to bottom, #071520, #0d2d45);
+  padding: 30px 30px 10px 30px;
+  width: 380px;
+}
+
+.testimonial.classic .person {
+  display: flex;
+  margin-right: 16px;
+  width: 60px;
+  height: 60px;
 }
 
 .testimonial.classic q {
   display: block;
 }
 
-.testimonial.classic footer:before {
+.testimonial footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonial footer .name p {
+  margin: 0;
+}
+
+.testimonial footer .nickname {
+  font-weight: 700;
+}
+/* .testimonial.classic footer:before {
   display: block;
   content: "";
   width: 30px;
   height: 4px;
   margin: 20px auto 15px auto;
-}
+} */
 
 /* Style Big */
 
