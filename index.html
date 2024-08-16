@@ -25,7 +25,7 @@
     />
   </head>
   <body>
-    <header id="banner" data-enllax-ratio=".5">
+    <header id="banner">
       <!--Logo-->
       <div id="logo">
         <img
@@ -60,12 +60,7 @@
           </li>
           <li>
             <span class="icon highlight-icon">&#9679;</span>
-            <a href="#Partenaires">Partenaires</a>
-            <div class="link-node-navbar"></div>
-          </li>
-          <li>
-            <span class="icon highlight-icon">&#9679;</span>
-            <a href="#connexion">GOT Connexion</a>
+            <a href="connexion.html" id="connexionPage">GOT Connexion</a>
             <div class="link-node-navbar"></div>
           </li>
         </ul>
@@ -135,14 +130,14 @@
       <section id="about" class="introduction scrollto">
         <div class="col-3">
           <h3>LA GOT ÂME</h3>
-          <h1 class="section-title">
+          <h2 class="section-title">
             L'association
             <img
               src="/images/gallery-images/GuildOpenTech blanc lettres.svg"
               alt="Guild Open Tech"
               class="img-GOT"
             />
-          </h1>
+          </h2>
           <p class="section-subtitle">
             Tous nos projets fonctionnent selon nos valeurs. <br />
             De cette façon participer à nos projets open source c'est aussi
@@ -282,7 +277,7 @@
 
         <!--Call to Action-->
         <div class="CTA-about">
-          <a href="#" class="button primary-color">J'adhère</a>
+          <a href="connexion.html" class="button primary-color">J'adhère</a>
         </div>
       </section>
 
@@ -444,20 +439,17 @@
 
         <!--Call to Action-->
         <div class="CTA-projects">
-          <a href="#" class="button primary-color"
+          <a href="connexion.html" class="button primary-color"
             >Je kiffe vos projets ! Je m'engage</a
           >
         </div>
       </section>
 
       <!--Secion 4 Se dépasser-->
-      <section id="Sedepasser" class="introduction scrollto">
+      <section id="Sedepasser" class="introduction mtop scrollto">
         <div class="col-3">
           <h3>L'INCLUSION</h3>
           <h2 class="section-title">Dépasser les obstacles</h2>
-          <p class="section-subtitle">
-            En cours ou finalisés, nos membres en sont les acteurs
-          </p>
         </div>
         <div class="sedepasser">
           <div class="sedepasser-img">
@@ -516,7 +508,7 @@
 
             <!--Call to Action-->
             <div class="CTA-sedepasser">
-              <a href="#" class="button primary-color"
+              <a href="connexion.html" class="button primary-color"
                 >J'ai déjà la GOT Âme ! Je m'engage</a
               >
             </div>
@@ -527,19 +519,23 @@
       <!--Section 5 Témoignages-->
       <section
         id="testimonials"
-        class="introduction scrollto"
+        class="introduction mtop-testimonials scrollto"
         data-enllax-ratio=".2"
       >
         <div class="col-3">
           <h3>TÉMOIGNAGES</h3>
-          <h2 class="section-title">Ils parlent de nous</h2>
+          <h2 id="title-testi" class="section-title">Ils parlent de nous</h2>
         </div>
 
         <div class="cards-testimonials">
           <!--User Testimonial-->
           <blockquote class="col-3 testimonial classic">
             <header>
-              <img src="/images/icons/Guillemets desvg.webp" alt="guillemets" class="guillemets"/>
+              <img
+                src="/images/icons/Guillemets desvg.webp"
+                alt="guillemets"
+                class="guillemets"
+              />
               <div class="stars">
                 <img src="/images/icons/Etoile.webp" alt="etoile" />
                 <img src="/images/icons/Etoile.webp" alt="etoile" />
@@ -551,8 +547,8 @@
             <h2>Speedy code management</h2>
             <q
               >The handbook significantly improved my code management workflow
-              in days.The handbook significantly improved my code management workflow
-              in days.</q
+              in days.The handbook significantly improved my code management
+              workflow in days.</q
             >
             <footer>
               <img
@@ -570,7 +566,11 @@
           <!--User Testimonial-->
           <blockquote class="col-3 testimonial classic">
             <header>
-              <img src="/images/icons/Guillemets desvg.webp" alt="guillemets" class="guillemets"/>
+              <img
+                src="/images/icons/Guillemets desvg.webp"
+                alt="guillemets"
+                class="guillemets"
+              />
               <div class="stars">
                 <img src="/images/icons/Etoile.webp" alt="etoile" />
                 <img src="/images/icons/Etoile.webp" alt="etoile" />
@@ -600,7 +600,11 @@
           <!--User Testimonial-->
           <blockquote class="col-3 testimonial classic">
             <header>
-              <img src="/images/icons/Guillemets desvg.webp" alt="guillemets" class="guillemets"/>
+              <img
+                src="/images/icons/Guillemets desvg.webp"
+                alt="guillemets"
+                class="guillemets"
+              />
               <div class="stars">
                 <img src="/images/icons/Etoile.webp" alt="etoile" />
                 <img src="/images/icons/Etoile.webp" alt="etoile" />
@@ -627,22 +631,26 @@
             </footer>
           </blockquote>
         </div>
+        <!--Call to Action-->
+        <a href="connexion.html" class="button primary-color" id="CTA-testimonials"
+          >Go/ No go?</a
+        >
       </section>
 
       <!--Section 6 Partenaires-->
-      <section id="Partenaires" class="introduction scrollto">
-        <div class="col-3">
-          <!-- <div class="section-heading"> -->
-          <h3>TRUST</h3>
+      <!-- <section id="Partenaires" class="introduction scrollto">
+        <div class="col-3"> -->
+      <!-- <div class="section-heading"> -->
+      <!-- <h3>TRUST</h3>
           <h2 class="section-title">Ils sont nos partenaires</h2>
           <p class="section-subtitle">
             Nous avons le soutien des grands acteurs de la technologie et de
             l'innovation
-          </p>
-          <!-- </div> -->
-        </div>
+          </p> -->
+      <!-- </div> -->
+      <!-- </div> -->
 
-        <div class="link-partenaires">
+      <!-- <div class="link-partenaires">
           <a href="#">
             <img
               src="images/Partenaires-images/Logo Google Partner.svg"
@@ -674,7 +682,7 @@
             />
           </a>
         </div>
-      </section>
+      </section> -->
 
       <!--Pricing Tables-->
       <!-- <section id="pricing" class="secondary-color scrollto clearfix ">
@@ -755,13 +763,50 @@
 
     <!--Footer-->
     <footer id="landing-footer" class="clearfix">
-      <p id="copyright" class="col-2">
+      <h2 class="title-footer">Nos partenaires</h2>
+      <div class="link-partenaires">
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo Google Partner.svg"
+            alt="Partenaires-Google"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-Canva-1.webp"
+            alt="Partenaires-Canva"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-Github.webp"
+            alt="Partenaires-Github"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-HelloAsso.webp"
+            alt="Partenaires-HelloAsso"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-JeVeuxAider.gouv.fr.webp"
+            alt="Partenaires-JeVeuxAider.gouv"
+          />
+        </a>
+      </div>
+      <div class="link-footer-propos">
+        <a href="page404missTerry.html" class="link-terry">Miss Terry</a>
+        <a href="about.html" class="link-about">A propos</a>
+      </div>
+      <!-- <p id="copyright" class="col-2">
         Made with love by
         <a href="https://www.guildopentech.org">Guild Open Tech</a>
-      </p>
+      </p> -->
 
       <!--Social Icons in Footer-->
-      <ul class="col-2 social-icons">
+      <!-- <ul class="col-2 social-icons">
         <li>
           <a
             target="_blank"
@@ -798,7 +843,7 @@
             <i class="fa fa-discord fa-1x"></i><span>Discord</span>
           </a>
         </li>
-      </ul>
+      </ul> -->
     </footer>
 
     <!-- Include JavaScript resources -->
@@ -809,7 +854,7 @@
     <script src="js/jquery.enllax.min.js"></script>
     <script src="js/jquery.scrollUp.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.stickyNavbar.min.js"></script>
+    <!-- <script src="js/jquery.stickyNavbar.min.js"></script> -->
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/images-loaded.min.js"></script>
     <script src="js/lightbox.min.js"></script>

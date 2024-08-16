@@ -128,6 +128,10 @@ nav a {
   background: linear-gradient(to bottom, #071520, #0d2d45);
 }
 
+#landing-footer {
+  background: radial-gradient(circle at top left,#0d2d45 20%, #071520);
+}
+
 /*------------------------------------------------------------------------------------------*/
 /* 4. Banner */
 /*------------------------------------------------------------------------------------------*/
@@ -298,7 +302,8 @@ input[type="submit"]:hover {
 #landing-footer,
 #landing-footer p,
 #landing-footer a {
-  font-size: 14px;
+  height: 50px;
+  font-size: 18px;
   font-weight: normal;
   color: #2ab8cd;
 }

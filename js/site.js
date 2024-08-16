@@ -86,6 +86,35 @@ document.addEventListener("DOMContentLoaded", function () {
   updateSpanColors();
 
   window.addEventListener("scroll", updateSpanColors);
+
+  const sectionAExclure = document.getElementById("about");
+
+  if (sectionAExclure) {
+    sectionAExclure.removeAttribute("tabindex");
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Sélectionne tous les liens de la navbar
+  const navLinks = document.querySelectorAll("#nav-main a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      const target = link.getAttribute("href");
+
+      // Vérifie si le lien est un ID (scroll vers une section)
+      if (target.startsWith("#")) {
+        event.preventDefault();
+        const section = document.querySelector(target);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        // Sinon, c'est un lien vers une autre page, pas besoin d'empêcher le comportement par défaut
+        window.location.href = target;
+      }
+    });
+  });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -108,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         updateCounter(entry.target);
-        observer.unobserve(entry.target); 
+        observer.unobserve(entry.target);
       }
     });
   };
@@ -121,3 +150,11 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(counter);
   });
 });
+
+// Sélectionner la section à exclure
+const sectionAExclure = document.getElementById("about");
+
+// Retirer l'attribut tabindex de cette section spécifique
+if (sectionAExclure) {
+  sectionAExclure.removeAttribute("tabindex");
+}
