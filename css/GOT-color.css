@@ -20,6 +20,10 @@ body {
   color: #fdfdfd;
 }
 
+#about-body {
+  background: radial-gradient(circle at bottom right, #0d2d45 30%, #071520 70%);
+}
+
 /* Standard Headings h1-h6 */
 
 h1 {
@@ -192,8 +196,6 @@ nav a {
 .testimonial.classic footer {
   color: #ffffff;
 } */
-
-
 
 /*------------------------------------------------------------------------------------------*/
 /* 6. Buttons */

@@ -55,6 +55,9 @@ $(window).load(function () {
   }
 });
 
+/* Ajout Js Angèle */
+
+// Comportement des ronds dans la navbar et du lien GOT Connexion
 document.addEventListener("DOMContentLoaded", function () {
   function updateSpanColors() {
     var links = document.querySelectorAll("#nav-main li a");
@@ -64,7 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (link.classList.contains("active")) {
         if (svg && svg.classList.contains("highlight-icon")) {
-          svg.style.color = "#2ab8cd";
+          // Change la couleur du contour du cercle
+          svg.querySelector("circle").style.stroke = "#2ab8cd";
+          // Remplit le cercle avec une couleur
+          svg.querySelector("circle").style.fill = "#2ab8cd";
           svg.style.filter = `
           drop-shadow(0 0 5px #2AB8CD)
           drop-shadow(0 0 10px #2AB8CD)
@@ -76,8 +82,9 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       } else {
         if (svg && svg.classList.contains("highlight-icon")) {
-          svg.style.color = "";
-          svg.style.filter = "";
+          svg.querySelector("circle").style.fill = "transparent";
+          svg.querySelector("circle").style.stroke = "#f6a316";
+          svg.style.filter = "none";
         }
       }
     });
@@ -87,6 +94,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener("scroll", updateSpanColors);
 
+  // Attacher les événements mouseenter et mouseleave à chaque lien
+  var links = document.querySelectorAll("#nav-main li a");
+  links.forEach(function (link) {
+    link.addEventListener("mouseenter", function () {
+      var svg = link.previousElementSibling;
+      if (svg && svg.classList.contains("highlight-icon")) {
+        svg.querySelector("circle").style.stroke = "#2ab8cd";
+        svg.querySelector("circle").style.fill = "#2ab8cd";
+        svg.style.filter = `
+        drop-shadow(0 0 5px #2AB8CD)
+        drop-shadow(0 0 10px #2AB8CD)
+        drop-shadow(0 0 20px #2AB8CD)
+        drop-shadow(0 0 40px #2AB8CD)
+        drop-shadow(0 0 80px #2AB8CD)
+        drop-shadow(0 0 120px #2AB8CD)
+        `;
+      }
+    });
+
+    link.addEventListener("mouseleave", function () {
+      updateSpanColors(); // Rétablit les couleurs d'origine ou actives
+    });
+  });
   const sectionAExclure = document.getElementById("about");
 
   if (sectionAExclure) {
@@ -94,8 +124,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Comportement des liens dnas la navbar au scrol sur la page
 document.addEventListener("DOMContentLoaded", function () {
-  // Sélectionne tous les liens de la navbar
   const navLinks = document.querySelectorAll("#nav-main a");
 
   navLinks.forEach((link) => {
@@ -110,13 +140,13 @@ document.addEventListener("DOMContentLoaded", function () {
           section.scrollIntoView({ behavior: "smooth" });
         }
       } else {
-        // Sinon, c'est un lien vers une autre page, pas besoin d'empêcher le comportement par défaut
         window.location.href = target;
       }
     });
   });
 });
 
+// Compteur pour section GOT-Ame
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".counter");
 
@@ -158,3 +188,72 @@ const sectionAExclure = document.getElementById("about");
 if (sectionAExclure) {
   sectionAExclure.removeAttribute("tabindex");
 }
+
+/* Carousel */
+// Fonction générique pour mettre à jour la visibilité des cartes dans une galerie spécifique
+function updateGallery(galleryDivs, startIndex, visibleCards) {
+  galleryDivs.forEach((div, index) => {
+    if (index >= startIndex && index < startIndex + visibleCards) {
+      div.style.display = "flex";
+    } else {
+      div.style.display = "none";
+    }
+  });
+}
+
+// Fonction générique pour gérer les événements de clic
+function setupCarousel(gallerySelector, rightArrowSelector, leftArrowSelector, visibleCards) {
+  const galleryDivs = document.querySelectorAll(gallerySelector);
+  const slideToRight = document.getElementById(rightArrowSelector);
+  const slideToLeft = document.getElementById(leftArrowSelector);
+  let startIndex = 0;
+
+  // Initialisation de la galerie
+  updateGallery(galleryDivs, startIndex, visibleCards);
+
+  // Événement pour la flèche de droite
+  slideToRight.addEventListener("click", function () {
+    console.log("click right");
+    if (startIndex + visibleCards < galleryDivs.length) {
+      startIndex++;
+      updateGallery(galleryDivs, startIndex, visibleCards);
+    }
+
+    // Afficher la flèche de gauche
+    if (startIndex > 0) {
+      slideToLeft.classList.remove("hidden");
+      slideToLeft.classList.add("arrow-left");
+    }
+
+    // Masquer la flèche de droite si c'est la fin
+    if (startIndex + visibleCards >= galleryDivs.length) {
+      slideToRight.classList.add("hidden");
+    }
+  });
+
+  // Événement pour la flèche de gauche
+  slideToLeft.addEventListener("click", function () {
+    console.log("click left");
+    if (startIndex > 0) {
+      startIndex--;
+      updateGallery(galleryDivs, startIndex, visibleCards);
+    }
+
+    // Afficher la flèche de droite
+    if (startIndex + visibleCards < galleryDivs.length) {
+      slideToRight.classList.remove("hidden");
+    }
+
+    // Masquer la flèche de gauche si c'est le début
+    if (startIndex === 0) {
+      slideToLeft.classList.add("hidden");
+    }
+  });
+}
+
+// Initialisation du carousel pour la première section
+setupCarousel(".card-gallery", "right-arrow-1", "left-arrow-1", 4);
+
+// Initialisation du carousel pour la deuxième section
+setupCarousel(".cards-testimonials .classic", "right-arrow-2", "left-arrow-2", 3);
+

@@ -24,7 +24,7 @@
       type="text/css"
     />
   </head>
-  <body>
+  <body id="about-body">
     <header id="banner">
       <!--Logo-->
       <div id="logo">
@@ -39,27 +39,39 @@
       <nav id="nav-main">
         <ul class="nav-list">
           <li>
-            <span class="icon highlight-icon">&#9679;</span>
-            <a href="#about">La GOT Âme</a>
+            <svg
+              class="highlight-icon"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="#f6a316"
+                stroke-width="3"
+                fill="transparent"
+              />
+            </svg>
+            <a href="index.html">Accueil</a>
             <div class="link-node-navbar"></div>
           </li>
+          
           <li>
-            <span class="icon highlight-icon">&#9679;</span>
-            <a href="#projects">Projets en cours</a>
-            <div class="link-node-navbar"></div>
-          </li>
-          <li>
-            <span class="icon highlight-icon">&#9679;</span>
-            <a href="#Sedepasser">Se dépasser</a>
-            <div class="link-node-navbar"></div>
-          </li>
-          <li>
-            <span class="icon highlight-icon">&#9679;</span>
-            <a href="#testimonials">Témoignages</a>
-            <div class="link-node-navbar"></div>
-          </li>
-          <li>
-            <span class="icon highlight-icon">&#9679;</span>
+            <svg
+              class="highlight-icon"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="#f6a316"
+                stroke-width="3"
+                fill="transparent"
+              />
+            </svg>
             <a href="connexion.html" id="connexionPage">GOT Connexion</a>
             <div class="link-node-navbar"></div>
           </li>
@@ -73,51 +85,37 @@
         <nav id="nav-mobile"></nav>
       </div>
     </header>
+
     <main id="content-about">
       <h1>A propos de nous</h1>
       <div>
         <ul class="styled-list-about">
           <li>
-            <!-- <span class="highlight-icon">&#9679;</span> -->
-            <svg class="highlight-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" stroke="#f6a316" stroke-width="3" fill="transparent"/>
-            </svg>
+            <div class="circle-list-about-2"></div>
             <a href="#">Mentions légales association et hébergeur</a>
           </li>
           <li class="highlighted">
-            <svg class="highlight-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" stroke="#FEFEFE" stroke-width="3" fill="transparent"/>
-            </svg>
+            <div class="circle-list-about-3"></div>
             <a href="#">Presse</a>
           </li>
           <li class="highlighted">
-            <svg class="highlight-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" stroke="#f6a316" stroke-width="3" fill="transparent"/>
-            </svg>
+            <div class="circle-list-about-2"></div>
             <a href="#">Besoin d'aide ? Demande à Miss Terry</a>
           </li>
           <li class="highlighted">
-            <svg class="highlight-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" stroke="#FEFEFE" stroke-width="3" fill="transparent"/>
-            </svg>
+            <div class="circle-list-about-3"></div>
             <a href="#">Gestion des cookies</a>
           </li>
           <li class="highlighted">
-            <svg class="highlight-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" stroke="#f6a316" stroke-width="3" fill="transparent"/>
-            </svg>
+            <div class="circle-list-about-2"></div>
             <a href="#">Conditions Générales d'Utilisation (CGU)</a>
           </li>
           <li class="highlighted">
-            <svg class="highlight-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" stroke="#FEFEFE" stroke-width="3" fill="transparent"/>
-            </svg>
+            <div class="circle-list-about-3"></div>
             <a href="#">Charte</a>
           </li>
           <li class="highlighted">
-            <svg class="highlight-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="12" cy="12" r="10" stroke="#f6a316" stroke-width="3" fill="transparent"/>
-            </svg>
+            <div class="circle-list-about-2"></div>
             <a href="#">Me désinscrire</a>
           </li>
         </ul>
@@ -182,7 +180,20 @@
       </div>
       <div class="link-footer-propos">
         <a href="page404missTerry.html" class="link-terry">Miss Terry</a>
-        <a href="about.html" class="link-about">A propos</a>
+        <a href="index.html" class="link-about">Accueil</a>
       </div>
+
+      <script src="js/jquery.1.8.3.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/featherlight.min.js"></script>
+    <script src="js/featherlight.gallery.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.stickyNavbar.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/images-loaded.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/site.js"></script>
   </body>
 </html>
