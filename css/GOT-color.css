@@ -1,7 +1,7 @@
 /* GOT Landing Page Dynamic Style Index
 
 1. Website Default Styling
-2. Navigation
+2. Header/Navigation
 3. Primary and Secondary Colors
 4. Banner
 5. Typography
@@ -15,57 +15,57 @@
 
 body {
   background: #071520;
+  font-family: "Cabin", "Open Sans", Arial;
+  font-size: 18px;
+  color: #fdfdfd;
 }
 
-/* Default Link Color */
+/* Standard Headings h1-h6 */
 
-a:hover {
-  color: #2ab8cd;
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffffff;
 }
 
-.nav-list li:hover .icon {
-    color: #2ab8cd;
-  text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
-    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
-}
-/* 0 0 3px #2AB8CD,
-0 0 7px #2AB8CD,
-0 0 15px #2AB8CD,
-0 0 30px #2AB8CD */
-
-.nav-list li:hover a {
-  text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
-    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
-}
-
-/* Default Icon Color = section 2 */
-
-.icon i {
+h2 {
+  font-size: 34px;
+  font-weight: 300;
   color: #f6a316;
 }
 
-/* Border Color _ Cadres _ sections 6_Témoignages et 7_GOT Connexion */
-
-#banner .section-heading:before {
-  background: #0d2d45;
+h3 {
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  color: #f6a316;
 }
 
-.testimonial.classic footer:before {
-  background: #f6a316;
-}
-
-.pricing-block-content:hover {
-  border-color: #2ab8cd;
+/* Titres section2 icones et packages */
+h4 {
+  font-size: 20px;
+  font-weight: 200;
+  color: #f6a316;
 }
 
 /*------------------------------------------------------------------------------------------*/
 /* 2. Header sur page d'accueil */
 /*------------------------------------------------------------------------------------------*/
 
-/* Transparent Header Color on a Banner */
-
 nav a {
   color: #f6a316;
+}
+
+.nav-list li:hover .icon {
+  color: #2ab8cd;
+  text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
+    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
+}
+
+.nav-list li:hover a {
+  color: #2ab8cd;
+  text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
+    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
 }
 
 /* Header Active State */
@@ -80,6 +80,11 @@ nav a {
 
 #nav-mobile ul li a {
   color: #f6a316;
+}
+/* Border Color _ Cadres _ sections 6_Témoignages et 7_GOT Connexion */
+
+.pricing-block-content:hover {
+  border-color: #2ab8cd;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -115,13 +120,6 @@ nav a {
   margin: 30px auto 25px auto;
 }
 
-/* Section 2_Association Primary Icon Colors */
-
-.primary-color .icon i,
-.primary-color i {
-  color: #f6a316;
-}
-
 /* Section 7_GOT Connexion Background Cadre and Text Colors */
 
 .secondary-color {
@@ -129,14 +127,14 @@ nav a {
 }
 
 #landing-footer {
-  background: radial-gradient(circle at top left,#0d2d45 20%, #071520);
+  background: radial-gradient(circle at top left, #0d2d45 20%, #071520);
 }
 
 /*------------------------------------------------------------------------------------------*/
-/* 4. Banner */
+/* 4. Hero-section
 /*------------------------------------------------------------------------------------------*/
 
-/* Banner Background and Text Colors = section 1 */
+/* Sections Background and Text Colors = section 1 */
 
 .hero-section {
   background: url("../images/banner-images/Body_MeshGradient-CC-N°1.webp")
@@ -166,12 +164,6 @@ nav a {
 /* 5. Typography */
 /*------------------------------------------------------------------------------------------*/
 
-body {
-  font-family: "Cabin", "Open Sans", Arial;
-  font-size: 18px;
-  color: #fdfdfd;
-}
-
 /* Section 1 = La GOT Âme Title  */
 
 .section-title {
@@ -190,7 +182,7 @@ body {
 
 /* Section 5 =Testimonial */
 
-.testimonial q {
+/* .testimonial q {
   font-size: 20px;
   font-weight: 300;
   color: #ffffff;
@@ -199,47 +191,9 @@ body {
 .testimonial.classic q,
 .testimonial.classic footer {
   color: #ffffff;
-}
+} */
 
-/* Standard Headings h1-h6 */
 
-h1 {
-  font-size: 60px;
-  font-weight: 500;
-  color: #ffffff;
-}
-
-h2 {
-  font-size: 34px;
-  font-weight: 300;
-  color: #f6a316;
-}
-
-h3 {
-  font-size: 27px;
-  font-weight: 600;
-  letter-spacing: 1.8px;
-  color: #f6a316;
-}
-
-/* Titres section2 icones et packages */
-h4 {
-  font-size: 20px;
-  font-weight: 200;
-  color: #f6a316;
-}
-
-h5 {
-  font-size: 16px;
-  font-weight: 300;
-  color: #b50d0d;
-}
-
-h6 {
-  font-size: 14px;
-  font-weight: 200;
-  color: #cc1bc9;
-}
 
 /*------------------------------------------------------------------------------------------*/
 /* 6. Buttons */
