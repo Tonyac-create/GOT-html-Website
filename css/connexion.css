@@ -1,0 +1,64 @@
+#content-connexion-page {
+  margin-top: 132px;
+  margin-left: 84px;
+  width: 40%;
+}
+
+#content-connexion-page h2 {
+  font-weight: 500;
+  padding-top: 38px;
+  padding-bottom: 12px;
+}
+
+.form-login {
+  display: flex;
+}
+
+#CTA-login {
+  margin-left: 39px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 132px;
+  height: 55px;
+}
+
+#CTA-beMember, #CTA-toSee {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.field-1 {
+  display: flex;
+  align-items: center;
+}
+
+.field-1.mb {
+    margin-bottom: 19px;
+}
+
+.form-login label {
+  width: 20%;
+}
+
+.form-login input {
+  width: 288px;
+  height: 100%;
+}
+
+#beMember, #toSee {
+    display: flex;
+    flex-direction: column;
+    padding-left: 197px;
+}
+
+#beMember h2, #toSee h2 {
+    margin-top: 98px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#beMember p, #toSee p {
+    font-weight: 600;
+    margin: 4px 0 4px 0;
+}
