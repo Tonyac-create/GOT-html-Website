@@ -4,6 +4,10 @@
   width: 40%;
 }
 
+.body-connexion {
+  background: radial-gradient(circle at bottom, #0d2d45 30%, #071520 70%);
+}
+
 #content-connexion-page h2 {
   font-weight: 500;
   padding-top: 38px;
@@ -22,19 +26,21 @@
   height: 55px;
 }
 
-#CTA-beMember, #CTA-toSee {
-    margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
+#CTA-beMember,
+#CTA-toSee {
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .field-1 {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .field-1.mb {
-    margin-bottom: 19px;
+  margin-bottom: 19px;
 }
 
 .form-login label {
@@ -44,21 +50,36 @@
 .form-login input {
   width: 288px;
   height: 100%;
+  background-color: #071520;
+  border: 2px solid #2ab8cd;
 }
 
-#beMember, #toSee {
-    display: flex;
-    flex-direction: column;
-    padding-left: 197px;
+.eyes {
+  width: 34px;
+  position: absolute;
+  right: 54px;
 }
 
-#beMember h2, #toSee h2 {
-    margin-top: 98px;
-    padding-top: 0;
-    padding-bottom: 0;
+#beMember,
+#toSee {
+  display: flex;
+  flex-direction: column;
+  padding-left: 197px;
 }
 
-#beMember p, #toSee p {
-    font-weight: 600;
-    margin: 4px 0 4px 0;
+#toSee {
+  margin-bottom: 30px;
+}
+
+#beMember h2,
+#toSee h2 {
+  margin-top: 98px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#beMember p,
+#toSee p {
+  font-weight: 600;
+  margin: 4px 0 4px 0;
 }

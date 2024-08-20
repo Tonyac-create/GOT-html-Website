@@ -25,7 +25,7 @@
       type="text/css"
     />
   </head>
-  <body>
+  <body class="body-connexion">
     <header id="banner">
       <!--Logo-->
       <div id="logo">
@@ -94,14 +94,26 @@
         <div>
           <div class="field-1 mb">
             <label for="">Email</label>
-            <input type="email" placeholder="guild-open-tech@gamil.com" />
+            <input type="email" placeholder="guild-open-tech@gmail.com" />
+            <img
+              src="/images/icons/ICO_Oeil_ouvert.webp"
+              alt="oeil ouvert"
+              class="eyes"
+            />
           </div>
           <div class="field-1">
             <label for="">Mot de passe</label>
             <input type="password" />
+            <img
+              src="/images/icons/ICO_Oeil-ferme-2.webp"
+              alt="oeil fermé"
+              class="eyes"
+            />
           </div>
         </div>
-        <button class="button primary-color" id="CTA-login">> Enter</button>
+        <div id="CTA-login">
+          <a href="register.html" class="button primary-color">> Enter</a>
+        </div>
       </form>
       <section id="beMember">
         <h2>Tu peux devenir Membre :</h2>
@@ -111,17 +123,60 @@
         <p>Tu vas créer et partager ta page perso</p>
         <p>Tu peux candidater sur un projet</p>
         <p>Tu peux proposer un nouveau projet</p>
-        <button class="button primary-color" id="CTA-beMember">
-          > Je candidate
-        </button>
+        <div id="CTA-beMember">
+          <a href="register.html" class="button primary-color"
+            >> Je candidate</a
+          >
+        </div>
       </section>
       <section id="toSee">
         <h2>Tu peux t'inscrire :</h2>
         <p>Tu es membre du Discord</p>
         <p>Tu peux assiter aux formations sur Discord</p>
-        <button class="button primary-color" id="CTA-toSee">> Je vois</button>
+        <div id="CTA-toSee">
+          <a href="register.html" class="button primary-color">> Je vois</a>
+        </div>
       </section>
     </main>
+    <footer id="landing-footer" class="clearfix">
+      <h2 class="title-footer">Nos partenaires</h2>
+      <div class="link-partenaires">
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo Google Partner.svg"
+            alt="Partenaires-Google"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-Canva-1.webp"
+            alt="Partenaires-Canva"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-Github.webp"
+            alt="Partenaires-Github"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-HelloAsso.webp"
+            alt="Partenaires-HelloAsso"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-JeVeuxAider.gouv.fr.webp"
+            alt="Partenaires-JeVeuxAider.gouv"
+          />
+        </a>
+      </div>
+      <div class="link-footer-propos">
+        <a href="page404missTerry.html" class="link-terry">Miss Terry</a>
+        <a href="about.html" class="link-about">A propos</a>
+      </div>
+    </footer>
 
     <script src="js/jquery.1.8.3.min.js"></script>
     <script src="js/wow.min.js"></script>
