@@ -91,11 +91,11 @@ textarea {
 }
 
 input {
-  height: 40px;
-  margin: 3px 0;
+  /* height: 40px;
+  margin: 3px 0; */
   outline: none;
   line-height: normal;
-  font-size: 18 px;
+  /* font-size: 18 px; */
 }
 
 input[type="submit"] {
@@ -254,7 +254,7 @@ nav#nav-main {
 #nav-trigger span {
   display: inline-block;
   width: 38px;
-  height: 71px;
+  /* height: 71px; */
   color: #d00f0f;
   cursor: pointer;
   text-transform: uppercase;
@@ -266,6 +266,10 @@ nav#nav-main {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+#nav-trigger span img {
+  width: 35px;
+  height: 28px;
 }
 
 #nav-trigger span.open:after {
@@ -302,6 +306,10 @@ nav#nav-mobile ul {
   box-shadow: 0 5px 3px rgba(238, 238, 238, 0.2);
   background-color: #071520;
 }
+
+/* nav#nav-mobile ul li svg, .link-node-navbar {
+  display: none;
+} */
 
 nav#nav-mobile ul:after {
   display: none;

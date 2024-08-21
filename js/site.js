@@ -258,3 +258,24 @@ setupCarousel(".card-gallery", "right-arrow-1", "left-arrow-1", 4);
 // Initialisation du carousel pour la deuxième section
 setupCarousel(".cards-testimonials .classic", "right-arrow-2", "left-arrow-2", 3);
 
+
+// URL de l'App Script
+// https://script.google.com/macros/s/AKfycby9dxiHuZowuSEEKPH_Jf3jk4cQUDxpIIVtdH5MRwJdI9ki4Wku_xntU63QDhV7S5IV9w/exec
+
+document.getElementById('my-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const url = 'https://script.google.com/macros/s/AKfycby9dxiHuZowuSEEKPH_Jf3jk4cQUDxpIIVtdH5MRwJdI9ki4Wku_xntU63QDhV7S5IV9w/exec'; 
+  const formData = new FormData(document.getElementById('my-form'));
+  console.log("🚀 ~ document.getElementById ~ formData:", formData)
+
+  fetch(url, {
+      method: 'POST',
+      mode: 'no-cors',
+      body: formData
+  }).then(response => {
+      alert('Données envoyées avec succès!');
+  }).catch(error => {
+      alert('Erreur lors de l\'envoi des données.');
+  });
+});

@@ -171,6 +171,12 @@ nav a {
   background-size: 26%;
 }
 
+#content-register-page {
+  background: url("../images/banner-images/GOT_Formulaires_CC_1.webp")
+    no-repeat center bottom;
+  background-size: 28%;
+}
+
 /*------------------------------------------------------------------------------------------*/
 /* 5. Typography */
 /*------------------------------------------------------------------------------------------*/

@@ -88,13 +88,13 @@
     <main id="content-register-page">
       <section class="memberSection">
         <h1>Participer</h1>
-        <h2>Tu peux devenir Membre :</h2>
-        <p>
+        <h2>Tu veux devenir Membre :</h2>
+        <p class="text-section">
           Nous avons besoin de quelques informations pour comprendre ton profil,
           ce qui t'intéresse, et nous conviendrons d'un entretien avec toi.
         </p>
         <span>* réponse obligatoire</span> 
-        <form action="" class="form-register">
+        <form action="" id="my-form" class="form-register">
           <div class="field-2">
             <label for="email">Email*</label>
             <input
@@ -124,12 +124,12 @@
             />
           </div>
           <div class="field-2">
-            <label for="repeatPassword">Confirmer le mot de passe*</label>
+            <label for="repeatPassword">Confirmer le <br> mot de passe*</label>
             <input
               type="password"
               name="repeatPassword"
               id="repeatPassword"
-              placeholder="mdp123@GOT"
+              placeholder="mdp12345@GOT"
             />
             <img
               src="/images/icons/ICO_Oeil_ouvert.webp"
@@ -151,6 +151,16 @@
               <option value="compta">Comptabilité</option>
               <option value="development">Développement</option>
               <option value="Graf">Graphisme</option>
+              <option value="IA">IA</option>
+              <option value="juridic">Juridique</option>
+              <option value="marketing">Marketing</option>
+              <option value="graf">Graphisme</option>
+              <option value="mentorat">Mentorat</option>
+              <option value="SM">ScrumMaster</option>
+              <option value="SEO">SEO</option>
+              <option value="UI">UI</option>
+              <option value="UX">UX</option>
+              <option value="wordpress">Wordpress</option>
             </select>
           </div>
           <div class="field-2">
@@ -167,25 +177,17 @@
             <label for="interest1">Intérêt 1*</label>
             <select name="interest" id="interest1">
               <option value=""></option>
+              <option value="CDP">Chef de projet/PO</option>
+              <option value="communication">Communication</option>
+              <option value="CM">Communauty Manager</option>
+              <option value="compta">Comptabilité</option>
+              <option value="development">Développement</option>
+              <option value="Graf">Graphisme</option>
+              <option value="IA">IA</option>
               <option value="juridic">Juridique</option>
               <option value="marketing">Marketing</option>
-              <option value="Mentorat">Senior</option>
-            </select>
-          </div>
-          <div class="field-2">
-            <label for="experienceB">Expérience B</label>
-            <select name="experience" id="experienceB">
-              <option value=""></option>
-              <option value="SM">ScrumMaster</option>
-              <option value="SEO">SEO</option>
-              <option value="UI">UI</option>
-              <option value="UX">UX</option>
-            </select>
-          </div>
-          <div class="field-2">
-            <label for="interest2">Intérêt 2</label>
-            <select name="interest2" id="interest2">
-              <option value=""></option>
+              <option value="graf">Graphisme</option>
+              <option value="mentorat">Mentorat</option>
               <option value="SM">ScrumMaster</option>
               <option value="SEO">SEO</option>
               <option value="UI">UI</option>
@@ -194,22 +196,69 @@
             </select>
           </div>
           <div class="field-2">
-            <label for="nicknameDiscord">Pseudo Discord</label>
-            <input type="text" name="nicknameDiscord" id="nicknameDiscord" />
+            <label for="experienceB">Expérience B</label>
+            <select name="experience" id="experienceB">
+              <option value=""></option>
+              <option value="CDP">Chef de projet/PO</option>
+              <option value="communication">Communication</option>
+              <option value="CM">Communauty Manager</option>
+              <option value="compta">Comptabilité</option>
+              <option value="development">Développement</option>
+              <option value="Graf">Graphisme</option>
+              <option value="IA">IA</option>
+              <option value="juridic">Juridique</option>
+              <option value="marketing">Marketing</option>
+              <option value="graf">Graphisme</option>
+              <option value="mentorat">Mentorat</option>
+              <option value="SM">ScrumMaster</option>
+              <option value="SEO">SEO</option>
+              <option value="UI">UI</option>
+              <option value="UX">UX</option>
+              <option value="wordpress">Wordpress</option>
+            </select>
+          </div>
+          <div class="field-2">
+            <label for="interest2">Intérêt 2</label>
+            <select name="interest2" id="interest2">
+              <option value=""></option>
+              <option value="CDP">Chef de projet/PO</option>
+              <option value="communication">Communication</option>
+              <option value="CM">Communauty Manager</option>
+              <option value="compta">Comptabilité</option>
+              <option value="development">Développement</option>
+              <option value="Graf">Graphisme</option>
+              <option value="IA">IA</option>
+              <option value="juridic">Juridique</option>
+              <option value="marketing">Marketing</option>
+              <option value="graf">Graphisme</option>
+              <option value="mentorat">Mentorat</option>
+              <option value="SM">ScrumMaster</option>
+              <option value="SEO">SEO</option>
+              <option value="UI">UI</option>
+              <option value="UX">UX</option>
+              <option value="wordpress">Wordpress</option>
+            </select>
+          </div>
+          <div class="field-3">
+            <div class="link-create-discord">
+              <label for="nicknameDiscord">Pseudo Discord</label>
+              <input type="text" name="nicknameDiscord" id="nicknameDiscord" />
+            </div>
+            <a href="https://discord.com/login" target="_blank">Je n'en ai pas, je crée un pseudo Discord</a>
           </div>
           <div id="CTA-beMember-2">
-            <a href="#" class="button primary-color">> Je candidate</a>
+            <button type="submit" href="#" class="button primary-color">> Je candidate</button>
           </div>
         </form>
       </section>
       <section id="inscription">
         <h2>Tu peux t'inscrire :</h2>
-        <p>
+        <p class="text-section">
           Si tu veux prendre du temps et voir ce que GOT peut t'apporter, tu
           peux simplement créer un compte Inscrit.
         </p>
         <span>* réponse obligatoire</span> 
-        <form action="" class="form-register">
+        <form action="" id="my-form" class="form-register-toSee">
           <div class="field-2">
             <label for="email">Email*</label>
             <input
@@ -239,12 +288,12 @@
             />
           </div>
           <div class="field-2">
-            <label for="repeatPassword">Confirmer le mot de passe*</label>
+            <label for="repeatPassword">Confirmer le <br> mot de passe*</label>
             <input
               type="password"
               name="repeatPassword"
               id="repeatPassword"
-              placeholder="mdp123@GOT"
+              placeholder="mdp12345@GOT"
             />
             <img
               src="/images/icons/ICO_Oeil_ouvert.webp"
@@ -257,7 +306,7 @@
             <input type="text" name="phone" id="phone" />
           </div>
           <div id="CTA-toSee-2">
-            <a href="#" class="button primary-color">> Je vois</a>
+            <button type="submit" href="#" class="button primary-color">> Je vois</button>
           </div>
         </form>
       </section>
