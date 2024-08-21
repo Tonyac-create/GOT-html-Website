@@ -67,9 +67,10 @@ nav a {
 }
 
 .nav-list li:hover a {
-  color: #2ab8cd;
-  text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
-    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
+  color: #f6a316;
+  transform: scale(110%);
+  /* text-shadow: 0 0 5px #2ab8cd, 0 0 10px #2ab8cd, 0 0 20px #2ab8cd,
+    0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd; */
 }
 
 /* Header Active State */
@@ -131,7 +132,7 @@ nav a {
 }
 
 #landing-footer {
-  background: radial-gradient(circle at top left, #0d2d45 20%, #071520);
+  background: radial-gradient(circle at bottom, #0d2d45 10%, #071520);
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -162,6 +163,12 @@ nav a {
   background: url("../images/banner-images/Body_2_MeshGradient-CC_html.webp")
     no-repeat right center;
   background-size: 50%;
+}
+
+#content-connexion-page {
+  background: url("../images/banner-images/GOT_Connect_350px_CC_4.webp") no-repeat
+    left bottom;
+  background-size: 26%;
 }
 
 /*------------------------------------------------------------------------------------------*/

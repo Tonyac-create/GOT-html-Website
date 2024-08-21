@@ -100,16 +100,16 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("mouseenter", function () {
       var svg = link.previousElementSibling;
       if (svg && svg.classList.contains("highlight-icon")) {
-        svg.querySelector("circle").style.stroke = "#2ab8cd";
-        svg.querySelector("circle").style.fill = "#2ab8cd";
-        svg.style.filter = `
-        drop-shadow(0 0 5px #2AB8CD)
-        drop-shadow(0 0 10px #2AB8CD)
-        drop-shadow(0 0 20px #2AB8CD)
-        drop-shadow(0 0 40px #2AB8CD)
-        drop-shadow(0 0 80px #2AB8CD)
-        drop-shadow(0 0 120px #2AB8CD)
-        `;
+        svg.querySelector("circle").style.stroke = "#f6a316";
+        svg.querySelector("circle").style.fill = "#f6a316";
+        // svg.style.filter = `
+        // drop-shadow(0 0 5px #2AB8CD)
+        // drop-shadow(0 0 10px #2AB8CD)
+        // drop-shadow(0 0 20px #2AB8CD)
+        // drop-shadow(0 0 40px #2AB8CD)
+        // drop-shadow(0 0 80px #2AB8CD)
+        // drop-shadow(0 0 120px #2AB8CD)
+        // `;
       }
     });
 
@@ -118,9 +118,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
   const sectionAExclure = document.getElementById("about");
+  const sectionAExclure2 = document.getElementById("testimonials");
 
   if (sectionAExclure) {
     sectionAExclure.removeAttribute("tabindex");
+    sectionAExclure2.removeAttribute("tabindex");
   }
 });
 
@@ -213,7 +215,6 @@ function setupCarousel(gallerySelector, rightArrowSelector, leftArrowSelector, v
 
   // Événement pour la flèche de droite
   slideToRight.addEventListener("click", function () {
-    console.log("click right");
     if (startIndex + visibleCards < galleryDivs.length) {
       startIndex++;
       updateGallery(galleryDivs, startIndex, visibleCards);

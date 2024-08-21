@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <title>Guild Open Tech</title>
 
     <meta name="keywords" content="Innovons l'informatique" />
@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="images/favicon.ico" title="favicon" />
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/connexion.css" />
     <link rel="stylesheet" href="css/GOT-color.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link href="css/animate.css" rel="stylesheet" type="text/css" />
@@ -21,8 +22,298 @@
       rel="stylesheet"
       type="text/css"
     />
-</head>
-<body>
-    Inscription
-</body>
+  </head>
+  <body>
+    <header id="banner">
+      <!--Logo-->
+      <div id="logo">
+        <img
+          src="images\Logos\logo_99px.webp"
+          id="GOT_logo_99px"
+          alt="GOT_logo"
+        />
+      </div>
+
+      <!--Main Navigation-->
+      <nav id="nav-main">
+        <ul class="nav-list">
+          <li>
+            <svg
+              class="highlight-icon"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="#f6a316"
+                stroke-width="3"
+                fill="transparent"
+              />
+            </svg>
+            <a href="index.html">Accueil</a>
+            <div class="link-node-navbar"></div>
+          </li>
+
+          <li>
+            <svg
+              class="highlight-icon"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="#f6a316"
+                stroke-width="3"
+                fill="transparent"
+              />
+            </svg>
+            <a href="connexion.html" id="connexionPage">GOT Connexion</a>
+            <div class="link-node-navbar"></div>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="nav-trigger">
+        <span>
+          <img src="/images/bars-solid.svg" alt="icone menu burger" />
+        </span>
+        <nav id="nav-mobile"></nav>
+      </div>
+    </header>
+
+    <main id="content-register-page">
+      <section class="memberSection">
+        <h1>Participer</h1>
+        <h2>Tu peux devenir Membre :</h2>
+        <p>
+          Nous avons besoin de quelques informations pour comprendre ton profil,
+          ce qui t'intéresse, et nous conviendrons d'un entretien avec toi.
+        </p>
+        <span>* réponse obligatoire</span> 
+        <form action="" class="form-register">
+          <div class="field-2">
+            <label for="email">Email*</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="guild-open-tech@gmail.com"
+            />
+            <img
+              src="/images/icons/ICO_Oeil_ouvert.webp"
+              alt="oeil ouvert"
+              class="eyes-2"
+            />
+          </div>
+          <div class="field-2">
+            <label for="password">Mot de passe*</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="**************"
+            />
+            <img
+              src="/images/icons/ICO_Oeil_ferme_blanc.webp"
+              alt="oeil fermé"
+              class="eyes-2"
+            />
+          </div>
+          <div class="field-2">
+            <label for="repeatPassword">Confirmer le mot de passe*</label>
+            <input
+              type="password"
+              name="repeatPassword"
+              id="repeatPassword"
+              placeholder="mdp123@GOT"
+            />
+            <img
+              src="/images/icons/ICO_Oeil_ouvert.webp"
+              alt="oeil ouvert"
+              class="eyes-2"
+            />
+          </div>
+          <div class="field-2">
+            <label for="phone">Téléphone*</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div class="field-2">
+            <label for="postA">Poste A*</label>
+            <select name="posts" id="postA">
+              <option value=""></option>
+              <option value="CDP">Chef de projet/PO</option>
+              <option value="communication">Communication</option>
+              <option value="CM">Communauty Manager</option>
+              <option value="compta">Comptabilité</option>
+              <option value="development">Développement</option>
+              <option value="Graf">Graphisme</option>
+            </select>
+          </div>
+          <div class="field-2">
+            <label for="seniorA">Séniorité A*</label>
+            <select name="senior" id="seniorA">
+              <option value=""></option>
+              <option value="newbie">Débutant</option>
+              <option value="junior">Junior</option>
+              <option value="senior">Senior</option>
+              <option value="expert">Expert</option>
+            </select>
+          </div>
+          <div class="field-2">
+            <label for="interest1">Intérêt 1*</label>
+            <select name="interest" id="interest1">
+              <option value=""></option>
+              <option value="juridic">Juridique</option>
+              <option value="marketing">Marketing</option>
+              <option value="Mentorat">Senior</option>
+            </select>
+          </div>
+          <div class="field-2">
+            <label for="experienceB">Expérience B</label>
+            <select name="experience" id="experienceB">
+              <option value=""></option>
+              <option value="SM">ScrumMaster</option>
+              <option value="SEO">SEO</option>
+              <option value="UI">UI</option>
+              <option value="UX">UX</option>
+            </select>
+          </div>
+          <div class="field-2">
+            <label for="interest2">Intérêt 2</label>
+            <select name="interest2" id="interest2">
+              <option value=""></option>
+              <option value="SM">ScrumMaster</option>
+              <option value="SEO">SEO</option>
+              <option value="UI">UI</option>
+              <option value="UX">UX</option>
+              <option value="wordpress">Wordpress</option>
+            </select>
+          </div>
+          <div class="field-2">
+            <label for="nicknameDiscord">Pseudo Discord</label>
+            <input type="text" name="nicknameDiscord" id="nicknameDiscord" />
+          </div>
+          <div id="CTA-beMember-2">
+            <a href="#" class="button primary-color">> Je candidate</a>
+          </div>
+        </form>
+      </section>
+      <section id="inscription">
+        <h2>Tu peux t'inscrire :</h2>
+        <p>
+          Si tu veux prendre du temps et voir ce que GOT peut t'apporter, tu
+          peux simplement créer un compte Inscrit.
+        </p>
+        <span>* réponse obligatoire</span> 
+        <form action="" class="form-register">
+          <div class="field-2">
+            <label for="email">Email*</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="guild-open-tech@gmail.com"
+            />
+            <img
+              src="/images/icons/ICO_Oeil_ouvert.webp"
+              alt="oeil ouvert"
+              class="eyes-2"
+            />
+          </div>
+          <div class="field-2">
+            <label for="password">Mot de passe*</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="**************"
+            />
+            <img
+              src="/images/icons/ICO_Oeil_ferme_blanc.webp"
+              alt="oeil fermé"
+              class="eyes-2"
+            />
+          </div>
+          <div class="field-2">
+            <label for="repeatPassword">Confirmer le mot de passe*</label>
+            <input
+              type="password"
+              name="repeatPassword"
+              id="repeatPassword"
+              placeholder="mdp123@GOT"
+            />
+            <img
+              src="/images/icons/ICO_Oeil_ouvert.webp"
+              alt="oeil ouvert"
+              class="eyes-2"
+            />
+          </div>
+          <div class="field-2">
+            <label for="phone">Téléphone*</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div id="CTA-toSee-2">
+            <a href="#" class="button primary-color">> Je vois</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="landing-footer" class="clearfix">
+      <h2 class="title-footer">Nos partenaires</h2>
+      <div class="link-partenaires">
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo Google Partner.svg"
+            alt="Partenaires-Google"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-Canva-1.webp"
+            alt="Partenaires-Canva"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-Github.webp"
+            alt="Partenaires-Github"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-HelloAsso.webp"
+            alt="Partenaires-HelloAsso"
+          />
+        </a>
+        <a href="#">
+          <img
+            src="images/Partenaires-images/Logo-JeVeuxAider.gouv.fr.webp"
+            alt="Partenaires-JeVeuxAider.gouv"
+          />
+        </a>
+      </div>
+      <div class="link-footer-propos">
+        <a href="page404missTerry.html" class="link-terry">Miss Terry</a>
+        <a href="about.html" class="link-about">A propos</a>
+      </div>
+    </footer>
+
+    <script src="js/jquery.1.8.3.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/featherlight.min.js"></script>
+    <script src="js/featherlight.gallery.min.js"></script>
+    <script src="js/jquery.enllax.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.stickyNavbar.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/images-loaded.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script src="js/site.js"></script>
+  </body>
 </html>
