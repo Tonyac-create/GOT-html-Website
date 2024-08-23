@@ -1,16 +1,23 @@
 #content-connexion-page,
 #content-register-page {
   margin-top: 132px;
-  margin-bottom: 49px;
-  /* margin-left: 84px; */
-  /* width: 40%; */
-  height: 1022px;
+  height: 1053px;
 }
 
 #content-register-page {
   display: flex;
-  /* gap: 144px; */
   margin-left: 85px;
+  height: 1154px;
+}
+
+.text-nofinish {
+  padding-left: 85px;
+  margin: 0;
+  font-size: 21px;
+}
+
+.text-nofinish-register {
+  font-size: 21px;
 }
 
 span {
@@ -145,7 +152,7 @@ span {
 }
 
 #toSee {
-  margin-bottom: 30px;
+  padding-bottom: 80px;
 }
 
 #beMember h2,
