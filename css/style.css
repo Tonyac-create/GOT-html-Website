@@ -787,6 +787,20 @@ h6 {
 }
 
 /* --------- 6.4 Gallery ---------- */
+
+#gallery {
+  display: flex;
+  position: relative;
+  margin: 24px 0;
+}
+
+#gallery .card-gallery {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  padding: 0 36px;
+}
+
 .card-gallery ul {
   list-style: none;
   width: 80%;
@@ -827,19 +841,6 @@ h6 {
   margin-right: 4px;
   text-shadow: 0 0 1px #2ab8cd, 0 0 3px #2ab8cd, 0 0 5px #2ab8cd,
     0 0 10px rgba(42, 184, 205, 0.7);
-}
-
-#gallery {
-  display: flex;
-  position: relative;
-  margin: 24px 0;
-}
-
-#gallery .card-gallery {
-  display: flex;
-  flex-direction: column;
-  width: 55%;
-  padding: 0 36px;
 }
 
 #gallery .link-card-gallery {
@@ -1505,7 +1506,8 @@ main .design-about {
   }
 
   #content {
-    padding-top:70px;
+    padding-top: 70px;
+    padding-bottom: 90px;
   }
 
   /* Hero-Section */
@@ -1540,8 +1542,48 @@ main .design-about {
     display: none;
   }
 
-  .link-node{
+  .link-node {
     display: none;
+  }
+
+  #about .col-3 {
+    width: 100%;
+  }
+
+  .sedepasser {
+    flex-direction: column-reverse;
+  }
+
+  .sedepasser-img {
+    margin: 0 auto 0 auto;
+  }
+
+  .CTA-sedepasser {
+    display: flex;
+    margin-bottom: 35px;
+  }
+
+  .CTA-sedepasser a {
+    margin: 0 auto 0 auto;
+  }
+
+  #landing-footer {
+    height: 120px !important;
+    flex-direction: column;
+  }
+
+  .link-partenaires {
+    display: flex;
+    align-items: center;
+  }
+
+  #landing-footer .link-partenaires a {
+    display: flex;
+    align-items: center;
+  }
+
+  #landing-footer .link-footer-propos {
+    margin: 0 auto 0 auto;
   }
 }
 

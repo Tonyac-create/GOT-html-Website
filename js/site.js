@@ -192,19 +192,13 @@ if (sectionAExclure) {
 }
 
 /* Carousel */
-// Fonction générique pour mettre à jour la visibilité des cartes dans une galerie spécifique
-function updateGallery(galleryDivs, startIndex, visibleCards) {
-  galleryDivs.forEach((div, index) => {
-    if (index >= startIndex && index < startIndex + visibleCards) {
-      div.style.display = "flex";
-    } else {
-      div.style.display = "none";
-    }
-  });
-}
-
 // Fonction générique pour gérer les événements de clic
-function setupCarousel(gallerySelector, rightArrowSelector, leftArrowSelector, visibleCards) {
+function setupCarousel(
+  gallerySelector,
+  rightArrowSelector,
+  leftArrowSelector,
+  visibleCards
+) {
   const galleryDivs = document.querySelectorAll(gallerySelector);
   const slideToRight = document.getElementById(rightArrowSelector);
   const slideToLeft = document.getElementById(leftArrowSelector);
@@ -234,7 +228,6 @@ function setupCarousel(gallerySelector, rightArrowSelector, leftArrowSelector, v
 
   // Événement pour la flèche de gauche
   slideToLeft.addEventListener("click", function () {
-    console.log("click left");
     if (startIndex > 0) {
       startIndex--;
       updateGallery(galleryDivs, startIndex, visibleCards);
@@ -252,30 +245,171 @@ function setupCarousel(gallerySelector, rightArrowSelector, leftArrowSelector, v
   });
 }
 
-// Initialisation du carousel pour la première section
-setupCarousel(".card-gallery", "right-arrow-1", "left-arrow-1", 4);
+// Fonction pour mettre à jour le carrousel en fonction de la taille de l'écran
+function updateCarouselSettings() {
+  let visibleCardsFirstCarousel = 4; // Valeur par défaut pour le premier carrousel
+  let visibleCardsSecondCarousel = 3; // Valeur par défaut pour le second carrousel
 
-// Initialisation du carousel pour la deuxième section
-setupCarousel(".cards-testimonials .classic", "right-arrow-2", "left-arrow-2", 3);
+  // Si l'écran est plus petit ou égal à 768px, ajuster les valeurs
+  if (window.matchMedia("(max-width: 1024px)").matches) {
+    visibleCardsFirstCarousel = 2;
+    visibleCardsSecondCarousel = 2;
+  }
 
+  // Réinitialiser les carrousels avec le nombre d'éléments visibles mis à jour
+  setupCarousel(
+    ".card-gallery",
+    "right-arrow-1",
+    "left-arrow-1",
+    visibleCardsFirstCarousel
+  );
+  setupCarousel(
+    ".cards-testimonials .classic",
+    "right-arrow-2",
+    "left-arrow-2",
+    visibleCardsSecondCarousel
+  );
+}
+
+// Initialisation au chargement de la page
+updateCarouselSettings();
+
+// Réagir aux changements de taille de l'écran
+window.addEventListener("resize", updateCarouselSettings);
+
+// Fonction pour mettre à jour l'affichage de la galerie
+function updateGallery(galleryDivs, startIndex, visibleCards) {
+  // Logique de mise à jour de la galerie (par exemple, masquer/afficher des éléments)
+  galleryDivs.forEach((div, index) => {
+    if (index >= startIndex && index < startIndex + visibleCards) {
+      div.style.display = "flex"; // Afficher les éléments dans la plage
+    } else {
+      div.style.display = "none"; // Masquer les autres éléments
+    }
+  });
+}
+
+// // Fonction générique pour mettre à jour la visibilité des cartes dans une galerie spécifique
+// function updateGallery(galleryDivs, startIndex, visibleCards) {
+//   galleryDivs.forEach((div, index) => {
+//     if (index >= startIndex && index < startIndex + visibleCards) {
+//       div.style.display = "flex";
+//     } else {
+//       div.style.display = "none";
+//     }
+//   });
+// }
+
+// // Fonction générique pour gérer les événements de clic
+// function setupCarousel(
+//   gallerySelector,
+//   rightArrowSelector,
+//   leftArrowSelector,
+//   visibleCards
+// ) {
+//   const galleryDivs = document.querySelectorAll(gallerySelector);
+//   const slideToRight = document.getElementById(rightArrowSelector);
+//   const slideToLeft = document.getElementById(leftArrowSelector);
+//   let startIndex = 0;
+
+//   // Initialisation de la galerie
+//   updateGallery(galleryDivs, startIndex, visibleCards);
+
+//   // Événement pour la flèche de droite
+//   slideToRight.addEventListener("click", function () {
+//     if (startIndex + visibleCards < galleryDivs.length) {
+//       startIndex++;
+//       updateGallery(galleryDivs, startIndex, visibleCards);
+//     }
+
+//     // Afficher la flèche de gauche
+//     if (startIndex > 0) {
+//       slideToLeft.classList.remove("hidden");
+//       slideToLeft.classList.add("arrow-left");
+//     }
+
+//     // Masquer la flèche de droite si c'est la fin
+//     if (startIndex + visibleCards >= galleryDivs.length) {
+//       slideToRight.classList.add("hidden");
+//     }
+//   });
+
+//   // Événement pour la flèche de gauche
+//   slideToLeft.addEventListener("click", function () {
+//     if (startIndex > 0) {
+//       startIndex--;
+//       updateGallery(galleryDivs, startIndex, visibleCards);
+//     }
+
+//     // Afficher la flèche de droite
+//     if (startIndex + visibleCards < galleryDivs.length) {
+//       slideToRight.classList.remove("hidden");
+//     }
+
+//     // Masquer la flèche de gauche si c'est le début
+//     if (startIndex === 0) {
+//       slideToLeft.classList.add("hidden");
+//     }
+//   });
+// }
+
+// // Fonction pour mettre à jour le carrousel en fonction de la taille de l'écran
+// function updateCarouselSettings() {
+//   let visibleCards = 4; // Nombre par défaut
+
+//   // Si l'écran est plus petit ou égal à 768px, afficher 2 éléments
+//   if (window.matchMedia("(max-width: 1024px)").matches) {
+//     visibleCards = 2;
+//   }
+
+//   // Réinitialiser les carrousels avec le nombre d'éléments visibles mis à jour
+//   setupCarousel(".card-gallery", "right-arrow-1", "left-arrow-1", visibleCards);
+//   setupCarousel(
+//     ".cards-testimonials .classic",
+//     "right-arrow-2",
+//     "left-arrow-2",
+//     3
+//   ); // Laisser comme avant ou ajuster si nécessaire
+// }
+
+// // Initialisation au chargement de la page
+// updateCarouselSettings();
+
+// // Réagir aux changements de taille de l'écran
+// window.addEventListener("resize", updateCarouselSettings);
+
+// // Fonction pour mettre à jour l'affichage de la galerie
+// function updateGallery(galleryDivs, startIndex, visibleCards) {
+//   // Logique de mise à jour de la galerie (par exemple, masquer/afficher des éléments)
+//   galleryDivs.forEach((div, index) => {
+//     if (index >= startIndex && index < startIndex + visibleCards) {
+//       div.style.display = "flex"; // Afficher les éléments dans la plage
+//     } else {
+//       div.style.display = "none"; // Masquer les autres éléments
+//     }
+//   });
+// }
 
 // URL de l'App Script
 // https://script.google.com/macros/s/AKfycby9dxiHuZowuSEEKPH_Jf3jk4cQUDxpIIVtdH5MRwJdI9ki4Wku_xntU63QDhV7S5IV9w/exec
 
-document.getElementById('my-form').addEventListener('submit', function(event) {
+document.getElementById("my-form").addEventListener("submit", function (event) {
   event.preventDefault();
 
-  const url = 'https://script.google.com/macros/s/AKfycby9dxiHuZowuSEEKPH_Jf3jk4cQUDxpIIVtdH5MRwJdI9ki4Wku_xntU63QDhV7S5IV9w/exec'; 
-  const formData = new FormData(document.getElementById('my-form'));
-  console.log("🚀 ~ document.getElementById ~ formData:", formData)
+  const url =
+    "https://script.google.com/macros/s/AKfycby9dxiHuZowuSEEKPH_Jf3jk4cQUDxpIIVtdH5MRwJdI9ki4Wku_xntU63QDhV7S5IV9w/exec";
+  const formData = new FormData(document.getElementById("my-form"));
+  console.log("🚀 ~ document.getElementById ~ formData:", formData);
 
   fetch(url, {
-      method: 'POST',
-      mode: 'no-cors',
-      body: formData
-  }).then(response => {
-      alert('Données envoyées avec succès!');
-  }).catch(error => {
-      alert('Erreur lors de l\'envoi des données.');
-  });
+    method: "POST",
+    mode: "no-cors",
+    body: formData,
+  })
+    .then((response) => {
+      alert("Données envoyées avec succès!");
+    })
+    .catch((error) => {
+      alert("Erreur lors de l'envoi des données.");
+    });
 });
