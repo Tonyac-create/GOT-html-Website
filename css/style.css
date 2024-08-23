@@ -208,12 +208,6 @@ nav#nav-main {
   width: 140px;
 }
 
-/* .nav-list li .highlight-icon {
-  margin-bottom: 5px;
-  font-size: 30px;
-  color: #f0a500;
-} */
-
 .link-node-navbar {
   height: 1px;
   background-color: #00aced;
@@ -303,13 +297,16 @@ nav#nav-mobile ul {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  box-shadow: 0 5px 3px rgba(238, 238, 238, 0.2);
   background-color: #071520;
 }
 
-/* nav#nav-mobile ul li svg, .link-node-navbar {
+nav#nav-mobile ul li svg {
   display: none;
-} */
+}
+
+nav#nav-mobile ul li .link-node-navbar {
+  display: none;
+}
 
 nav#nav-mobile ul:after {
   display: none;
@@ -1233,12 +1230,6 @@ h6 {
   }
 }
 
-/* --------- 6.6 Partenaires ---------- */
-#Partenaires {
-  display: flex;
-  flex-direction: column;
-}
-
 #landing-footer {
   position: fixed;
   bottom: 0;
@@ -1481,9 +1472,24 @@ main .design-about {
 /* =Media Queries for Nav
 ===============================*/
 @media all and (max-width: 1024px) {
+  #banner {
+    width: 30%;
+  }
+
   #nav-trigger {
     display: block;
-    margin-left: auto;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  nav#nav-mobile ul {
+    position: relative;
+  }
+
+  #nav-trigger .open {
+    display: flex;
   }
 
   nav#nav-main {
@@ -1496,6 +1502,46 @@ main .design-about {
 
   nav#nav-mobile li {
     display: block;
+  }
+
+  #content {
+    padding-top:70px;
+  }
+
+  /* Hero-Section */
+
+  #hero-section {
+    margin-top: 0;
+  }
+
+  .section-heading {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .section-heading img {
+    margin: 0 auto 0 auto;
+  }
+
+  .container {
+    width: 59%;
+    margin: 0 0 70px 52px;
+  }
+
+  .container ul li {
+    margin-bottom: 8px;
+  }
+
+  .circle-list-about-2 {
+    display: none;
+  }
+
+  .circle-list-about-3 {
+    display: none;
+  }
+
+  .link-node{
+    display: none;
   }
 }
 
