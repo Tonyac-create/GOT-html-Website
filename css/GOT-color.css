@@ -147,13 +147,13 @@ nav a {
   background-size: 50%;
 }
 
-#about {
+.about {
   background: url("../images/banner-images/meshgradient-CC.webp") no-repeat
     right bottom;
   background-size: 50%;
 }
 
-#projects {
+.project {
   background: url("../images/banner-images/Body_3_MGrdt-CC_html.webp") no-repeat
     left top;
   background-size: 70%;

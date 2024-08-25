@@ -251,7 +251,10 @@ function updateCarouselSettings() {
   let visibleCardsSecondCarousel = 3; // Valeur par défaut pour le second carrousel
 
   // Si l'écran est plus petit ou égal à 768px, ajuster les valeurs
-  if (window.matchMedia("(max-width: 1024px)").matches) {
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    visibleCardsFirstCarousel = 1;
+    visibleCardsSecondCarousel = 1;
+  } else if (window.matchMedia("(max-width: 1024px)").matches) {
     visibleCardsFirstCarousel = 2;
     visibleCardsSecondCarousel = 2;
   }

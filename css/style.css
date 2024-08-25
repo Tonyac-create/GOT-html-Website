@@ -1516,9 +1516,22 @@ main .design-about {
     margin-top: 0;
   }
 
+  #hero-section .title-hero h1 {
+    font-size: 53px;
+  }
+
+  #hero-section {
+    background-size: 78%;
+  }
+
+  .title-hero {
+    margin-left: 0;
+  }
+
   .section-heading {
     width: 100%;
     flex-direction: column;
+    margin-left: 16px;
   }
 
   .section-heading img {
@@ -1526,12 +1539,21 @@ main .design-about {
   }
 
   .container {
-    width: 59%;
-    margin: 0 0 70px 52px;
+    width: 90%;
+    margin: 0 0 70px 16px;
   }
 
   .container ul li {
     margin-bottom: 8px;
+  }
+
+  #CTA-hero-section {
+    margin-left: 0;
+  }
+
+  .button-discord {
+    display: flex;
+    justify-content: center;
   }
 
   .circle-list-about-2 {
@@ -1546,35 +1568,115 @@ main .design-about {
     display: none;
   }
 
+  .introduction {
+    margin-left: 16px;
+  }
+
   #about .col-3 {
+    width: 96%;
+  }
+
+  #about {
+    background: url("../images/banner-images/meshgradient-CC.webp") no-repeat
+      right center;
+    background-size: 100%;
+  }
+
+  #about .col-3 .section-title {
+    font-size: 53px;
+  }
+
+  .img-GOT {
     width: 100%;
+  }
+
+  .tag-about {
+    flex-direction: column;
+    margin-right: 16px;
+    margin-left: 0;
+  }
+
+  .CTA-about {
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  #projects {
+    background: url(../images/banner-images/Body_3_MGrdt-CC_html.webp) no-repeat left center;
+    background-size: 100%;
+  }
+
+  #gallery .card-gallery {
+    width: 90%;
+  }
+
+  .card-gallery ul {
+    width: 100%;
+  }
+
+  .CTA-projects {
+    text-align: center;
+    margin-right: 16px;
+  }
+
+  #Sedepasser .col-3 h2 {
+    font-size: 53px;
   }
 
   .sedepasser {
     flex-direction: column-reverse;
   }
 
-  .sedepasser-img {
-    margin: 0 auto 0 auto;
+  .sedepasser-text {
+    margin-left: 0;
   }
+
+  .sedepasser-title {
+    font-size: 28px;
+  }
+
+  /* .sedepasser-img {
+    margin: 0 auto 0 auto;
+  } */
 
   .CTA-sedepasser {
     display: flex;
     margin-bottom: 35px;
+    margin-right: 16px;
   }
 
   .CTA-sedepasser a {
     margin: 0 auto 0 auto;
   }
 
+  #testimonials .col-3 h2 {
+    font-size: 35px;
+    width: 100%;
+  }
+
+  .mtop-testimonials {
+    padding-bottom: 120px;
+  }
+
+  #testimonials .cards-testimonials {
+    height: 620px;
+  }
+
+  #testimonials .cards-testimonials blockquote {
+    width: 77%;
+    height: 601px;
+  }
+
   #landing-footer {
-    height: 120px !important;
+    height: 220px !important;
     flex-direction: column;
   }
 
   .link-partenaires {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   #landing-footer .link-partenaires a {
