@@ -1273,10 +1273,8 @@ h6 {
   height: 818px;
   padding: 100px 100px 0 87px;
   margin-top: 75px;
-  background-image: url("../images/banner-images/GOTHtml_APropos_PlumeCC.webp");
-  background-position: left bottom;
+  background: url("../images/banner-images/GOTHtml_APropos_PlumeCC.webp") no-repeat left bottom;
   background-size: 47%;
-  background-repeat: no-repeat;
 }
 
 #content-about h1 {
@@ -1470,7 +1468,7 @@ main .design-about {
 /* Responsive Elements */
 /*------------------------------------------------------------------------------------------*/
 
-/* =Media Queries for Nav
+/* =Media Queries
 ===============================*/
 @media all and (max-width: 1024px) {
   #banner {
@@ -1636,10 +1634,6 @@ main .design-about {
     font-size: 28px;
   }
 
-  /* .sedepasser-img {
-    margin: 0 auto 0 auto;
-  } */
-
   .CTA-sedepasser {
     display: flex;
     margin-bottom: 35px;
@@ -1686,6 +1680,37 @@ main .design-about {
 
   #landing-footer .link-footer-propos {
     margin: 0 auto 0 auto;
+  }
+
+  #content-about {
+    padding: 0;
+    margin-bottom: 30px;
+    margin-left: 16px;
+    background: url("../images/banner-images/GOTHtml_APropos_PlumeCC.webp") no-repeat -330px center;
+  background-size: 173%;
+  }
+
+  #content-about h1 {
+    font-size: 53px;
+  }
+
+  #content-about .styled-list-about {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #content-about .styled-list-about li {
+    width: 100%;
+    font-size: 21px;
+  }
+
+  #content-about .link-socials {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  main .design-about {
+    margin-top: 31px;
   }
 }
 
