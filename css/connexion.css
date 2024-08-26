@@ -238,3 +238,70 @@ span {
   margin-top: 122px;
   margin-right: 26px;
 }
+
+/* Media Queries */
+
+@media all and (max-width: 768px) {
+  #content-connexion-page {
+    margin-top: 96px;
+    height: 100%;
+  }
+
+  #content-connexion-page h1 {
+    margin-left: 16px;
+    padding: 0;
+    font-size: 43px;
+  }
+
+  .text-nofinish, .form-login {
+    padding: 0 16px 0 16px;
+  }
+
+  .form-login {
+    flex-direction: column;
+  }
+
+  #CTA-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 32px 0 0 0;
+  }
+
+  .enter {
+    display: flex;
+    align-items: center;
+  }
+
+  #beMember, #toSee {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
+
+  #toSee {
+    padding-bottom: 280px;
+  }
+
+  #content-register-page {
+    flex-direction: column;
+    margin-left: 16px;
+    margin-top: 90px;
+    height: 100%;
+  }
+
+  .memberSection p {
+    width: 100%;
+  }
+
+  .form-register, .form-register-toSee {
+    width: 97%;
+  }
+
+  #inscription {
+    margin-top: 30px;
+    margin-right: 0;
+    height: 890px;
+  }
+
+}

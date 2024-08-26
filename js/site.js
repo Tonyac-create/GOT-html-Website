@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Comportement des liens dnas la navbar au scrol sur la page
+// Comportement des liens dans la navbar au scroll sur la page
 document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll("#nav-main a");
 

@@ -1470,9 +1470,13 @@ main .design-about {
 
 /* =Media Queries
 ===============================*/
-@media all and (max-width: 1024px) {
+@media all and (max-width: 768px) {
   #banner {
     width: 30%;
+  }
+
+  #scrollUp {
+    bottom: 220px;
   }
 
   #nav-trigger {
@@ -1638,6 +1642,7 @@ main .design-about {
     display: flex;
     margin-bottom: 35px;
     margin-right: 16px;
+    text-align: center;
   }
 
   .CTA-sedepasser a {
@@ -1719,7 +1724,7 @@ main .design-about {
 @media (max-width: 480px) {
   #scrollUp,
   #scrollUp:before {
-    display: none;
+    /* display: none; */
   }
 
   .col-1,
@@ -1757,7 +1762,7 @@ main .design-about {
 
   /* Hide Elements */
   a#scrollUp {
-    display: none !important;
+    /* display: none !important; */
   }
 }
 
@@ -1766,7 +1771,7 @@ main .design-about {
 @media (min-width: 480px) and (max-width: 767px) {
   #scrollUp,
   #scrollUp:before {
-    display: none;
+    /* display: none; */
   }
 
   .col-1,

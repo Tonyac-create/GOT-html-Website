@@ -67,4 +67,8 @@ section a {
       no-repeat right center;
     background-size: 100%;
   }
+  
+  .page-404 {
+    margin-top: 184px;
+  }
 }
