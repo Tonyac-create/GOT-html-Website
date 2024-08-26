@@ -14,10 +14,12 @@
   padding-left: 85px;
   margin: 0;
   font-size: 21px;
+  font-style: italic;
 }
 
 .text-nofinish-register {
   font-size: 21px;
+  font-style: italic;
 }
 
 span {
@@ -258,7 +260,8 @@ span {
     font-weight: 600;
   }
 
-  .text-nofinish, .form-login {
+  .text-nofinish,
+  .form-login {
     padding: 0 16px 0 16px;
   }
 
@@ -273,7 +276,9 @@ span {
     margin: 32px 0 0 0;
   }
 
-  #CTA-login a, #CTA-beMember a, #CTA-toSee a {
+  #CTA-login a,
+  #CTA-beMember a,
+  #CTA-toSee a {
     font-size: 21px;
     font-weight: 600;
   }
@@ -283,14 +288,16 @@ span {
     align-items: center;
   }
 
-  #beMember, #toSee {
+  #beMember,
+  #toSee {
     padding-left: 16px;
     padding-right: 16px;
     width: 100%;
     margin-top: 70px;
   }
 
-  #beMember p, #toSee p {
+  #beMember p,
+  #toSee p {
     font-weight: 500;
   }
 
@@ -311,6 +318,11 @@ span {
     padding-top: 35px;
   }
 
+  .text-nofinish {
+    font-size: 18px;
+    font-style: italic;
+  }
+
   .text-nofinish-register {
     font-style: italic;
     font-size: 18px;
@@ -321,12 +333,12 @@ span {
     font-weight: 600;
   }
 
-
   .memberSection p {
     width: 100%;
   }
 
-  .form-register, .form-register-toSee {
+  .form-register,
+  .form-register-toSee {
     width: 97%;
   }
 
@@ -335,5 +347,4 @@ span {
     margin-right: 0;
     height: 890px;
   }
-
 }

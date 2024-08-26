@@ -258,7 +258,10 @@ input[type="submit"]:hover {
 
 #landing-footer,
 #landing-footer p,
-#landing-footer a {
+#landing-footer a,
+#landing-footer-about a,
+#landing-footer-connexion a,
+#landing-footer-register a {
   height: 50px;
   font-size: 18px;
   font-weight: normal;
