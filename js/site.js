@@ -209,6 +209,7 @@ function setupCarousel(
 
   // Événement pour la flèche de droite
   slideToRight.addEventListener("click", function () {
+    console.log("click");
     if (startIndex + visibleCards < galleryDivs.length) {
       startIndex++;
       updateGallery(galleryDivs, startIndex, visibleCards);

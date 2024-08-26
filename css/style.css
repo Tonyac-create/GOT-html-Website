@@ -688,7 +688,7 @@ h6 {
   margin-top: 24px;
   margin-left: auto;
   margin-right: auto;
-  height: 500px;
+  height: 572px;
   padding-left: 4px;
 }
 
@@ -734,7 +734,6 @@ h6 {
 }
 
 .testimonial.classic {
-  /* display: flex; */
   flex-direction: column;
   gap: 8px;
   border: 2px solid #0d2d45;
@@ -742,8 +741,7 @@ h6 {
   border-bottom-left-radius: 500px;
   border-bottom-right-radius: 500px;
   background: linear-gradient(to bottom, #071520, #0d2d45);
-  /* padding: 30px 30px 10px 30px; */
-  width: 380px;
+  width: 294px;
 }
 
 .testimonial.classic .person-footer {
@@ -1505,6 +1503,7 @@ main .design-about {
 
 /* =Media Queries
 ===============================*/
+
 @media all and (max-width: 768px) {
   #banner {
     width: 100%;
@@ -1762,11 +1761,13 @@ main .design-about {
 
   #testimonials .cards-testimonials {
     height: 620px;
+    margin-left: 70px;
+    margin-right: 70px;
   }
 
   #testimonials .cards-testimonials blockquote {
-    width: 77%;
-    height: 601px;
+    width: 80%;
+    height: 629px;
   }
 
   .testimonial.classic q {
@@ -1779,44 +1780,6 @@ main .design-about {
 
   #CTA-testimonials {
     font-size: 17px;
-  }
-
-  /* #landing-footer {
-    height: 220px !important;
-    flex-direction: column;
-  } */
-
-  #partners {
-    display: flex;
-    padding: 0 16px;
-  }
-
-  #partners .link-partenaires {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #partners .link-partenaires h2 {
-    font-size: 27px;
-    color: #fefefe;
-    padding-top: 0;
-    padding-bottom: 20px;
-  }
-
-  .link-partners {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-  }
-
-  #partners .link-partenaires a img {
-    height: 31px;
-  }
-
-  #landing-footer .link-partenaires {
-    display: none;
   }
 
   #landing-footer-about .link-partenaires,
@@ -1908,14 +1871,58 @@ main .design-about {
   }
 }
 
+@media all and (max-width: 550px) {
+  #testimonials .cards-testimonials blockquote {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  #landing-footer .link-partenaires {
+    display: none;
+  }
+
+  #partners {
+    display: flex;
+    padding: 0 16px;
+    margin-bottom: 164px;
+  }
+  
+  #partners .link-partenaires {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #partners .link-partenaires h2 {
+    font-size: 27px;
+    color: #fefefe;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .link-partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  #partners .link-partenaires a img {
+    height: 31px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .testimonial.classic {
+    width: 282px;
+  }
+}
+
 /* Landscape mobile & down
 ===============================*/
 @media (max-width: 480px) {
-  #scrollUp,
-  #scrollUp:before {
-    /* display: none; */
-  }
-
   .col-1,
   .col-2,
   .col-3,
