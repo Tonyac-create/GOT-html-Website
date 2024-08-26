@@ -131,7 +131,8 @@ nav a {
   background: linear-gradient(to bottom, #071520, #0d2d45);
 }
 
-#landing-footer {
+#landing-footer,
+#landing-footer-about {
   background: radial-gradient(circle at bottom, #0d2d45 10%, #071520);
 }
 
@@ -142,8 +143,8 @@ nav a {
 /* Sections Background and Text Colors = section 1 */
 
 .hero-section {
-  background: url("../images/banner-images/Body_MeshGradient-CC-N°1.webp")
-    no-repeat right bottom;
+  background: url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat right
+      bottom;
   background-size: 50%;
 }
 
@@ -166,14 +167,14 @@ nav a {
 }
 
 #content-connexion-page {
-  background: url("../images/banner-images/GOT_Connect_350px_CC_4.webp") no-repeat
-    left bottom;
+  background: url("../images/banner-images/GOT_Connect_350px_CC_4.webp")
+    no-repeat left bottom;
   background-size: 26%;
 }
 
 #content-register-page {
-  background: url("../images/banner-images/GOT_Formulaires_CC_1.webp")
-    no-repeat center bottom;
+  background: url("../images/banner-images/GOT_Formulaires_CC_1.webp") no-repeat
+    center bottom;
   background-size: 28%;
 }
 
@@ -183,19 +184,19 @@ nav a {
 
 /* Section 1 = La GOT Âme Title  */
 
-.section-title {
+/* .section-title {
   font-size: 60px;
   font-weight: 500;
   color: #ffffff;
   margin: 15px 0 8px 0;
-}
+} */
 
-.section-subtitle {
+/* .section-subtitle {
   font-size: 27px;
   font-weight: 300;
   line-height: 35px;
   color: #f6a316;
-}
+} */
 
 /*------------------------------------------------------------------------------------------*/
 /* 6. Buttons */

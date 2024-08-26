@@ -628,6 +628,7 @@ h6 {
   padding: 16px 24px;
   width: 280px;
   height: 99px;
+  background: linear-gradient(to left, #071520, #0d2d45);
 }
 
 .tag-about {
@@ -1232,7 +1233,7 @@ h6 {
 }
 
 #landing-footer {
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   width: 100%;
 }
@@ -1273,7 +1274,8 @@ h6 {
   height: 818px;
   padding: 100px 100px 0 87px;
   margin-top: 75px;
-  background: url("../images/banner-images/GOTHtml_APropos_PlumeCC.webp") no-repeat left bottom;
+  background: url("../images/banner-images/GOTHtml_APropos_PlumeCC.webp")
+    no-repeat left bottom;
   background-size: 47%;
 }
 
@@ -1464,6 +1466,28 @@ main .design-about {
   opacity: 1;
 }
 
+.section-title {
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 15px 0 8px 0;
+}
+
+.section-subtitle {
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 35px;
+  color: #f6a316;
+}
+
+.logo-hidden {
+  display: none;
+}
+
+#partners {
+  display: none;
+}
+
 /*------------------------------------------------------------------------------------------*/
 /* Responsive Elements */
 /*------------------------------------------------------------------------------------------*/
@@ -1476,7 +1500,7 @@ main .design-about {
   }
 
   #scrollUp {
-    bottom: 220px;
+    right: 5px;
   }
 
   #nav-trigger {
@@ -1519,11 +1543,16 @@ main .design-about {
   }
 
   #hero-section .title-hero h1 {
-    font-size: 53px;
+    font-size: 35px;
+    font-weight: 600;
   }
 
   #hero-section {
-    background-size: 78%;
+    /* background: url("../images/banner-images/MissTerry_Mobile_2.webp") no-repeat
+        right bottom,
+      url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat
+        right bottom; */
+    background-size:  78%;
   }
 
   .title-hero {
@@ -1547,10 +1576,13 @@ main .design-about {
 
   .container ul li {
     margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
   }
 
   #CTA-hero-section {
     margin-left: 0;
+    font-size: 17px;
   }
 
   .button-discord {
@@ -1584,18 +1616,41 @@ main .design-about {
     background-size: 100%;
   }
 
-  #about .col-3 .section-title {
-    font-size: 53px;
+  .section-title {
+    font-size: 35px;
+    font-weight: 600;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .img-GOT {
-    width: 100%;
+    width: 90%;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
   }
 
   .tag-about {
     flex-direction: column;
     margin-right: 16px;
     margin-left: 0;
+    gap: 0;
+  }
+
+  .tag {
+    background: none;
+    border: none;
+  }
+
+  .text-tag span {
+    font-size: 20px;
+  }
+
+  .text-tag p {
+    font-size: 15px;
   }
 
   .CTA-about {
@@ -1604,8 +1659,13 @@ main .design-about {
     margin-left: 0;
   }
 
+  .CTA-about a {
+    font-size: 17px;
+  }
+
   #projects {
-    background: url(../images/banner-images/Body_3_MGrdt-CC_html.webp) no-repeat left center;
+    background: url(../images/banner-images/Body_3_MGrdt-CC_html.webp) no-repeat
+      left center;
     background-size: 100%;
   }
 
@@ -1622,9 +1682,13 @@ main .design-about {
     margin-right: 16px;
   }
 
-  #Sedepasser .col-3 h2 {
-    font-size: 53px;
+  .CTA-projects a {
+    font-size: 17px;
   }
+
+  /* #Sedepasser .col-3 h2 {
+    font-size: 53px;
+  } */
 
   .sedepasser {
     flex-direction: column-reverse;
@@ -1635,7 +1699,32 @@ main .design-about {
   }
 
   .sedepasser-title {
-    font-size: 28px;
+    font-size: 21px;
+    font-weight: 600;
+  }
+
+  .sedepasser-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sedepasser-img img {
+    width: 80%;
+    height: 78%;
+  }
+
+  .sedepasser-list li {
+    font-size: 17px;
+  }
+
+  .logo-hidden {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .logo-hidden img {
+    width: 44%;
   }
 
   .CTA-sedepasser {
@@ -1647,6 +1736,7 @@ main .design-about {
 
   .CTA-sedepasser a {
     margin: 0 auto 0 auto;
+    font-size: 17px;
   }
 
   #testimonials .col-3 h2 {
@@ -1655,7 +1745,8 @@ main .design-about {
   }
 
   .mtop-testimonials {
-    padding-bottom: 120px;
+    padding-bottom: 60px;
+    margin-top: 0;
   }
 
   #testimonials .cards-testimonials {
@@ -1667,36 +1758,78 @@ main .design-about {
     height: 601px;
   }
 
-  #landing-footer {
+  .testimonial.classic q {
+    font-size: 20px;
+  }
+
+  #gallery .cards-testimonials .col-3 h2 {
+    font-size: 27px;
+  }
+
+  #CTA-testimonials {
+    font-size: 17px;
+  }
+
+  /* #landing-footer {
     height: 220px !important;
     flex-direction: column;
+  } */
+
+  #partners {
+    display: flex;
+    padding: 0 16px;
   }
 
-  .link-partenaires {
+  #partners .link-partenaires {
     display: flex;
+    flex-direction: column;
     align-items: center;
+  }
+
+  #partners .link-partenaires h2 {
+    font-size: 27px;
+    color: #fefefe;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .link-partners {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
   }
 
-  #landing-footer .link-partenaires a {
+  #partners .link-partenaires a img {
+    height: 31px;
+  }
+
+  #landing-footer .link-partenaires {
+    display: none;
+  }
+
+  /* #landing-footer .link-partenaires a {
     display: flex;
     align-items: center;
-  }
+  } */
 
   #landing-footer .link-footer-propos {
     margin: 0 auto 0 auto;
   }
 
   #content-about {
+    height: 756px;
     padding: 0;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     margin-left: 16px;
-    background: url("../images/banner-images/GOTHtml_APropos_PlumeCC.webp") no-repeat -330px center;
-  background-size: 173%;
+    background: url("../images/banner-images/GOTHtml_APropos_PlumeCC.webp")
+      no-repeat -17px bottom;
+    background-size: 104%;
   }
 
   #content-about h1 {
-    font-size: 53px;
+    font-size: 42px;
+    font-weight: 600;
   }
 
   #content-about .styled-list-about {
@@ -1706,7 +1839,7 @@ main .design-about {
 
   #content-about .styled-list-about li {
     width: 100%;
-    font-size: 21px;
+    font-size: 18px;
   }
 
   #content-about .link-socials {
@@ -1716,6 +1849,35 @@ main .design-about {
 
   main .design-about {
     margin-top: 31px;
+  }
+
+  #landing-footer-about {
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    padding: 0 16px;
+  }
+
+  .link-footer-propos {
+    margin-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .link-footer-propos a {
+    color: #2ab8cd;
+  }
+
+  #landing-footer-about .link-terry {
+    padding-right: 24px;
+    border-right: 2px solid #f6a316;
+  }
+
+  #landing-footer-about .link-about {
+    padding-left: 24px;
+  }
+
+  #landing-footer-about .link-partenaires a img {
+    height: 31px;
   }
 }
 
