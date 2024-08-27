@@ -1,6 +1,3 @@
-<div style="background-color: black; color: white; padding: 20px;">
-
-
 ![](./images/Logos/logo_99px.webp)
 
 # Guild OpenTech
@@ -27,5 +24,3 @@ Merci, enjoy :D
 [![GitHub Logo](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/Tonyac-create)
 
 <a href="https://www.linkedin.com/in/angelique-copere-dev/">Mon LinkedIn Angélique copéré</a>
-
-</div>
