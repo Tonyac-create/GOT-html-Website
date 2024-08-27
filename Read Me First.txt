@@ -1,7 +1,0 @@
-Dans l'esprit de Guild Open Tech, nous avons créé ce site vitrine en open source afin qu'il puisse aussi être utilisé comme base de développement par d'autres.
-
-Si vous appréciez ce travail et qu'il vous est utile, merci de bien vouloir nous supporter en allant mettre un témoignage 
-* dans l'application définitive sur www.guildopentech.org
-* en nous envoyant un témoignage par email à contact@guidopentech.org
-
-Merci, enjoy :D

@@ -1244,8 +1244,6 @@ h6 {
   margin: 16px 0;
 }
 
-
-
 #landing-footer .link-partenaires a,
 #landing-footer-about .link-partenaires a,
 #landing-footer-connexion .link-partenaires a,
@@ -1789,9 +1787,9 @@ main .design-about {
     margin: 0;
   }
 
-  #landing-footer .link-footer-propos {
+  /* #landing-footer .link-footer-propos {
     margin: 0 auto 0 auto;
-  }
+  } */
 
   #content-about {
     height: 756px;
@@ -1845,6 +1843,7 @@ main .design-about {
     color: #2ab8cd;
   }
 
+
   #landing-footer-about .link-terry,
   #landing-footer-connexion .link-terry,
   #landing-footer-register .link-terry {
@@ -1882,12 +1881,20 @@ main .design-about {
     display: none;
   }
 
+  #landing-footer .link-footer-propos,
+  #landing-footer-about .link-footer-propos,
+  #landing-footer-connexion .link-footer-propos,
+  #landing-footer-register .link-footer-propos {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   #partners {
     display: flex;
     padding: 0 16px;
     margin-bottom: 164px;
   }
-  
+
   #partners .link-partenaires {
     display: flex;
     flex-direction: column;
@@ -1947,7 +1954,6 @@ main .design-about {
 /* Mobile to Tablet Portrait
 ===============================*/
 @media (min-width: 480px) and (max-width: 767px) {
-
   .col-1,
   .col-2,
   .col-2-3 {
