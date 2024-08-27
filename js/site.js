@@ -248,7 +248,7 @@ function setupCarousel(
 
 // Fonction pour mettre à jour le carrousel en fonction de la taille de l'écran
 function updateCarouselSettings() {
-  let visibleCardsFirstCarousel = 4; // Valeur par défaut pour le premier carrousel
+  let visibleCardsFirstCarousel = 3; // Valeur par défaut pour le premier carrousel
   let visibleCardsSecondCarousel = 3; // Valeur par défaut pour le second carrousel
 
   // Si l'écran est plus petit ou égal à 768px, ajuster les valeurs

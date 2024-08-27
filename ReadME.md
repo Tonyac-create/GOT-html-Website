@@ -1,7 +1,5 @@
 ![](./images/Logos/LOGO_TxtBk_99pxdesvg.webp)
 
-# Guild OpenTech
-
 Dans l'esprit de Guild Open Tech, nous avons créé ce site vitrine en open source afin qu'il puisse aussi être utilisé comme base de développement par d'autres.
 
 Si vous appréciez ce travail et qu'il vous est utile, merci de bien vouloir nous supporter en allant mettre un témoignage
