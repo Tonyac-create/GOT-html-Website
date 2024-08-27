@@ -1,4 +1,4 @@
-![](./images/Logos/logo_99px.webp)
+![](./images/Logos/LOGO_TxtBk_99pxdesvg.webp)
 
 # Guild OpenTech
 
