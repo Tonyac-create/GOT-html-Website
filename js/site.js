@@ -102,19 +102,11 @@ document.addEventListener("DOMContentLoaded", function () {
       if (svg && svg.classList.contains("highlight-icon")) {
         svg.querySelector("circle").style.stroke = "#f6a316";
         svg.querySelector("circle").style.fill = "#f6a316";
-        // svg.style.filter = `
-        // drop-shadow(0 0 5px #2AB8CD)
-        // drop-shadow(0 0 10px #2AB8CD)
-        // drop-shadow(0 0 20px #2AB8CD)
-        // drop-shadow(0 0 40px #2AB8CD)
-        // drop-shadow(0 0 80px #2AB8CD)
-        // drop-shadow(0 0 120px #2AB8CD)
-        // `;
       }
     });
 
     link.addEventListener("mouseleave", function () {
-      updateSpanColors(); // Rétablit les couleurs d'origine ou actives
+      updateSpanColors(); 
     });
   });
   const sectionAExclure = document.getElementById("about");
@@ -126,23 +118,24 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Comportement des liens dans la navbar au scroll sur la page
+// Comportement des liens dans la navbar
 document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll("#nav-main a");
+  const navLinks = document.querySelectorAll("#nav-main a, #nav-mobile a")
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
-      const target = link.getAttribute("href");
+      console.log("click")
+      const target = link.getAttribute("href")
 
       // Vérifie si le lien est un ID (scroll vers une section)
       if (target.startsWith("#")) {
-        event.preventDefault();
-        const section = document.querySelector(target);
+        event.preventDefault()
+        const section = document.querySelector(target)
         if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
+          section.scrollIntoView({ behavior: "smooth" })
         }
       } else {
-        window.location.href = target;
+        window.location.href = target
       }
     });
   });

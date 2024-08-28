@@ -262,9 +262,7 @@ nav#nav-main {
   height: 28px;
 }
 
-#nav-trigger span:hover,
-.nav-solid #nav-trigger span.open:hover,
-.nav-solid #nav-trigger span:hover {
+#nav-trigger span:hover {
   opacity: 1;
 }
 
@@ -306,21 +304,6 @@ nav#nav-mobile li {
 nav#nav-mobile li:last-child {
   border-bottom: none;
 }
-
-/* nav#nav-mobile a {
-  display: block;
-  padding: 12px 0;
-  color: #333;
-  width: 100%;
-  height: auto;
-  line-height: normal;
-  display: block;
-  border-bottom: none !important;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-} */
 
 nav#nav-mobile a:hover {
   color: #2ab8cd;
@@ -1504,6 +1487,7 @@ main .design-about {
   }
 
   nav#nav-mobile ul {
+    display: none;
     position: relative;
   }
 
@@ -1876,7 +1860,7 @@ main .design-about {
   #partners {
     display: flex;
     padding: 0 16px;
-    margin-bottom: 164px;
+    margin-bottom: 20px;
   }
 
   #partners .link-partenaires {
