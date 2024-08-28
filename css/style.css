@@ -1848,7 +1848,7 @@ main .design-about {
   }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1460px) {
   #landing-footer .link-partenaires {
     display: none;
   }
@@ -1864,7 +1864,7 @@ main .design-about {
   #partners {
     display: flex;
     padding: 0 16px;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
   }
 
   #partners .link-partenaires {
@@ -1879,6 +1879,11 @@ main .design-about {
     color: #fefefe;
     padding-top: 0;
     padding-bottom: 20px;
+  }
+
+  .links-partners {
+    display: flex;
+    gap: 16px;
   }
 
   .link-partners {
