@@ -3,14 +3,29 @@
 }
 
 #mentions {
+  margin-bottom: 100px;
   margin-left: 86px;
+}
+
+#mentions-cookies {
+  margin: 0 86px 100px 86px;
+}
+
+#mentions h1 {
+  font-size: 48px;
 }
 
 .mentions-span {
   color: #2ab8cd;
+  font-weight: 600;
+}
+
+.mentions-span-2 {
+  color: #f6a316;
 }
 
 #landing-footer-mentions {
+  width: 100%;
   background: radial-gradient(circle at bottom, #0d2d45 10%, #071520);
   display: flex;
   align-items: center;
@@ -49,4 +64,8 @@
 
 #landing-footer-mentions .link-about {
   padding-left: 24px;
+}
+
+.list-CGU li {
+  margin-bottom: 16px;
 }

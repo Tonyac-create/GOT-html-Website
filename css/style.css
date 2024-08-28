@@ -200,6 +200,10 @@ nav#nav-main {
   margin: 0;
 }
 
+nav#nav-mobile .expanded {
+  display: flex;
+}
+
 .nav-list li {
   display: flex;
   flex-direction: column;
