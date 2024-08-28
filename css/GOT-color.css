@@ -73,6 +73,12 @@ nav a {
     0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd; */
 }
 
+/* Header Colors when the Navigation is sticky and solid */
+
+.nav-list ul li a {
+  color: #f6a316;
+}
+
 /* Header Active State */
 
 .nav-list li a.active {
@@ -81,11 +87,7 @@ nav a {
     0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
 }
 
-/* Header Colors when the Navigation is sticky and solid */
 
-#nav-mobile ul li a {
-  color: #f6a316;
-}
 /* Border Color _ Cadres _ sections 6_Témoignages et 7_GOT Connexion */
 
 .pricing-block-content:hover {
