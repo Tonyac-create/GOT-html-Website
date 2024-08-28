@@ -1,0 +1,52 @@
+#content-mentions {
+  margin-top: 150px;
+}
+
+#mentions {
+  margin-left: 86px;
+}
+
+.mentions-span {
+  color: #2ab8cd;
+}
+
+#landing-footer-mentions {
+  background: radial-gradient(circle at bottom, #0d2d45 10%, #071520);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  padding: 0 28px 0 28px;
+}
+
+#landing-footer-mentions .link-partenaires {
+  display: flex;
+  margin: 16px 0;
+}
+
+#landing-footer-mentions .link-partenaires a {
+  margin-right: 10px;
+  align-content: center;
+}
+
+#landing-footer-mentions .link-partenaires a img {
+  height: 31px;
+}
+
+#landing-footer-mentions .link-footer-propos {
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+#landing-footer-mentions .link-footer-propos a {
+    color: #2ab8cd;
+  }
+
+#landing-footer-mentions .link-terry {
+  padding-right: 24px;
+  border-right: 2px solid #f6a316;
+}
+
+#landing-footer-mentions .link-about {
+  padding-left: 24px;
+}
