@@ -7,7 +7,7 @@
   margin-left: 86px;
 }
 
-#mentions-cookies {
+#mentions-cookies, #mentions {
   margin: 0 86px 100px 86px;
 }
 
@@ -15,9 +15,27 @@
   font-size: 48px;
 }
 
+#mentions-cookies h1 {
+  font-size: 48px;
+}
+
+#mentions-cookies ul li {
+  margin-bottom: 8px;
+}
+
 .mentions-span {
   color: #2ab8cd;
   font-weight: 600;
+  font-size: 21px;
+}
+
+.mentions-span-text {
+  color: #2ab8cd;
+}
+
+.base {
+  display: flex;
+  margin: 18px 0;
 }
 
 .mentions-span-2 {
