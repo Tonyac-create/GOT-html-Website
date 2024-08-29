@@ -949,7 +949,13 @@ h6 {
 }
 
 .CTA-sedepasser {
+  display: flex;
   margin-top: 45px;
+}
+
+.CTA-depasser {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /**
@@ -1586,6 +1592,10 @@ main .design-about {
     margin-left: 16px;
   }
 
+  .mtop {
+    margin-top: 95px;
+  }
+
   #about .col-3 {
     width: 96%;
   }
@@ -1608,7 +1618,7 @@ main .design-about {
   }
 
   .section-subtitle {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 24px;
   }
@@ -1681,6 +1691,7 @@ main .design-about {
   .sedepasser-img {
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .sedepasser-img img {
@@ -1707,6 +1718,7 @@ main .design-about {
     margin-bottom: 35px;
     margin-right: 16px;
     text-align: center;
+    margin-top: 0;
   }
 
   .CTA-sedepasser a {
@@ -1878,6 +1890,8 @@ main .design-about {
 
   .links-partners {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
   }
 
