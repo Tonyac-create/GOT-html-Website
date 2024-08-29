@@ -92,6 +92,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateSpanColors();
 
+  window.addEventListener("scroll", updateSpanColors);
+
   // Attacher les événements mouseenter et mouseleave à chaque lien
   var links = document.querySelectorAll("#nav-main li a");
   links.forEach(function (link) {
@@ -119,50 +121,37 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const burgerIcone = document.getElementById("burger");
-  console.log("🚀 ~ burgerIcone:", burgerIcone);
-
-  window.addEventListener("scroll", () => {
-    console.log("scroll");
-    burgerIcone.classList.remove("open");
-  });
-});
-
-// Comportement des liens dans la navbar
-document.addEventListener("DOMContentLoaded", function () {
-  const burgerIcone = document.getElementById("burger");
   const navMobile = document.querySelector("nav#nav-mobile ul");
 
   window.addEventListener("scroll", () => {
-    // Check if the menu is currently expanded
     if (navMobile.classList.contains("expanded")) {
-      // Close the menu
       navMobile.classList.remove("expanded");
-      navMobile.style.display = "none"; // To ensure it's hidden after removing the class
+      navMobile.style.display = "none";
       burgerIcone.classList.remove("open");
     }
   });
 });
-// document.addEventListener("DOMContentLoaded", function () {
-//   const navLinks = document.querySelectorAll("#nav-main a, #nav-mobile a");
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll("#nav-main a, #nav-mobile a");
 
-//   navLinks.forEach((link) => {
-//     link.addEventListener("click", function (event) {
-//       console.log("click");
-//       const target = link.getAttribute("href");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      console.log("click");
+      const target = link.getAttribute("href");
 
-//       // Vérifie si le lien est un ID (scroll vers une section)
-//       if (target.startsWith("#")) {
-//         event.preventDefault();
-//         const section = document.querySelector(target);
-//         if (section) {
-//           section.scrollIntoView({ behavior: "smooth" });
-//         }
-//       } else {
-//         window.location.href = target;
-//       }
-//     });
-//   });
-// });
+      // Vérifie si le lien est un ID (scroll vers une section)
+      if (target.startsWith("#")) {
+        event.preventDefault();
+        const section = document.querySelector(target);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        }
+      } else {
+        window.location.href = target;
+      }
+    });
+  });
+});
 
 // Compteur pour section GOT-Ame
 document.addEventListener("DOMContentLoaded", () => {
