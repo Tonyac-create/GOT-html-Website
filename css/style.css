@@ -285,6 +285,10 @@ nav#nav-mobile ul {
   padding-bottom: 10px;
   text-align: center;
   background-color: #071520;
+  margin-left: -40px;
+  margin-right: -40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 nav#nav-mobile ul li svg {
@@ -1751,7 +1755,7 @@ main .design-about {
 
   .mtop-testimonials {
     padding-bottom: 60px;
-    margin-top: 0;
+    margin-top: 50px;
   }
 
   #testimonials .cards-testimonials {
@@ -1848,7 +1852,6 @@ main .design-about {
   .link-footer-propos a {
     color: #2ab8cd;
   }
-
 
   #landing-footer-about .link-terry,
   #landing-footer-connexion .link-terry,
@@ -1974,17 +1977,7 @@ main .design-about {
   }
 
   .col-3 {
-    width: 50%;
-  }
-
-  /*-----------------Header Elements-----------------*/
-
-  /*Navigation*/
-  nav#nav-mobile ul {
-    margin-left: -40px;
-    margin-right: -40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 90%;
   }
 }
 

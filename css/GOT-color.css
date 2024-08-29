@@ -132,8 +132,7 @@ nav a {
   background: linear-gradient(to bottom, #071520, #0d2d45);
 }
 
-#landing-footer,
-#landing-footer-about {
+#landing-footer {
   background: radial-gradient(circle at bottom, #0d2d45 10%, #071520);
 }
 
@@ -184,6 +183,10 @@ nav a {
 @media all and (max-width: 768px) {
   #content-connexion-page {
     background-size: 30%;
+  }
+
+  #content-register-page {
+    background-size: 39%;
   }
 }
 

@@ -60,7 +60,7 @@ $(window).load(function () {
 // Comportement des ronds dans la navbar et du lien GOT Connexion
 document.addEventListener("DOMContentLoaded", function () {
   function updateSpanColors() {
-    var links = document.querySelectorAll("#nav-main li a");
+    var links = document.querySelectorAll("#nav-main li a, #nav-mobile li a");
 
     links.forEach(function (link) {
       var svg = link.previousElementSibling;
@@ -106,36 +106,37 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     link.addEventListener("mouseleave", function () {
-      updateSpanColors(); 
+      updateSpanColors();
     });
   });
-  const sectionAExclure = document.getElementById("about");
-  const sectionAExclure2 = document.getElementById("testimonials");
 
-  if (sectionAExclure) {
-    sectionAExclure.removeAttribute("tabindex");
-    sectionAExclure2.removeAttribute("tabindex");
+  const sectionsAExclure = document.querySelectorAll("section");
+
+  if (sectionsAExclure) {
+    sectionsAExclure.forEach(function (section) {
+      section.removeAttribute("tabindex");
+    });
   }
 });
 
 // Comportement des liens dans la navbar
 document.addEventListener("DOMContentLoaded", function () {
-  const navLinks = document.querySelectorAll("#nav-main a, #nav-mobile a")
+  const navLinks = document.querySelectorAll("#nav-main a, #nav-mobile a");
 
   navLinks.forEach((link) => {
     link.addEventListener("click", function (event) {
-      console.log("click")
-      const target = link.getAttribute("href")
+      console.log("click");
+      const target = link.getAttribute("href");
 
       // Vérifie si le lien est un ID (scroll vers une section)
       if (target.startsWith("#")) {
-        event.preventDefault()
-        const section = document.querySelector(target)
+        event.preventDefault();
+        const section = document.querySelector(target);
         if (section) {
-          section.scrollIntoView({ behavior: "smooth" })
+          section.scrollIntoView({ behavior: "smooth" });
         }
       } else {
-        window.location.href = target
+        window.location.href = target;
       }
     });
   });
@@ -177,12 +178,12 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Sélectionner la section à exclure
-const sectionAExclure = document.getElementById("about");
+// const sectionAExclure = document.querySelectorAll("section");
 
 // Retirer l'attribut tabindex de cette section spécifique
-if (sectionAExclure) {
-  sectionAExclure.removeAttribute("tabindex");
-}
+// if (sectionAExclure) {
+//   sectionAExclure.removeAttribute("tabindex");
+// }
 
 /* Carousel */
 // Fonction générique pour gérer les événements de clic
@@ -285,8 +286,6 @@ function updateGallery(galleryDivs, startIndex, visibleCards) {
     }
   });
 }
-
-
 
 // URL de l'App Script
 // https://script.google.com/macros/s/AKfycby9dxiHuZowuSEEKPH_Jf3jk4cQUDxpIIVtdH5MRwJdI9ki4Wku_xntU63QDhV7S5IV9w/exec

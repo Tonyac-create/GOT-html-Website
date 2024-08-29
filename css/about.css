@@ -1,5 +1,5 @@
 #content-mentions {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 #mentions {
@@ -86,4 +86,10 @@
 
 .list-CGU li {
   margin-bottom: 16px;
+}
+
+@media all and (max-width: 768px) {
+  #mentions, #mentions-cookies {
+    margin: 0 16px 24px 16px;
+  }
 }
