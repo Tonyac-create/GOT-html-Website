@@ -1413,7 +1413,7 @@ main .design-about {
 .title-footer {
   font-size: 18px;
   font-weight: 500;
-  color: #2ab8cd;
+  color: #fefefe;
   margin-right: 20px;
 }
 
@@ -1693,6 +1693,7 @@ main .design-about {
 
   .sedepasser {
     flex-direction: column-reverse;
+    margin-bottom: 0;
   }
 
   .sedepasser-text {
@@ -1708,11 +1709,12 @@ main .design-about {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .sedepasser-img img {
     width: 80%;
-    height: 78%;
+    height: 86%;
   }
 
   .sedepasser-list li {
@@ -1830,8 +1832,12 @@ main .design-about {
   #landing-footer-register {
     display: flex;
     flex-direction: column;
-    height: 205px;
+    height: 230px;
     padding: 0 16px;
+  }
+
+  #landing-footer-about .title-footer {
+    padding-bottom: 0;
   }
 
   .link-footer-propos {
