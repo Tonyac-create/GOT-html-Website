@@ -543,6 +543,9 @@ h6 {
 }
 
 .icon-top .icon {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   position: relative;
   display: block;
 }
@@ -1218,7 +1221,7 @@ h6 {
 #landing-footer-connexion .link-partenaires,
 #landing-footer-register .link-partenaires {
   display: flex;
-  margin: 16px 0;
+  /* margin: 16px 0; */
 }
 
 #landing-footer .link-partenaires a,
@@ -1226,7 +1229,8 @@ h6 {
 #landing-footer-connexion .link-partenaires a,
 #landing-footer-register .link-partenaires a {
   margin-right: 10px;
-  align-content: center;
+  display: flex;
+  align-items: center;
 }
 
 #landing-footer .link-partenaires img,
@@ -1401,8 +1405,9 @@ main .design-about {
 #landing-footer-register {
   display: flex;
   align-items: center;
+  justify-content: center;
   clear: both;
-  padding: 0 28px 0 28px;
+  /* padding: 0 28px 0 28px; */
 }
 
 .title-footer {
@@ -1617,6 +1622,16 @@ main .design-about {
     width: 90%;
   }
 
+  .icon-top .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .icon-block h4 {
+    padding: 0;
+  }
+
   .section-subtitle {
     font-size: 20px;
     font-weight: 500;
@@ -1763,17 +1778,13 @@ main .design-about {
   #landing-footer-connexion .link-partenaires,
   #landing-footer-register .link-partenaires {
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0;
   }
-
-  /* #landing-footer .link-footer-propos {
-    margin: 0 auto 0 auto;
-  } */
 
   #content-about {
     height: 756px;
     padding: 0;
-    /* margin-bottom: 30px; */
     margin-left: 16px;
     background: url("../images/banner-images/GOTHtml_APropos_PlumeCC.webp")
       no-repeat -17px bottom;
@@ -1790,18 +1801,27 @@ main .design-about {
     width: 100%;
   }
 
+  #content-about .link-socials a img {
+    width: 40px;
+    height: 40px;
+  }
+
   #content-about .styled-list-about li {
     width: 100%;
     font-size: 18px;
   }
 
   #content-about .link-socials {
+    margin-top: 81px;
     margin-left: 0;
     justify-content: center;
   }
 
   main .design-about {
-    margin-top: 31px;
+    font-size: 16px;
+    margin-top: auto;
+    padding-right: 8px;
+    padding-bottom: 5px;
   }
 
   #landing-footer-about,
