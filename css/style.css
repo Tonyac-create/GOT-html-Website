@@ -1539,11 +1539,11 @@ main .design-about {
   }
 
   #hero-section {
-    /* background: url("../images/banner-images/MissTerry_Mobile_2.webp") no-repeat
+    background: url("../images/banner-images/Miss_Terry_Mobile.webp") no-repeat
         right bottom,
       url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat
-        right bottom; */
-    background-size: 78%;
+        right bottom;
+    background-size: 17%, 78%;
   }
 
   .title-hero {
@@ -1554,6 +1554,7 @@ main .design-about {
     width: 100%;
     flex-direction: column;
     margin-left: 16px;
+    padding-right: 16px;
   }
 
   .section-heading img {

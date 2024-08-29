@@ -87,7 +87,6 @@ nav a {
     0 0 40px #2ab8cd, 0 0 80px #2ab8cd, 0 0 120px #2ab8cd;
 }
 
-
 /* Border Color _ Cadres _ sections 6_Témoignages et 7_GOT Connexion */
 
 .pricing-block-content:hover {
@@ -145,9 +144,11 @@ nav a {
 /* Sections Background and Text Colors = section 1 */
 
 .hero-section {
-  background: url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat right
+  background: url("../images/banner-images/Miss_Terry.webp") no-repeat
+      right bottom,
+    url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat right
       bottom;
-  background-size: 50%;
+  background-size: 9%, 50%;
 }
 
 .about {
