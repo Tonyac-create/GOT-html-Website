@@ -181,25 +181,11 @@ nav a {
   background-size: 28%;
 }
 
-/*------------------------------------------------------------------------------------------*/
-/* 5. Typography */
-/*------------------------------------------------------------------------------------------*/
-
-/* Section 1 = La GOT Âme Title  */
-
-/* .section-title {
-  font-size: 60px;
-  font-weight: 500;
-  color: #ffffff;
-  margin: 15px 0 8px 0;
-} */
-
-/* .section-subtitle {
-  font-size: 27px;
-  font-weight: 300;
-  line-height: 35px;
-  color: #f6a316;
-} */
+@media all and (max-width: 768px) {
+  #content-connexion-page {
+    background-size: 30%;
+  }
+}
 
 /*------------------------------------------------------------------------------------------*/
 /* 6. Buttons */
