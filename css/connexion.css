@@ -249,6 +249,10 @@ span {
     height: 100%;
   }
 
+  #content-connexion-page {
+    background-size: 19%;
+  }
+
   #content-connexion-page h1 {
     margin-left: 16px;
     padding: 0;
