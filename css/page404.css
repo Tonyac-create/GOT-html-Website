@@ -1,6 +1,6 @@
-body {
+/* body {
   height: 100vh;
-}
+} */
 
 #content-page404 {
   display: flex;
@@ -8,12 +8,10 @@ body {
   align-items: start;
   height: 80%;
   margin-top: 150px;
-}
-
-.content {
-  background: url("../images/banner-images/Body_2_MeshGradient-CC_html.webp")
+  background: url("../images/banner-images/Miss_Terry.webp") no-repeat right bottom,
+    url("../images/banner-images/Body_2_MeshGradient-CC_html.webp")
     no-repeat right bottom;
-  background-size: 60%;
+  background-size: 9%, 60%;
 }
 
 span {
@@ -62,10 +60,11 @@ section a {
     font-size: 21px;
   }
 
-  .content {
-    background: url("../images/banner-images/Body_2_MeshGradient-CC_html.webp")
-      no-repeat right center;
-    background-size: 100%;
+  #content-page404 {
+    background: url("../images/banner-images/Miss_Terry_Mobile.webp") no-repeat right bottom,
+    url("../images/banner-images/Body_2_MeshGradient-CC_html.webp")
+    no-repeat right bottom;
+  background-size: 21%, 100%;
   }
   
   .page-404 {
