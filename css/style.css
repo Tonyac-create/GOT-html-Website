@@ -1548,6 +1548,7 @@ main .design-about {
       url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat
         right bottom;
     background-size: 14%, 78%;
+    padding-right: 16px;
   }
 
   .title-hero {
