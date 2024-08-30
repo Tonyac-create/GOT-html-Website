@@ -1786,11 +1786,11 @@ main .design-about {
   .logo-hidden {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .logo-hidden img {
-    width: 38%;
+    width: 32%;
   }
 
   .CTA-sedepasser {
@@ -2016,6 +2016,10 @@ main .design-about {
 
   .sedepasser-img img {
     height: 75%;
+  }
+
+  .logo-hidden img {
+    width: 38%;
   }
 }
 
