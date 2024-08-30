@@ -1249,7 +1249,7 @@ h6 {
 #landing-footer-about .link-partenaires img,
 #landing-footer-connexion .link-partenaires img,
 #landing-footer-register .link-partenaires img {
-  height: 31px;
+  height: 19px;
 }
 
 #landing-footer .link-footer-propos,
@@ -1427,6 +1427,8 @@ main .design-about {
   font-weight: 500;
   color: #fefefe;
   margin-right: 20px;
+  padding-top: 35px;
+  padding-bottom: 0;
 }
 
 /* Scroll Up */
@@ -1495,6 +1497,13 @@ main .design-about {
 
 /* =Media Queries
 ===============================*/
+@media all and (max-width: 768px) {
+  #landing-footer-about,
+  #landing-footer-connexion,
+  #landing-footer-register {
+    height: 132px;
+  }
+}
 
 @media all and (max-width: 1420px) {
   #landing-footer-about,
@@ -1502,9 +1511,10 @@ main .design-about {
   #landing-footer-register {
     display: flex;
     flex-direction: column;
-    height: 204px;
+    height: 89px;
     padding: 0 16px;
     padding-bottom: 16px;
+    background: radial-gradient(circle at bottom, #0d2d45 10%, #071520 80%);
   }
 }
 
@@ -1916,15 +1926,15 @@ main .design-about {
   }
 
   #landing-footer-about .link-partenaires a img {
-    height: 31px;
+    height: 19px;
   }
 
   #landing-footer-connexion .link-partenaires a img {
-    height: 31px;
+    height: 19px;
   }
 
   #landing-footer-register .link-partenaires a img {
-    height: 31px;
+    height: 19px;
   }
 }
 
