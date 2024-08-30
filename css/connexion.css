@@ -149,7 +149,7 @@ span {
   display: flex;
   flex-direction: column;
   padding-left: 237px;
-  width: 46%;
+  /* width: 46%; */
   margin-top: 48px;
 }
 
@@ -239,6 +239,11 @@ span {
 #inscription {
   margin-top: 122px;
   margin-right: 26px;
+}
+
+
+.link-asso {
+  color: #f6a316;
 }
 
 /* Media Queries */
