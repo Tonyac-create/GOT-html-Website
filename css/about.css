@@ -7,7 +7,8 @@
   margin-left: 86px;
 }
 
-#mentions-cookies, #mentions {
+#mentions-cookies,
+#mentions {
   margin: 0 86px 100px 86px;
 }
 
@@ -21,6 +22,10 @@
 
 #mentions-cookies ul li {
   margin-bottom: 8px;
+}
+
+#mentions-cookies p {
+  line-height: 28px;
 }
 
 .mentions-span {
@@ -48,6 +53,48 @@
 
 .btn-accept-CGU {
   margin-right: 150px;
+}
+
+.unscribe {
+  display: none;
+}
+
+.unscribe-display {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #0d2d45;
+  background-color: #071520;
+  padding: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+
+@media all and (max-width: 768px) {
+  .unscribe-display {
+    left: 20%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .unscribe-display {
+    left: 6%
+  }
+}
+
+.unscribe-display p {
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+#btn-closed {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 15px;
+  font-size: 20px;
 }
 
 #landing-footer-mentions {
@@ -80,8 +127,8 @@
 }
 
 #landing-footer-mentions .link-footer-propos a {
-    color: #2ab8cd;
-  }
+  color: #2ab8cd;
+}
 
 #landing-footer-mentions .link-terry {
   padding-right: 24px;
@@ -105,7 +152,8 @@
 }
 
 @media all and (max-width: 768px) {
-  #mentions, #mentions-cookies {
+  #mentions,
+  #mentions-cookies {
     margin: 0 16px 24px 16px;
   }
 }

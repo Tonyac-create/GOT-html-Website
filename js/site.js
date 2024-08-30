@@ -57,6 +57,22 @@ $(window).load(function () {
 
 /* Ajout Js Angèle */
 
+document.addEventListener("DOMContentLoaded", () => {
+  const link = document.getElementById("link-unscribe");
+  const divUnscribe = document.getElementById("text-unscribe");
+  const btn = document.getElementById("btn-closed");
+
+  link.addEventListener("click", function () {
+    divUnscribe.classList.remove("unscribe");
+    divUnscribe.classList.add("unscribe-display");
+  });
+
+  btn.addEventListener("click", () => {
+    divUnscribe.classList.remove("unscribe-display");
+    divUnscribe.classList.add("unscribe");
+  })
+});
+
 // Comportement des ronds dans la navbar et du lien GOT Connexion
 document.addEventListener("DOMContentLoaded", function () {
   function updateSpanColors() {

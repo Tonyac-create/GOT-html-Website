@@ -1291,6 +1291,7 @@ h6 {
   background: url("../images/banner-images/GOTHtml_APropos_PlumeCC.webp")
     no-repeat left bottom;
   background-size: 47%;
+  position: relative;
 }
 
 #content-about h1 {
