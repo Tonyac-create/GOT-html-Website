@@ -136,7 +136,9 @@ nav a {
   background: linear-gradient(to bottom, #071520, #0d2d45);
 }
 
-#landing-footer {
+#landing-footer,
+#landing-footer-connexion,
+#landing-footer-register {
   background: radial-gradient(circle at bottom, #0d2d45 10%, #071520);
 }
 
@@ -147,8 +149,8 @@ nav a {
 /* Sections Background and Text Colors = section 1 */
 
 .hero-section {
-  background: url("../images/banner-images/Miss_Terry.webp") no-repeat
-      right bottom,
+  background: url("../images/banner-images/Miss_Terry.webp") no-repeat right
+      bottom,
     url("../images/banner-images/Body_MeshGradient-CC-N°1.webp") no-repeat right
       bottom;
   background-size: 7%, 50%;

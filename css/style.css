@@ -511,7 +511,7 @@ h6 {
 }
 
 #CTA-Miss-Terry {
-  margin-left: 50px;
+  margin-left: 260px;
 }
 
 /*------------------------------------------------------------------------------------------*/
@@ -920,7 +920,9 @@ h6 {
 }
 
 .sedepasser-img {
-  width: 350px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 410px;
   height: 410px;
 }
 
@@ -929,8 +931,9 @@ h6 {
 }
 
 .sedepasser-img img {
-  width: 100%;
+  border-radius: 10px;
   height: 100%;
+  box-shadow: 0 0 24px #020e1f;
 }
 
 .sedepasser-list {
@@ -1499,14 +1502,47 @@ main .design-about {
   #landing-footer-register {
     display: flex;
     flex-direction: column;
-    height: 127px;
+    height: 204px;
     padding: 0 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  #landing-footer-about .link-partenaires,
+  #landing-footer-connexion .link-partenaires,
+  #landing-footer-register .link-partenaires {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+
+  #landing-footer .link-partenaires,
+  #landing-footer-about .link-partenaires,
+  #landing-footer-connexion .link-partenaires,
+  #landing-footer-register .link-partenaires {
+    /* flex-direction: column; */
+    align-items: center;
   }
 }
 
 @media all and (max-width: 570px) {
   .buttons-hero-section {
     flex-direction: column;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .sedepasser {
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
+
+  .sedepasser-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
 }
 
@@ -1672,6 +1708,10 @@ main .design-about {
     padding: 0;
   }
 
+  .got_ame {
+    font-size: 20px;
+  }
+
   .section-subtitle {
     font-size: 20px;
     font-weight: 300;
@@ -1726,15 +1766,6 @@ main .design-about {
     font-size: 17px;
   }
 
-  /* #Sedepasser .col-3 h2 {
-    font-size: 53px;
-  } */
-
-  .sedepasser {
-    flex-direction: column-reverse;
-    margin-bottom: 0;
-  }
-
   .sedepasser-text {
     margin-left: 0;
   }
@@ -1744,16 +1775,8 @@ main .design-about {
     font-weight: 600;
   }
 
-  .sedepasser-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
   .sedepasser-img img {
-    width: 55%;
-    height: 100%;
+    height: 75%;
   }
 
   .sedepasser-list li {
@@ -1773,8 +1796,8 @@ main .design-about {
   .CTA-sedepasser {
     display: flex;
     margin-bottom: 35px;
-    margin-right: 16px;
-    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 0;
   }
 
@@ -1866,15 +1889,6 @@ main .design-about {
     padding-bottom: 5px;
   }
 
-  /* #landing-footer-about,
-  #landing-footer-connexion,
-  #landing-footer-register {
-    display: flex;
-    flex-direction: column;
-    height: 230px;
-    padding: 0 16px;
-  } */
-
   #landing-footer-about .title-footer {
     padding-bottom: 0;
   }
@@ -1957,14 +1971,7 @@ main .design-about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
-  }
-
-  .link-partners {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
+    gap: 3px;
   }
 
   #partners .link-partenaires a img {
@@ -1975,6 +1982,12 @@ main .design-about {
 @media all and (min-width: 1024px) {
   .testimonial.classic {
     width: 282px;
+  }
+}
+
+@media all and (min-width: 1460px) {
+  .links-partners {
+    display: flex;
   }
 }
 
@@ -2002,8 +2015,7 @@ main .design-about {
   }
 
   .sedepasser-img img {
-    width: 70%;
-    height: 90%;
+    height: 75%;
   }
 }
 
