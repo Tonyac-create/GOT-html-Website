@@ -137,9 +137,10 @@ nav a {
 }
 
 #landing-footer,
+#landing-footer-about,
 #landing-footer-connexion,
 #landing-footer-register {
-  background: radial-gradient(circle at bottom, #0d2d45 10%, #071520);
+  background: radial-gradient(circle at bottom, #0d2d45 10%, #071520 80%);
 }
 
 /*------------------------------------------------------------------------------------------*/

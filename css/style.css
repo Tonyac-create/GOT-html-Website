@@ -1427,7 +1427,6 @@ main .design-about {
   font-weight: 500;
   color: #fefefe;
   margin-right: 20px;
-  padding-top: 35px;
   padding-bottom: 0;
 }
 
@@ -1511,10 +1510,9 @@ main .design-about {
   #landing-footer-register {
     display: flex;
     flex-direction: column;
-    height: 89px;
+    height: 100px;
     padding: 0 16px;
     padding-bottom: 16px;
-    background: radial-gradient(circle at bottom, #0d2d45 10%, #071520 80%);
   }
 }
 
@@ -1989,11 +1987,10 @@ main .design-about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 14px;
   }
 
   #partners .link-partenaires a img {
-    height: 31px;
+    height: 25px;
   }
 }
 
@@ -2030,6 +2027,12 @@ main .design-about {
   /*-----------------Typography-----------------*/
   h1 {
     font-size: 38px;
+  }
+
+  #landing-footer-about,
+  #landing-footer-connexion,
+  #landing-footer-register {
+    height: 168px;
   }
 
   .sedepasser-img img {
