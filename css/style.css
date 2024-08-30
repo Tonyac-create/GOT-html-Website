@@ -1556,6 +1556,14 @@ main .design-about {
   }
 }
 
+@media all and (min-width: 1460px) {
+  .title-footer {
+    padding-top: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
 @media all and (max-width: 768px) {
   #banner {
     width: 100%;
