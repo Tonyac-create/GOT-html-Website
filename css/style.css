@@ -1240,7 +1240,7 @@ h6 {
 #landing-footer-about .link-partenaires a,
 #landing-footer-connexion .link-partenaires a,
 #landing-footer-register .link-partenaires a {
-  margin-right: 10px;
+  margin-right: 20px;
   display: flex;
   align-items: center;
 }
@@ -1971,7 +1971,7 @@ main .design-about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3px;
+    gap: 14px;
   }
 
   #partners .link-partenaires a img {
