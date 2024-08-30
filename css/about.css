@@ -38,8 +38,16 @@
   margin: 18px 0;
 }
 
+.link-CGU {
+  color: #2ab8cd;
+}
+
 .mentions-span-2 {
   color: #f6a316;
+}
+
+.btn-accept-CGU {
+  margin-right: 150px;
 }
 
 #landing-footer-mentions {
@@ -82,6 +90,10 @@
 
 #landing-footer-mentions .link-about {
   padding-left: 24px;
+}
+
+.list-CGU {
+  margin-bottom: 25px;
 }
 
 .list-CGU li {
