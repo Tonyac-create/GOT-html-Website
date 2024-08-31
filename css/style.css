@@ -1511,7 +1511,7 @@ main .design-about {
   #landing-footer-register {
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 133px;
     padding: 0 16px;
     padding-bottom: 16px;
   }
@@ -1988,10 +1988,12 @@ main .design-about {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /* gap: 8px; */
   }
 
   #partners .link-partenaires a img {
     height: 25px;
+    margin-right: 8px;
   }
 }
 
